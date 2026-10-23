@@ -1,8 +1,10 @@
+import { AsciiIcon, type Shape } from "@/components/ascii-icon";
 import { CutButton } from "@/components/cut-button";
 import { ArrowRight } from "lucide-react";
 import type { CSSProperties, ReactNode } from "react";
 
 type Feature = {
+  shape: Shape;
   title: string;
   body: string;
   meta: string;
@@ -11,18 +13,21 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
+    shape: "scan",
     title: "Eén traject, van klacht tot doel",
     body: "Revalidatie en performance zitten in hetzelfde dossier. Je bouwt het pad in fases, geeft de volgende fase vrij wanneer het kan — zonder je cliënt over te zetten naar een ander systeem.",
     meta: "Traject · fases en plan",
     href: "#praktijkportaal",
   },
   {
+    shape: "shield",
     title: "Je ziet wat er in de zaal gebeurt",
     body: "Afgevinkte oefeningen, ingevulde weerstanden, RPE, pijn tijdens en na, motivatie en herstel. Niet wat iemand zich achteraf herinnert, maar wat er op het moment zelf is ingevuld.",
     meta: "Check-ins · sessielogboek",
     href: "#hoe-het-werkt",
   },
   {
+    shape: "key",
     title: "Compliance die je niet hoeft te regelen",
     body: "Hosting binnen de EU bij een gecertificeerde partij, inzage in dossiers gelogd in een append-only auditlog, invite-only toegang en wachtwoorden van minimaal 12 tekens.",
     meta: "NEN 7510 / 7512 / 7513",
@@ -69,6 +74,10 @@ export function Features(): ReactNode {
               </h3>
 
               <div className="border-border my-5 border-t border-dotted" />
+              <div className="flex justify-center py-6 sm:py-8">
+                <AsciiIcon shape={feature.shape} />
+              </div>
+              <div className="border-border mb-6 border-t border-dotted" />
 
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {feature.body}
