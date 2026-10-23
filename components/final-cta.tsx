@@ -1,18 +1,13 @@
 "use client";
 
-import AsciiWaves from "@/components/ascii-waves";
 import { CutButton } from "@/components/cut-button";
+import { AsciiField } from "@/components/ascii-field";
 import { softEase, useReducedMotion } from "@/lib/motion";
 import { motion, type Variants } from "motion/react";
-import { useSyncExternalStore, type ReactNode } from "react";
+import type { ReactNode } from "react";
 
-function useIsMounted(): boolean {
-  return useSyncExternalStore(
-    () => () => {},
-    () => true,
-    () => false
-  );
-}
+const CTA_MASK =
+  "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)";
 
 const container: Variants = {
   hidden: {},
@@ -27,13 +22,7 @@ const item: Variants = {
 };
 
 export function FinalCta(): ReactNode {
-  const mounted = useIsMounted();
   const prefersReducedMotion = useReducedMotion();
-
-  const hMask =
-    "linear-gradient(to right, transparent 0%, black 13%, black 27%, transparent 43%, transparent 57%, black 73%, black 87%, transparent 100%)";
-  const vMask =
-    "linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%)";
 
   const itemTransition = prefersReducedMotion
     ? { duration: 0.01 }
@@ -41,41 +30,7 @@ export function FinalCta(): ReactNode {
 
   return (
     <section className="relative overflow-hidden">
-      {mounted && !prefersReducedMotion && (
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10"
-        >
-          <div className="mx-auto h-full max-w-[1440px]">
-            <motion.div
-              className="h-full w-full"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 0.9 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 1.4, ease: softEase }}
-              style={{
-                maskImage: vMask,
-                WebkitMaskImage: vMask,
-                filter: "brightness(1.3)",
-              }}
-            >
-              <div
-                className="h-full w-full"
-                style={{ maskImage: hMask, WebkitMaskImage: hMask }}
-              >
-                <AsciiWaves
-                  color="#ffffff"
-                  intensity={0}
-                  elementSize={12}
-                  videoUrl="/sample-video-2.mp4"
-                  noiseScale={25}
-                  hasCursorInteraction={false}
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      )}
+      <AsciiField mask={CTA_MASK} opacity={0.55} className="-z-10" />
 
       <div
         aria-hidden="true"
