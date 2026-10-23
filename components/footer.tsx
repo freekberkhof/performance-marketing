@@ -164,9 +164,6 @@ export function Footer(): ReactNode {
                 <CutButton variant="solid" href="#demo">
                   Demo aanvragen
                 </CutButton>
-                <CutButton variant="outline" href="#inloggen">
-                  Inloggen
-                </CutButton>
               </div>
             </FooterColumn>
           </div>

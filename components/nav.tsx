@@ -241,9 +241,6 @@ export function Nav(): ReactNode {
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <CutButton variant="outline" href="#inloggen">
-            Inloggen
-          </CutButton>
           <CutButton variant="solid" href="#demo">
             Demo aanvragen
           </CutButton>
@@ -339,12 +336,6 @@ export function Nav(): ReactNode {
                   {link.label}
                 </a>
               ))}
-
-              <div className="border-border/50 mt-3 border-t pt-4">
-                <CutButton variant="outline" href="#inloggen" fullWidth>
-                  Inloggen
-                </CutButton>
-              </div>
             </div>
           </motion.div>
         )}
