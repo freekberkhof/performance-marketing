@@ -5,6 +5,11 @@ import type { CSSProperties, ReactNode } from "react";
 
 type Feature = {
   image: string;
+  /**
+   * "photo" krijgt de monochrome brandbehandeling, "ui" blijft vrijwel
+   * onbewerkt zodat een schermafbeelding leesbaar blijft.
+   */
+  kind: "photo" | "ui";
   alt: string;
   title: string;
   body: string;
@@ -14,24 +19,27 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    image: "/features/01.jpg",
-    alt: "Sporter werkt aan een oefening in de zaal",
+    image: "/features/praktijkportaal.jpg",
+    kind: "ui",
+    alt: "Het praktijkportaal toont het traject van een cliënt met fase, plan en sessies",
     title: "Eén traject, van klacht tot doel",
     body: "Revalidatie en performance zitten in hetzelfde dossier. Je bouwt het pad in fases, geeft de volgende fase vrij wanneer het kan — zonder je cliënt over te zetten naar een ander systeem.",
     meta: "Traject · fases en plan",
     href: "#praktijkportaal",
   },
   {
-    image: "/features/02.jpg",
-    alt: "Sporter tijdens een krachtoefening",
+    image: "/features/training.jpg",
+    kind: "photo",
+    alt: "Sporter tijdens een kettlebell-squat in de zaal",
     title: "Je ziet wat er in de zaal gebeurt",
     body: "Afgevinkte oefeningen, ingevulde weerstanden, RPE, pijn tijdens en na, motivatie en herstel. Niet wat iemand zich achteraf herinnert, maar wat er op het moment zelf is ingevuld.",
     meta: "Check-ins · sessielogboek",
     href: "#hoe-het-werkt",
   },
   {
-    image: "/features/03.jpg",
-    alt: "Sporter in rust tussen twee sets door",
+    image: "/features/app-mockup.jpg",
+    kind: "photo",
+    alt: "De Performance Plus app op een telefoon met het actieve programma",
     title: "Compliance die je niet hoeft te regelen",
     body: "Hosting binnen de EU bij een gecertificeerde partij, inzage in dossiers gelogd in een append-only auditlog, invite-only toegang en wachtwoorden van minimaal 12 tekens.",
     meta: "NEN 7510 / 7512 / 7513",
@@ -46,11 +54,20 @@ const IMAGE_CLIP =
   "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)";
 
 /**
- * Brand treatment for the card photography: near-monochrome and dark, in
- * line with the Performance Plus shoot. Light mode lifts the exposure so
- * the frame does not read as a black hole on a white card.
+ * Fotografie krijgt de monochrome brandbehandeling van de Performance Plus
+ * shoot. Schermafbeeldingen blijven onbewerkt — een filter maakt UI-tekst
+ * alleen maar slechter leesbaar — en worden linksboven uitgelijnd zodat de
+ * zijnavigatie en de kerncijfers in beeld blijven.
  */
-function FeatureImage({ src, alt }: { src: string; alt: string }): ReactNode {
+function FeatureImage({
+  src,
+  alt,
+  kind,
+}: {
+  src: string;
+  alt: string;
+  kind: Feature["kind"];
+}): ReactNode {
   return (
     <div
       className="relative aspect-[4/3] w-full overflow-hidden bg-[#0d1013]"
@@ -61,7 +78,11 @@ function FeatureImage({ src, alt }: { src: string; alt: string }): ReactNode {
         alt={alt}
         fill
         sizes="(min-width: 1024px) 420px, (min-width: 640px) 50vw, 100vw"
-        className="object-cover [filter:grayscale(0.9)_contrast(1.15)_brightness(0.78)]"
+        className={
+          kind === "ui"
+            ? "object-cover object-left-top"
+            : "object-cover [filter:grayscale(0.6)_contrast(1.1)_brightness(0.85)]"
+        }
       />
       <div
         aria-hidden="true"
@@ -107,7 +128,11 @@ export function Features(): ReactNode {
               </h3>
 
               <div className="border-border my-5 border-t border-dotted" />
-              <FeatureImage src={feature.image} alt={feature.alt} />
+              <FeatureImage
+                src={feature.image}
+                alt={feature.alt}
+                kind={feature.kind}
+              />
               <div className="border-border mt-6 mb-6 border-t border-dotted" />
 
               <p className="text-muted-foreground text-sm leading-relaxed">

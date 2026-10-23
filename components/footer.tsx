@@ -76,7 +76,7 @@ function Plus({ className }: { className: string }): ReactNode {
     <svg
       aria-hidden="true"
       viewBox="0 0 24 24"
-      className={`text-brand pointer-events-none absolute z-10 h-3.5 w-3.5 ${className}`}
+      className={`text-foreground pointer-events-none absolute z-10 h-3.5 w-3.5 ${className}`}
     >
       <path
         d="M12 4v16M4 12h16"

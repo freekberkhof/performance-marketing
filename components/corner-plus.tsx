@@ -16,7 +16,7 @@ function PlusSvg({ className }: { className: string }): ReactNode {
 export function CornerPlus({ className }: { className: string }): ReactNode {
   return (
     <PlusSvg
-      className={`text-brand pointer-events-none absolute z-10 h-3.5 w-3.5 ${className}`}
+      className={`pointer-events-none absolute z-10 h-3.5 w-3.5 text-white ${className}`}
     />
   );
 }
