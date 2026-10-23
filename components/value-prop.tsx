@@ -105,14 +105,7 @@ export function ValueProp(): ReactNode {
         <div className="lg:order-1">
           <Kicker>De uitdaging</Kicker>
           <h2 className="mt-5 max-w-2xl font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-            Je weet wat iemand{" "}
-            <span className="font-sans font-semibold tracking-tight">
-              zou moeten doen
-            </span>
-            . Zelden wat er{" "}
-            <span className="font-sans font-semibold tracking-tight">
-              echt gebeurt
-            </span>
+            Je weet wat iemand zou moeten doen. Zelden wat er echt gebeurt
           </h2>
 
           <dl className="mt-10">
