@@ -339,10 +339,7 @@ export function AppShowcase(): ReactNode {
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10">
         <div className="max-w-2xl">
           <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-            Vier schermen,{" "}
-            <span className="font-sans font-semibold tracking-tight">
-              één routine
-            </span>
+            Vier schermen, één routine
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
             De hele week zit in één app: wat je vandaag doet, wat je hebt

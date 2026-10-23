@@ -19,12 +19,9 @@ export function CaseStudy(): ReactNode {
           <div className="px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
             <LogoMark className="mb-7 h-9 w-9" />
             <h2 className="font-serif text-[1.75rem] leading-[1.22] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2]">
-              Performance Plus is gebouwd in de praktijk van{" "}
-              <span className="font-sans font-semibold tracking-tight">
-                PFH Performance
-              </span>{" "}
-              — voor cliënten die niet alleen van hun klacht af willen, maar
-              terug willen naar hun sport.
+              Performance Plus is gebouwd in de praktijk van PFH Performance —
+              voor cliënten die niet alleen van hun klacht af willen, maar terug
+              willen naar hun sport.
             </h2>
           </div>
 

@@ -56,10 +56,7 @@ export function Hero(): ReactNode {
             transition={itemTransition}
             className="font-serif text-4xl leading-[1.1] font-normal tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.5rem]"
           >
-            Van revalidatie naar prestatie,{" "}
-            <span className="font-sans font-medium tracking-tight">
-              in één traject
-            </span>
+            Van revalidatie naar prestatie, in één traject
           </motion.h1>
 
           <motion.p

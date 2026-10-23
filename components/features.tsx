@@ -45,15 +45,7 @@ export function Features(): ReactNode {
     <section className="mx-auto max-w-[1440px] px-5 pb-24 sm:px-8 sm:pb-32 lg:px-10">
       <div className="max-w-2xl">
         <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-          Het schema, de{" "}
-          <span className="font-sans font-semibold tracking-tight">
-            uitvoering
-          </span>{" "}
-          en de{" "}
-          <span className="font-sans font-semibold tracking-tight">
-            terugkoppeling
-          </span>{" "}
-          in één systeem
+          Het schema, de uitvoering en de terugkoppeling in één systeem
         </h2>
         <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
           Geen losse PDF&apos;s, Excel-schema&apos;s of appjes meer. De praktijk

@@ -87,10 +87,7 @@ export function Stats(): ReactNode {
       <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="lg:pt-6">
           <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-            Wat je terugkrijgt na elke{" "}
-            <span className="font-sans font-semibold tracking-tight">
-              sessie
-            </span>
+            Wat je terugkrijgt na elke sessie
           </h2>
           <p className="text-muted-foreground mt-4 max-w-md text-sm leading-relaxed sm:text-base">
             De cliënt vult na het trainen een korte check-in in. Die vier scores
