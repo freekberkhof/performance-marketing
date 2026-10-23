@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performance Plus · Optie 01 · In beweging</title>
+  <meta name="description" content="Ontwerppreview ronde 4, optie 01: Performance Plus voor fysiotherapiepraktijken. Fases, app, praktijkportaal en minder verslagwerk.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#eef1ec">
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="preload" as="image" href="assets/strength.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="t-light">
+  <a class="skip-link" href="#main">Naar de inhoud</a>
+
+  <header class="site-header">
+    <div class="wrap-wide header-inner">
+      <a class="brand" href="#top" aria-label="Performance Plus, naar boven">
+        <span class="brand-mark"><img src="assets/logo-mark.png" alt="" width="354" height="345"></span>
+        <span class="brand-name">Performance Plus</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-icon" aria-hidden="true"></span><span data-menu-label>Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Hoofdmenu">
+        <ul>
+          <li><a href="#app">App</a></li>
+          <li><a href="#praktijkportaal">Praktijkportaal</a></li>
+          <li><a href="#verslag">Minder verslagwerk</a></li>
+          <li><a href="#contact" data-open-contact>Contact</a></li>
+        </ul>
+        <div class="option-switch" role="group" aria-label="Ontwerpoptie kiezen">
+          <span class="switch-label">Optie</span>
+          <a href="light.html" aria-current="page" aria-label="Optie 01, In beweging (huidige)">01</a>
+          <a href="dark.html" aria-label="Optie 03, Terug naar het veld">03</a>
+          <a href="index.html" aria-label="Vergelijk beide opties">Vergelijk</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- 1 · Intro -->
+    <section class="hero-light" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Voor fysiotherapiepraktijken <span class="rule" aria-hidden="true"></span> Pilotversie</p>
+        <h1 id="hero-title"><span>Meer zicht op herstel.</span> <span class="soft">Meer tijd voor je cliënt.</span></h1>
+        <p class="lead">Je bouwt het traject in fases, je cliënt traint en checkt in via de app, en jij ziet belasting, pijn en motivatie terug in het praktijkportaal. Sessie voor sessie, zonder alles opnieuw over te typen.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact" data-open-contact>Plan een demo <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-secondary" href="#app">Bekijk de app</a>
+        </div>
+      </div>
+      <div class="wrap-wide hero-visual">
+        <figure class="hero-photo">
+          <img src="assets/strength.jpg" alt="Iemand traint een split squat met dumbbells in een lichte trainingsruimte aan het water" width="1672" height="941" fetchpriority="high">
+        </figure>
+        <aside class="hero-cue" aria-label="Voorbeeld uit het praktijkportaal">
+          <p class="cue-label">Praktijkportaal · demo</p>
+          <p class="cue-name">Frans Broekhof</p>
+          <p class="cue-meta">Fase 2 van 6 · Dynamisch belasten</p>
+          <dl class="cue-stats">
+            <div><dt>Sessies</dt><dd>16/16</dd></div>
+            <div><dt>Pijn na</dt><dd>6,0 → 3,0</dd></div>
+            <div><dt>Gem. RPE</dt><dd>7,4</dd></div>
+          </dl>
+          <svg class="cue-spark" viewBox="0 0 260 46" width="260" height="46" role="img" aria-label="Pijn na de sessie, weekgemiddelde, daalt van 6,0 in week 1 naar 3,0 in week 8">
+            <polyline points="4,8 38,14 72,18 106,20 140,24 174,26 208,30 242,32" fill="none" stroke="currentColor" stroke-width="2"/>
+            <g fill="currentColor"><circle cx="4" cy="8" r="3"/><circle cx="242" cy="32" r="3"/></g>
+            <text x="4" y="44">wk 1</text><text x="226" y="44">wk 8</text>
+          </svg>
+        </aside>
+        <div class="hero-phone">
+          <div class="phone">
+            <div class="phone-screen">
+              <img src="assets/app-01.jpg" alt="Overzichtsscherm uit de cliëntapp met ringen voor belasting, voltooid en motivatie (demogegevens)" width="647" height="1400" fetchpriority="high">
+              <span class="phone-island" aria-hidden="true"></span>
+              <span class="demo-tag">Demo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Traject -->
+    <section class="section" id="traject" aria-labelledby="traject-title" style="padding-top: clamp(40px, 6vw, 88px)">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Hoe het samenhangt</p>
+          <h2 id="traject-title">Eén lijn, van fase tot opvolging.</h2>
+          <p class="lead">Het schema, de uitvoering en de terugkoppeling in één systeem. De praktijk bouwt, de cliënt traint, en alles wat er gebeurt komt op dezelfde plek terug.</p>
+        </div>
+        <ol class="journey-cols">
+          <li>
+            <span class="step-n">01</span>
+            <span class="journey-who">Praktijk</span>
+            <h3>Fases en programma's klaarzetten</h3>
+            <p>Je bouwt het pad in fases en wijst per fase een programma toe uit je eigen bibliotheek. Revalidatie en performance blijven in hetzelfde traject.</p>
+            <span class="journey-data"><span>Traject</span><span>Fases</span><span>Programma's</span></span>
+            <a class="text-link" href="#praktijkportaal">Naar het praktijkportaal <span aria-hidden="true">→</span></a>
+          </li>
+          <li>
+            <span class="step-n">02</span>
+            <span class="journey-who">Cliënt</span>
+            <h3>Trainen, afvinken, inchecken</h3>
+            <p>Je cliënt vinkt oefeningen af en vult na de sessie pijn, RPE en motivatie in. Daarnaast een dagelijkse check-in over slaap, stress en pijn.</p>
+            <span class="journey-data"><span>Sessies</span><span>Check-ins</span><span>Notities</span></span>
+            <a class="text-link" href="#app">Bekijk de app <span aria-hidden="true">→</span></a>
+          </li>
+          <li>
+            <span class="step-n">03</span>
+            <span class="journey-who">Praktijk</span>
+            <h3>Zien, beoordelen, opvolgen</h3>
+            <p>Wat er is ingevuld komt terug in het portaal, met meldingen bij hoge pijnscores. Uit dezelfde gegevens bouw je een conceptverslag dat je zelf controleert.</p>
+            <span class="journey-data"><span>Meldingen</span><span>Grafieken</span><span>Verslag</span></span>
+            <a class="text-link" href="#verslag">Naar minder verslagwerk <span aria-hidden="true">→</span></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3 · App (Kaylees vier schermen) -->
+    <section class="story section" id="app" data-story aria-labelledby="app-title" style="padding-bottom: clamp(40px, 6vw, 96px)">
+      <div class="wrap-wide story-head">
+        <div class="section-head" style="margin-bottom:0">
+          <p class="eyebrow">De cliëntapp</p>
+          <h2 id="app-title">Vier schermen, één routine.</h2>
+          <p class="lead">De hele week zit in één app: wat je cliënt vandaag doet, wat er is afgevinkt, hoe het voelde en waar het naartoe gaat. De schermen hieronder komen uit de iOS-app en bevatten demogegevens.</p>
+        </div>
+      </div>
+      <div class="story-track">
+        <div class="story-sticky">
+          <div class="wrap-wide story-stage">
+            <div class="story-copy">
+              <div class="story-text" id="story-1">
+                <span class="step-n">01</span>
+                <h3>Je overzicht, elke ochtend</h3>
+                <p>Belasting, voltooide sessies en motivatie staan bovenaan. Eén blik en je weet waar je staat, en welke sessie vandaag klaarstaat.</p>
+              </div>
+              <div class="story-text" id="story-2">
+                <span class="step-n">02</span>
+                <h3>Sessie voor sessie afvinken</h3>
+                <p>Je week is opgedeeld in sessies, je sessie in oefeningen. Vink af tijdens het trainen; de voortgang loopt live mee.</p>
+              </div>
+              <div class="story-text" id="story-3">
+                <span class="step-n">03</span>
+                <h3>Even inchecken, één minuut</h3>
+                <p>Slaap, stress, pijn en de training van gisteren. Je fysio leest je check-ins mee in je dossier, of je slaat hem over.</p>
+              </div>
+              <div class="story-text" id="story-4">
+                <span class="step-n">04</span>
+                <h3>Je opbouw in cijfers</h3>
+                <p>RPE, motivatie, pijn tijdens en pijn na, uitgezet over je sessies. Niet hoe je denkt dat het ging, maar wat je op het moment zelf invulde.</p>
+              </div>
+            </div>
+
+            <div class="story-center">
+              <div class="story-phone" aria-label="Schermen uit de cliëntapp">
+                <div class="phone">
+                  <div class="phone-screen">
+                    <div class="screen-layer"><img src="assets/app-01.jpg" alt="Overzichtsscherm met de ringen voor belasting, voltooid en motivatie" width="647" height="1400" loading="lazy"><span class="screen-dim" aria-hidden="true"></span></div>
+                    <div class="screen-layer"><img src="assets/app-02.jpg" alt="Sessieoverzicht van week 1 met voltooide sessies en voortgangsbalken" width="647" height="1400" loading="lazy"><span class="screen-dim" aria-hidden="true"></span></div>
+                    <div class="screen-layer"><img src="assets/app-03.jpg" alt="Dagelijkse check-in met schuifregelaars voor slaap, stress en pijn" width="647" height="1400" loading="lazy"><span class="screen-dim" aria-hidden="true"></span></div>
+                    <div class="screen-layer"><img src="assets/app-04.jpg" alt="Progressiescherm met programma-statistieken en het sessieverloop" width="647" height="1400" loading="lazy"><span class="screen-dim" aria-hidden="true"></span></div>
+                    <span class="phone-island" aria-hidden="true"></span>
+                    <span class="demo-tag">Demo</span>
+                  </div>
+                </div>
+              </div>
+              <div class="story-controls">
+                <div class="story-nav">
+                  <button type="button" data-story-prev aria-label="Vorig scherm"><span aria-hidden="true">←</span></button>
+                  <span class="story-count" data-story-count>1 van 4</span>
+                  <button type="button" data-story-next aria-label="Volgend scherm"><span aria-hidden="true">→</span></button>
+                </div>
+                <ul class="story-steps" aria-label="Kies een appscherm">
+                  <li><button type="button" data-story-step aria-controls="story-1" aria-current="step"><span class="story-tick"><i></i></span>01 Overzicht</button></li>
+                  <li><button type="button" data-story-step aria-controls="story-2"><span class="story-tick"><i></i></span>02 Sessies</button></li>
+                  <li><button type="button" data-story-step aria-controls="story-3"><span class="story-tick"><i></i></span>03 Check-in</button></li>
+                  <li><button type="button" data-story-step aria-controls="story-4"><span class="story-tick"><i></i></span>04 Progressie</button></li>
+                </ul>
+                <p class="story-hint story-hint-manual">Veeg over het scherm of gebruik de knoppen.</p>
+                <p class="story-hint story-hint-pinned">Scroll verder of kies een scherm.</p>
+              </div>
+            </div>
+
+            <div class="story-aside" aria-hidden="true">
+              <div class="story-aside-item">
+                <div class="aside-card"><p class="k">Vandaag</p><p class="v">Week 1 · Sessie 3</p><p class="s">Belasting 7,5 · motivatie 4,5</p></div>
+                <span class="aside-pill">Geen Excel, geen papieren schema</span>
+              </div>
+              <div class="story-aside-item">
+                <div class="aside-card"><p class="v">Sessie 2 <span class="s tabular" style="float:right">6/7</span></p><div class="aside-bars"><i></i><i></i><i></i><i class="off"></i></div></div>
+                <span class="aside-pill">Met je fysio en je fase in beeld</span>
+              </div>
+              <div class="story-aside-item">
+                <div class="aside-card"><p class="v">Check-in bewaard</p><p class="s">slaap 4 · stress 7 · pijn 3</p></div>
+                <span class="aside-pill">Zichtbaar in het praktijkportaal</span>
+              </div>
+              <div class="story-aside-item">
+                <div class="aside-card"><p class="v">2 van 3 sessies voltooid</p><p class="s">Gem. RPE 7,5 · gem. pijn na 4,5</p></div>
+                <span class="aside-pill">Van herstel naar prestatie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · Praktijkportaal -->
+    <section class="section" id="praktijkportaal" aria-labelledby="portal-title" style="background: var(--bg-alt)">
+      <div class="wrap-wide">
+        <div class="portal-intro">
+          <div class="section-head">
+            <p class="eyebrow">Praktijkportaal</p>
+            <h2 id="portal-title">Van signaal naar inzicht.</h2>
+            <p class="lead">Zoek een cliënt, filter op status en open het dossier. Je ziet wat er in de zaal en thuis is ingevuld, uitgezet in de tijd.</p>
+          </div>
+          <div class="label-row" style="justify-content:flex-end;align-self:end">
+            <span class="demo-label">Interactieve demo · fictieve cliëntgegevens</span>
+          </div>
+        </div>
+        <div class="app-frame portal" data-portal>
+          <div class="frame-bar"><span><strong>Performance Plus</strong> · praktijkportaal</span><span>Bron: check-ins + sessielogboek · periode 24-08 t/m 18-10-2026</span></div>
+          <div class="portal-body">
+            <div class="portal-rail">
+              <div class="rail-brand"><span class="brand-mark"><img src="assets/logo-mark.png" alt="" width="354" height="345"></span><span>PFH Performance<small>Passion For Health</small></span></div>
+              <fieldset class="rail-filters">
+                <legend>Status</legend>
+                <label><span><input type="radio" name="status-filter" value="all" checked> Alle cliënten</span><span class="count" data-count="all">4</span></label>
+                <label><span><input type="radio" name="status-filter" value="prio"> Melding met voorrang</span><span class="count" data-count="prio">1</span></label>
+                <label><span><input type="radio" name="status-filter" value="checkins"> Weinig check-ins</span><span class="count" data-count="checkins">1</span></label>
+                <label><span><input type="radio" name="status-filter" value="rust"> Regulier</span><span class="count" data-count="rust">2</span></label>
+              </fieldset>
+              <p class="rail-note">Melding met voorrang: pijnscore van 7 of hoger in de laatste vier sessies of in de dagelijkse check-in. Weinig check-ins: minder dan de helft van de dagen ingevuld. Het portaal geeft geen behandeladvies.</p>
+            </div>
+            <div class="portal-main">
+              <form class="portal-toolbar" role="search" aria-label="Cliënten zoeken">
+                <div class="search-field">
+                  <label for="client-search">Zoek op naam, sport of klacht</label>
+                  <input id="client-search" type="search" autocomplete="off" placeholder="Bijv. tennis of schouder">
+                </div>
+                <p class="result-count" data-result-count aria-live="off">4 cliënten getoond</p>
+              </form>
+              <div class="table-scroll" role="region" aria-label="Cliëntentabel, horizontaal scrollbaar" tabindex="0">
+                <table class="data clients">
+                  <caption>Cliënten <small>Gem. RPE: laatste 4 sessies · scores 0–10</small></caption>
+                  <thead>
+                    <tr><th scope="col">Cliënt</th><th scope="col">Traject</th><th scope="col" class="num">Sessies</th><th scope="col" class="num">Laatste check-in</th><th scope="col" class="num">Gem. RPE</th><th scope="col" class="num">Pijn na (laatst)</th><th scope="col">Status</th></tr>
+                  </thead>
+                  <tbody data-client-rows>
+                    <tr class="is-selected"><th scope="row">Frans Broekhof<span class="row-sub">Tennis · VKB rechts</span></th><td>Fase 2 van 6<span class="row-sub">Dynamisch belasten</span></td><td class="num">16/16</td><td class="num">22-10<span class="row-sub">41/56 dagen</span></td><td class="num">7,4</td><td class="num">3,0</td><td><span class="status status-rust">Regulier</span></td></tr>
+                    <tr><th scope="row">Sanne Bos<span class="row-sub">Hardlopen · Achillespees links</span></th><td>Fase 3 van 5<span class="row-sub">Opbouw looptraining</span></td><td class="num">13/16</td><td class="num">17-10<span class="row-sub">19/56 dagen</span></td><td class="num">7,3</td><td class="num">3,0</td><td><span class="status status-checkins">Weinig check-ins</span></td></tr>
+                    <tr><th scope="row">Youssef El Amrani<span class="row-sub">Voetbal · Hamstring rechts</span></th><td>Fase 4 van 5<span class="row-sub">Sportspecifiek</span></td><td class="num">16/16</td><td class="num">22-10<span class="row-sub">48/56 dagen</span></td><td class="num">8,3</td><td class="num">0,5</td><td><span class="status status-rust">Regulier</span></td></tr>
+                    <tr><th scope="row">Lotte Vermeer<span class="row-sub">Volleybal · Schouder links</span></th><td>Fase 1 van 4<span class="row-sub">Belastbaarheid opbouwen</span></td><td class="num">16/16</td><td class="num">21-10<span class="row-sub">37/56 dagen</span></td><td class="num">6,8</td><td class="num">6,5</td><td><span class="status status-prio">Melding met voorrang</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <article class="detail" id="client-detail" aria-labelledby="detail-name">
+                <div class="detail-head">
+                  <div class="detail-id">
+                    <span class="avatar" data-detail-avatar aria-hidden="true">FB</span>
+                    <div>
+                      <h3 id="detail-name" tabindex="-1">Frans Broekhof</h3>
+                      <p class="detail-meta" data-detail-meta>Tennis · VKB rechts · doel: Terug op de baan</p>
+                    </div>
+                  </div>
+                  <div class="detail-tags"><span data-detail-phase>Fase 2 van 6 · Dynamisch belasten</span><span data-detail-owner>Behandelaar: Freek Berkhof</span></div>
+                </div>
+                <div class="tabs" role="tablist" aria-label="Onderdelen van het cliëntdossier">
+                  <button type="button" role="tab" id="tab-overzicht" data-tab="overzicht" aria-controls="panel-overzicht" aria-selected="true">Overzicht</button>
+                  <button type="button" role="tab" id="tab-sessies" data-tab="sessies" aria-controls="panel-sessies" aria-selected="false" tabindex="-1">Sessies</button>
+                  <button type="button" role="tab" id="tab-verslag" data-tab="verslag" aria-controls="panel-verslag" aria-selected="false" tabindex="-1">Verslag</button>
+                </div>
+
+                <div class="tabpanel" role="tabpanel" id="panel-overzicht" data-panel="overzicht" aria-labelledby="tab-overzicht" tabindex="0">
+                  <div class="overview">
+                    <div class="overview-main">
+                      <div class="rings" data-rings></div>
+                      <div class="card chart-card">
+                        <div class="chart-top">
+                          <div>
+                            <h4>Sessiescores in de tijd</h4>
+                            <p class="chart-meta" data-chart-meta>Bron: check-ins + sessielogboek · schaal 0–10</p>
+                          </div>
+                          <div class="chart-controls">
+                            <div class="series-toggles" role="group" aria-label="Reeksen tonen">
+                              <button type="button" data-series="pijnNa" aria-pressed="true">Pijn na</button>
+                              <button type="button" data-series="rpe" aria-pressed="true">RPE</button>
+                              <button type="button" data-series="motivatie" aria-pressed="true">Motivatie</button>
+                            </div>
+                            <fieldset class="seg">
+                              <legend>Periode</legend>
+                              <label><input type="radio" name="chart-range" value="4"> 4 weken</label>
+                              <label><input type="radio" name="chart-range" value="8" checked> 8 weken</label>
+                            </fieldset>
+                          </div>
+                        </div>
+                        <div class="chart-host" data-chart><p class="muted-cell">De grafiek wordt met JavaScript getekend. De onderliggende waarden staan onder ‘Sessies’.</p></div>
+                        <div class="legend" data-chart-legend></div>
+                        <p class="chart-summary" aria-live="polite"><strong>Samenvatting:</strong> <span data-chart-summary>Pijn na de sessie daalt bij Frans Broekhof van 6,0 naar 3,0 over 8 weken; RPE stijgt van 5,0 naar 7,5.</span></p>
+                      </div>
+                    </div>
+                    <div class="overview-side">
+                      <div class="card">
+                        <h4>Aandacht nodig</h4>
+                        <ul class="flags" data-flags><li><span class="flag flag-info">Sessie zonder check-in</span><span>1 sessie in deze periode</span></li></ul>
+                      </div>
+                      <div class="card">
+                        <p class="k">Herstel &amp; check-ins</p>
+                        <h4>Dagelijkse check-in · 8 weken</h4>
+                        <dl class="daily" data-daily></dl>
+                      </div>
+                      <p class="side-note">RPE is de ervaren inspanning die de cliënt zelf invult. Het is geen risicoscore en het portaal trekt er geen conclusies uit.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tabpanel" role="tabpanel" id="panel-sessies" data-panel="sessies" aria-labelledby="tab-sessies" tabindex="0" hidden>
+                  <div class="table-scroll" role="region" aria-label="Sessielogboek, horizontaal scrollbaar" tabindex="0">
+                    <table class="data">
+                      <caption>Sessielogboek van <span data-client-name>Frans Broekhof</span> <small>nieuwste eerst · scores 0–10 zoals ingevuld door de cliënt</small></caption>
+                      <thead><tr><th scope="col">Datum</th><th scope="col" class="num">Afgevinkt</th><th scope="col" class="num">Pijn tijdens</th><th scope="col" class="num">Pijn na</th><th scope="col" class="num">RPE</th><th scope="col" class="num">Motivatie</th><th scope="col">Notitie cliënt</th></tr></thead>
+                      <tbody data-session-rows></tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tabpanel" role="tabpanel" id="panel-verslag" data-panel="verslag" aria-labelledby="tab-verslag" tabindex="0" hidden>
+                  <p class="k" style="font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700">Conceptworkflow</p>
+                  <h4 style="margin-top:6px">Wat er klaarstaat voor het verslag van <span data-client-name>Frans Broekhof</span></h4>
+                  <ul class="report-brief" data-report-brief></ul>
+                  <a class="btn btn-primary btn-small" href="#verslag" data-open-report>Open de verslagworkflow <span class="arrow" aria-hidden="true">→</span></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Voorbeeldscenario -->
+    <section class="section" id="verwachting" aria-labelledby="scenario-title">
+      <div class="wrap-wide" data-scenario>
+        <div class="section-head">
+          <p class="eyebrow">Verwachting · concept</p>
+          <h2 id="scenario-title">Wat je meet, en wat je zou kunnen verwachten.</h2>
+          <p class="lead">Een mogelijke uitbreiding om te bespreken: de gemeten lijn doorgetrokken als voorbeeldscenario, met een bandbreedte. Zo zie je waar meting en verwachting uit elkaar lopen. De behandelaar beoordeelt het vervolg.</p>
+          <div class="label-row"><span class="demo-label">Voorbeeldscenario · ontwerpconcept</span></div>
+        </div>
+        <div class="scenario-grid">
+          <div class="card scenario-chart">
+            <div class="chart-top">
+              <div>
+                <h3 style="font-size:1.1rem">Weekgemiddelde en voorbeeldscenario</h3>
+                <p class="chart-meta">Bron: check-ins na de sessie · week 1–8 gemeten (24-08 t/m 18-10-2026) · week 9–12 alleen scenario</p>
+              </div>
+            </div>
+            <div class="chart-host" data-scenario-chart><p class="muted-cell">De grafiek wordt met JavaScript getekend.</p></div>
+            <div class="legend" data-scenario-legend></div>
+            <p class="chart-summary" aria-live="polite"><strong>Samenvatting:</strong> <span data-scenario-summary>Gemeten pijn na de sessie bij Frans Broekhof: week 8 gemiddeld 3,0.</span></p>
+          </div>
+          <div class="scenario-side">
+            <div class="card controls">
+              <div class="field"><label for="scenario-client">Cliënt</label>
+                <select id="scenario-client">
+                  <option value="frans">Frans Broekhof</option><option value="sanne">Sanne Bos</option><option value="youssef">Youssef El Amrani</option><option value="lotte">Lotte Vermeer</option>
+                </select>
+              </div>
+              <div class="field"><label for="scenario-metric">Meting</label>
+                <select id="scenario-metric"><option value="pijnNa">Pijn na de sessie</option><option value="rpe">Ervaren inspanning (RPE)</option></select>
+              </div>
+              <label class="check"><input type="checkbox" id="scenario-line" checked> Toon voorbeeldscenario</label>
+              <label class="check"><input type="checkbox" id="scenario-band" checked> Toon bandbreedte</label>
+            </div>
+            <div class="notice">
+              <strong>Illustratieve doorkijk; geen medische voorspelling.</strong>
+              <p>De behandelaar beoordeelt het vervolg. Dit ontwerpconcept noemt geen hersteldatum.</p>
+              <p>Rekenvoorbeeld: een rechte trend door de weekgemiddelden van week 3 tot en met 6, doorgetrokken vanaf week 6. De band wordt elke week breder. In week 7 en 8 zie je het verschil tussen gemeten en scenario.</p>
+            </div>
+          </div>
+        </div>
+        <div class="table-scroll scenario-table" role="region" aria-label="Weektabel gemeten en scenario, horizontaal scrollbaar" tabindex="0">
+          <table class="data">
+            <caption>Gemeten tegenover voorbeeldscenario <small>weekgemiddelden 0–10 · verschil = gemeten min scenario</small></caption>
+            <thead><tr><th scope="col">Week</th><th scope="col" class="num">Gemeten</th><th scope="col" class="num">Scenario</th><th scope="col" class="num">Bandbreedte</th><th scope="col" class="num">Verschil</th></tr></thead>
+            <tbody data-scenario-rows></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Minder verslagwerk -->
+    <section class="section" id="verslag" aria-labelledby="verslag-title" style="background: var(--bg-alt)">
+      <div class="wrap-wide" data-report>
+        <div class="section-head">
+          <p class="eyebrow">Minder verslagwerk</p>
+          <h2 id="verslag-title">Minder overtypen. Jij houdt de pen.</h2>
+          <p class="lead">Wat je cliënt al heeft vastgelegd hoef je niet opnieuw over te nemen. Sessies en check-ins vormen samen een kort conceptverslag met de echte waarden. Jij kiest de bronnen, past de tekst aan en controleert.</p>
+        </div>
+        <ul class="report-points">
+          <li><strong>Waarden uit de bron</strong><span>Datums, aantallen en scores komen rechtstreeks uit het sessielogboek en de check-ins.</span></li>
+          <li><strong>Alleen waarnemingen</strong><span>Het concept beschrijft wat er is ingevuld. Beoordeling en vervolg schrijf jij.</span></li>
+          <li><strong>Jij controleert</strong><span>Niets gaat ongezien een dossier in. In deze demo wordt niets opgeslagen.</span></li>
+        </ul>
+        <div class="app-frame report-frame">
+          <div class="frame-bar"><span><strong>Verslag</strong> · conceptworkflow</span><span class="demo-label">Interactieve demo · geen koppeling met een dossier</span></div>
+          <ol class="timeline" aria-label="Stappen in de verslagworkflow">
+            <li data-report-step class="is-done"><strong>Vastgelegd in de app</strong>Sessies en check-ins</li>
+            <li data-report-step aria-current="step"><strong>Bronnen kiezen</strong>Wat neem je mee</li>
+            <li data-report-step><strong>Concept opgebouwd</strong>Met de echte waarden</li>
+            <li data-report-step><strong>Behandelaar controleert</strong>Aanpassen en markeren</li>
+            <li class="is-outside"><strong>Overnemen in je dossier</strong>Buiten deze demo</li>
+          </ol>
+          <div class="report-body">
+            <div class="report-sources">
+              <div class="field"><label for="report-client">Cliënt</label>
+                <select id="report-client">
+                  <option value="frans">Frans Broekhof</option><option value="sanne">Sanne Bos</option><option value="youssef">Youssef El Amrani</option><option value="lotte">Lotte Vermeer</option>
+                </select>
+              </div>
+              <fieldset style="border:0;margin:0;padding:0;display:grid;gap:8px">
+                <legend class="label" style="font-size:.8rem;font-weight:600;color:var(--muted);margin-bottom:8px;padding:0">Bronnen uit het portaal</legend>
+                <ul data-report-sources>
+                  <li><span class="source-item"><span></span><span class="source-body"><span class="source-label">Sessielogboek</span><span class="source-value">16 van 16 sessies afgerond</span></span></span></li>
+                  <li><span class="source-item"><span></span><span class="source-body"><span class="source-label">Pijn tijdens / na</span><span class="source-value">pijn na: week 1 gem. 6,0 → week 8 gem. 3,0</span></span></span></li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="report-editor">
+              <label for="report-text" class="label" style="font-size:.8rem;font-weight:600;color:var(--muted)">Conceptverslag (bewerkbaar)</label>
+              <textarea id="report-text" spellcheck="true" disabled placeholder="Klik op ‘Maak voorbeeldverslag’ om een concept op te bouwen uit de gekozen bronnen."></textarea>
+              <div class="report-actions">
+                <button class="btn btn-primary" type="button" data-report-build>Maak voorbeeldverslag</button>
+                <button class="btn btn-secondary" type="button" data-report-approve disabled>Controleer en markeer</button>
+              </div>
+              <p class="report-status" data-report-status role="status">Nog geen concept. Kies bronnen en klik op ‘Maak voorbeeldverslag’.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Fotobrug en oorsprong -->
+    <section class="bridge-light" aria-labelledby="origin-title">
+      <figure><img src="assets/daylight.jpg" alt="Sporter zit even op een plyobox in een zonnige trainingsruimte en kijkt naar buiten" width="1448" height="1086" loading="lazy"></figure>
+      <div class="wrap">
+        <div class="bridge-card">
+          <blockquote><p>Revalidatie en prestatie zijn geen twee trajecten, maar fases van hetzelfde traject.</p></blockquote>
+          <p>Je begint bij belasting opbouwen en eindigt bij terug op het veld, zonder onderweg van systeem te wisselen.</p>
+        </div>
+      </div>
+      <div class="wrap section" style="padding-top: clamp(56px, 7vw, 96px)">
+        <div class="origin">
+          <span class="brand-mark"><img src="assets/logo-mark.png" alt="" width="354" height="345"></span>
+          <div>
+            <p class="eyebrow" style="margin-bottom:14px">Waar het vandaan komt</p>
+            <h2 id="origin-title">Gebouwd in de praktijk van PFH Performance.</h2>
+          </div>
+          <div class="origin-copy">
+            <p>Performance Plus is gebouwd voor cliënten die niet alleen van hun klacht af willen, maar terug willen naar hun sport. Daarom zitten revalidatie en performance in hetzelfde dossier.</p>
+            <p>Het draait als pilotversie en wordt stap voor stap verbeterd op basis van gebruik en feedback uit de praktijk.</p>
+            <ul class="origin-facts">
+              <li>Praktijkportaal <span>trajecten, fases, programma's</span></li>
+              <li>Cliëntapp <span>sessies, check-ins, progressie</span></li>
+              <li>Toegang <span>alleen op uitnodiging</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title" style="padding-top: 0">
+      <div class="wrap faq-grid">
+        <div class="section-head">
+          <p class="eyebrow">Veelgestelde vragen</p>
+          <h2 id="faq-title">Wat je wilt weten voor de demo.</h2>
+          <p class="lead">Staat je vraag er niet bij? We denken graag mee.</p>
+          <a class="btn btn-secondary" href="#contact" data-open-contact style="width:fit-content">Stel je vraag</a>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary><span class="faq-question">Voor wie is Performance Plus bedoeld?</span></summary>
+            <p>Voor fysiotherapiepraktijken die cliënten begeleiden van klacht naar doel. De praktijk is de klant: behandelaars en praktijkbeheerders werken in het portaal, cliënten krijgen een uitnodiging voor de app. Er is geen open registratie.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Hoe werken fases en programma's?</span></summary>
+            <p>Een traject bestaat uit fases, en per fase wijs je een programma toe vanuit je bibliotheek. Of dat programma uit revalidatie of performance komt, maakt voor het dossier niet uit. Je cliënt blijft in dezelfde lijn.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Wat vult een cliënt in, en wat zie ik terug?</span></summary>
+            <p>Na een sessie: pijn tijdens, pijn na, RPE (hoe zwaar het voelde), motivatie en eventueel een notitie. Daarnaast is er een dagelijkse check-in over slaap, stress, pijn en spierpijn. Afgeronde sessies en check-ins komen als melding in het portaal; bij een pijnscore van 7 of hoger krijgt die melding voorrang.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Geeft de app advies aan mijn cliënt?</span></summary>
+            <p>Nee. De app vervangt geen persoonlijke beoordeling en is geen spoedkanaal. Meldingen gaan naar de praktijk, nooit automatisch terug naar de cliënt.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Is dit een afgerond product?</span></summary>
+            <p>Nee, Performance Plus draait als pilotversie. Wat er staat werkt; wat eraan komt, bepalen we samen met de praktijken die meedraaien.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Wat laat deze demo wel en niet zien?</span></summary>
+            <p>De cliënten en waarden op deze pagina zijn fictief. Het voorbeeldscenario en de verslagworkflow zijn concepten om te bespreken: ze laten hier een mogelijke werkwijze zien, slaan niets op en schrijven niets naar een dossier. De appschermen komen uit de iOS-app en bevatten demogegevens.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · Contact -->
+    <section class="section contact-band" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow" style="margin-bottom:16px">Contact</p>
+          <h2 id="contact-title">Zien hoe het in jouw praktijk past?</h2>
+        </div>
+        <div class="contact-side">
+          <p>In een demo lopen we samen door het portaal en de app, met jouw manier van werken als uitgangspunt.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:info@passionforhealth.nl" data-open-contact>Plan een demo <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="mailto:info@passionforhealth.nl">info@passionforhealth.nl</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top"><span class="brand-mark"><img src="assets/logo-mark.png" alt="" width="354" height="345"></span><span class="brand-name">Performance Plus</span></a>
+          <p style="margin-top:14px;max-width:30rem">Pilotversie, gebouwd in de praktijk van PFH Performance. Ontwerppreview ronde 4, optie 01 · alle cliëntgegevens zijn fictief.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Op deze pagina</h2>
+          <ul>
+            <li><a href="#app">App</a></li>
+            <li><a href="#praktijkportaal">Praktijkportaal</a></li>
+            <li><a href="#verwachting">Voorbeeldscenario</a></li>
+            <li><a href="#verslag">Minder verslagwerk</a></li>
+            <li><a href="#faq">Veelgestelde vragen</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Verder</h2>
+          <ul>
+            <li><a href="dark.html">Optie 03 · Terug naar het veld</a></li>
+            <li><a href="index.html">Beide opties vergelijken</a></li>
+            <li><a href="mailto:info@passionforhealth.nl">info@passionforhealth.nl</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal"><span>© <span data-year>2026</span> Passion For Health</span><span>Foto's: gegenereerde beelden, geen echte cliënten.</span></div>
+    </div>
+  </footer>
+
+  <dialog class="dialog" id="contact-dialog" aria-labelledby="contact-dialog-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" data-close aria-label="Sluit het contactvenster"><span aria-hidden="true">×</span></button>
+      <form novalidate>
+        <div class="form-grid">
+          <h2 id="contact-dialog-title">Demo aanvragen</h2>
+          <p class="dialog-intro">Vul je gegevens in. Daarna zie je het bericht en open je het zelf in je e-mailprogramma, gericht aan info@passionforhealth.nl. Deze pagina verstuurt niets.</p>
+          <p class="form-errors" data-form-errors role="alert" hidden></p>
+          <div class="field"><label for="contact-name">Naam <span class="req">(verplicht)</span></label><input id="contact-name" type="text" name="name" autocomplete="name" required data-label="je naam"></div>
+          <div class="field"><label for="contact-email">E-mailadres <span class="req">(verplicht)</span></label><input id="contact-email" type="email" name="email" autocomplete="email" required data-label="je e-mailadres"></div>
+          <div class="field"><label for="contact-practice">Praktijk <span class="req">(verplicht)</span></label><input id="contact-practice" type="text" name="practice" autocomplete="organization" required data-label="je praktijk"></div>
+          <div class="field"><label for="contact-message">Vraag of toelichting <span class="req">(optioneel)</span></label><textarea id="contact-message" name="message" rows="3"></textarea></div>
+          <div class="cta-row"><button class="btn btn-primary" type="submit">Bekijk e-mailbericht</button><button class="btn btn-secondary" type="button" data-close>Annuleer</button></div>
+          <p class="form-foot">Er wordt niets opgeslagen of automatisch verzonden.</p>
+        </div>
+      </form>
+      <div class="form-grid" data-contact-result hidden>
+        <h2 id="contact-result-title" tabindex="-1">Je bericht staat klaar</h2>
+        <p class="dialog-intro">Met de knop hieronder opent je eigen e-mailprogramma een nieuw bericht met deze tekst. Versturen doe je daar zelf; deze pagina verstuurt niets.</p>
+        <pre class="mail-preview" data-mail-preview></pre>
+        <div class="cta-row"><a class="btn btn-primary" href="mailto:info@passionforhealth.nl" data-mail-link>Open in e-mailprogramma</a><button class="btn btn-secondary" type="button" data-contact-back>Gegevens aanpassen</button></div>
+      </div>
+    </div>
+  </dialog>
+
+  <p id="live-region" class="visually-hidden" aria-live="polite"></p>
+  <script src="app.js"></script>
+</body>
+</html>
