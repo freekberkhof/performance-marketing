@@ -57,7 +57,7 @@ export default function HomePage(): ReactNode {
         </InView>
         <InView>
           <Features />
-        </InView>
+        </InView> 
         <AppShowcase />
         <InView>
           <ValueProp />
