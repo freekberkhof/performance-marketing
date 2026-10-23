@@ -1,12 +1,11 @@
-import { AsciiIcon } from "@/components/ascii-icon";
 import { CutButton } from "@/components/cut-button";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import type { CSSProperties, ReactNode } from "react";
 
-type Shape = "scan" | "shield" | "key";
-
 type Feature = {
-  shape: Shape;
+  image: string;
+  alt: string;
   title: string;
   body: string;
   meta: string;
@@ -15,21 +14,24 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    shape: "scan",
+    image: "/features/01.jpg",
+    alt: "Sporter werkt aan een oefening in de zaal",
     title: "Eén traject, van klacht tot doel",
     body: "Revalidatie en performance zitten in hetzelfde dossier. Je bouwt het pad in fases, geeft de volgende fase vrij wanneer het kan — zonder je cliënt over te zetten naar een ander systeem.",
     meta: "Traject · fases en plan",
     href: "#praktijkportaal",
   },
   {
-    shape: "shield",
+    image: "/features/02.jpg",
+    alt: "Sporter tijdens een krachtoefening",
     title: "Je ziet wat er in de zaal gebeurt",
     body: "Afgevinkte oefeningen, ingevulde weerstanden, RPE, pijn tijdens en na, motivatie en herstel. Niet wat iemand zich achteraf herinnert, maar wat er op het moment zelf is ingevuld.",
     meta: "Check-ins · sessielogboek",
     href: "#hoe-het-werkt",
   },
   {
-    shape: "key",
+    image: "/features/03.jpg",
+    alt: "Sporter in rust tussen twee sets door",
     title: "Compliance die je niet hoeft te regelen",
     body: "Hosting binnen de EU bij een gecertificeerde partij, inzage in dossiers gelogd in een append-only auditlog, invite-only toegang en wachtwoorden van minimaal 12 tekens.",
     meta: "NEN 7510 / 7512 / 7513",
@@ -39,6 +41,35 @@ const FEATURES: Feature[] = [
 
 const CARD_CLIP =
   "polygon(0 0, calc(100% - 34px) 0, 100% 34px, 100% 100%, 0 100%)";
+
+const IMAGE_CLIP =
+  "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)";
+
+/**
+ * Brand treatment for the card photography: near-monochrome and dark, in
+ * line with the Performance Plus shoot. Light mode lifts the exposure so
+ * the frame does not read as a black hole on a white card.
+ */
+function FeatureImage({ src, alt }: { src: string; alt: string }): ReactNode {
+  return (
+    <div
+      className="relative aspect-[4/3] w-full overflow-hidden bg-[#0d1013]"
+      style={{ clipPath: IMAGE_CLIP } as CSSProperties}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(min-width: 1024px) 420px, (min-width: 640px) 50vw, 100vw"
+        className="object-cover [filter:grayscale(0.85)_contrast(1.1)_brightness(0.92)] dark:[filter:grayscale(0.9)_contrast(1.15)_brightness(0.78)]"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"
+      />
+    </div>
+  );
+}
 
 export function Features(): ReactNode {
   const clip = { clipPath: CARD_CLIP } as CSSProperties;
@@ -76,10 +107,8 @@ export function Features(): ReactNode {
               </h3>
 
               <div className="border-border my-5 border-t border-dotted" />
-              <div className="flex justify-center py-6 sm:py-8">
-                <AsciiIcon shape={feature.shape} />
-              </div>
-              <div className="border-border mb-6 border-t border-dotted" />
+              <FeatureImage src={feature.image} alt={feature.alt} />
+              <div className="border-border mt-6 mb-6 border-t border-dotted" />
 
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {feature.body}
