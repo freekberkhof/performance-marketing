@@ -61,7 +61,7 @@ function FeatureImage({ src, alt }: { src: string; alt: string }): ReactNode {
         alt={alt}
         fill
         sizes="(min-width: 1024px) 420px, (min-width: 640px) 50vw, 100vw"
-        className="object-cover [filter:grayscale(0.85)_contrast(1.1)_brightness(0.92)] dark:[filter:grayscale(0.9)_contrast(1.15)_brightness(0.78)]"
+        className="object-cover [filter:grayscale(0.9)_contrast(1.15)_brightness(0.78)]"
       />
       <div
         aria-hidden="true"

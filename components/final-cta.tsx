@@ -4,7 +4,6 @@ import AsciiWaves from "@/components/ascii-waves";
 import { CutButton } from "@/components/cut-button";
 import { softEase, useReducedMotion } from "@/lib/motion";
 import { motion, type Variants } from "motion/react";
-import { useTheme } from "next-themes";
 import { useSyncExternalStore, type ReactNode } from "react";
 
 function useIsMounted(): boolean {
@@ -29,11 +28,7 @@ const item: Variants = {
 
 export function FinalCta(): ReactNode {
   const mounted = useIsMounted();
-  const { resolvedTheme } = useTheme();
   const prefersReducedMotion = useReducedMotion();
-
-  const isDark = resolvedTheme === "dark";
-  const color = isDark ? "#ffffff" : "#0a0a0a";
 
   const hMask =
     "linear-gradient(to right, transparent 0%, black 13%, black 27%, transparent 43%, transparent 57%, black 73%, black 87%, transparent 100%)";
@@ -55,15 +50,13 @@ export function FinalCta(): ReactNode {
             <motion.div
               className="h-full w-full"
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: isDark ? 0.9 : 1 }}
+              whileInView={{ opacity: 0.9 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 1.4, ease: softEase }}
               style={{
                 maskImage: vMask,
                 WebkitMaskImage: vMask,
-                filter: isDark
-                  ? "brightness(1.3)"
-                  : "saturate(2.6) contrast(1.35)",
+                filter: "brightness(1.3)",
               }}
             >
               <div
@@ -71,7 +64,7 @@ export function FinalCta(): ReactNode {
                 style={{ maskImage: hMask, WebkitMaskImage: hMask }}
               >
                 <AsciiWaves
-                  color={color}
+                  color="#ffffff"
                   intensity={0}
                   elementSize={12}
                   videoUrl="/sample-video-2.mp4"
@@ -126,8 +119,8 @@ export function FinalCta(): ReactNode {
             <CutButton variant="solid" href="#demo">
               Demo aanvragen
             </CutButton>
-            <CutButton variant="outline" href="#tarieven">
-              Bekijk de tarieven
+            <CutButton variant="outline" href="#hoe-het-werkt">
+              Bekijk de app
             </CutButton>
           </motion.div>
         </motion.div>

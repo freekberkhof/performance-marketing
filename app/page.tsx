@@ -7,7 +7,6 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { HeroWaves } from "@/components/hero-waves";
 import { Nav } from "@/components/nav";
-import { Pricing } from "@/components/pricing";
 import { Stats } from "@/components/stats";
 import { TrustedBy } from "@/components/trusted-by";
 import { ValueProp } from "@/components/value-prop";
@@ -68,9 +67,6 @@ export default function HomePage(): ReactNode {
         </InView>
         <InView>
           <CaseStudy />
-        </InView>
-        <InView>
-          <Pricing />
         </InView>
         <InView>
           <Faq />

@@ -241,7 +241,7 @@ function AttentionCard(): ReactNode {
             <span
               className={`rounded-full px-2.5 py-1 text-[11px] font-medium ${
                 f.critical
-                  ? "bg-[#ef5f5f]/85 text-white"
+                  ? "bg-[#e84a5f]/85 text-white"
                   : "border-border/60 text-muted-foreground border"
               }`}
             >
@@ -276,7 +276,7 @@ function CheckInCard(): ReactNode {
         </span>
       </div>
 
-      <div className="mt-3 flex items-center gap-1 rounded-full bg-black/[0.04] p-0.5 dark:bg-white/[0.06]">
+      <div className="mt-3 flex items-center gap-1 rounded-full bg-white/[0.06] p-0.5">
         {["Dag", "Week", "Maand", "Jaar"].map((r, i) => (
           <span
             key={r}

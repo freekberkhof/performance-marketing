@@ -67,7 +67,7 @@ const PLATFORM_ITEMS: PlatformItem[] = [
 
 const SIMPLE_LINKS = [
   { label: "Voor praktijken", href: "#praktijken" },
-  { label: "Tarieven", href: "#tarieven" },
+  { label: "Veelgestelde vragen", href: "#faq" },
 ];
 
 function useScrolled(threshold = 8): boolean {

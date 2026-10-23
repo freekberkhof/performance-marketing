@@ -87,7 +87,7 @@ function buildMask(shape: Shape, cols: number, rows: number): boolean[] {
 
 export function AsciiIcon({
   shape,
-  color = "#2f80ff",
+  color = "#1de9a6",
   cols = 22,
   className = "",
 }: AsciiIconProps): ReactNode {
