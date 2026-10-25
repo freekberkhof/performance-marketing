@@ -1,0 +1,210 @@
+/* Ronde 12 · alleen de donkere website. De cliëntapp en lichte variant blijven intact. */
+.dark-editorial {
+  --bg: #121618;
+  --bg-alt: #181e21;
+  --surface: #1a2023;
+  --surface-2: #232b30;
+  --ink: #e9edef;
+  --muted: #aeb7bc;
+  --line: #303a3f;
+  --accent: #adc6d6;
+  --font-display: var(--font);
+  --radius: 4px;
+  --radius-lg: 5px;
+  --wide: 1240px;
+  --wrap: 1240px;
+}
+.dark-editorial h1, .dark-editorial h2, .dark-editorial h3 { font-weight: 550; letter-spacing: -.035em; text-transform: none; line-height: 1.12; }
+.dark-editorial :is(#portal-title, #verslag-title) { text-transform: none; letter-spacing: -.035em; }
+.dark-editorial .section { padding-block: clamp(64px, 7.5vw, 104px); }
+.dark-editorial .lead { font-size: 1rem; line-height: 1.75; }
+.dark-editorial .eyebrow { text-transform: none; letter-spacing: 0; font-weight: 450; }
+.dark-editorial .btn { border-radius: 4px; font-size: .9rem; min-height: 46px; padding-inline: 20px; }
+.dark-editorial .site-header { background: #121618; backdrop-filter: none; }
+.dark-editorial .brand-mark { background: none; box-shadow: none; border-radius: 0; }
+.dark-editorial .brand-mark img { width: 25px; height: 25px; }
+.dark-editorial .brand-name { font-size: .94rem; letter-spacing: -.025em; }
+.dark-editorial .site-nav { gap: 32px; }
+.dark-editorial .site-nav ul { gap: 24px; }
+.dark-editorial .site-nav a { font-size: .82rem; }
+.dark-editorial .site-nav .nav-demo { display: inline-flex; gap: 25px; align-items: center; padding: 9px 0 9px 25px; border-left: 1px solid var(--line); color: var(--ink); }
+
+/* De sportfoto is de opening. Typografie ondersteunt het beeld. */
+.dark-editorial .hero-dark { min-height: 610px; height: min(720px, calc(100svh - 64px)); align-items: center; }
+.dark-editorial .hero-dark .hero-copy { padding-block: 80px; gap: 22px; }
+.dark-editorial .hero-dark h1 { font-size: clamp(2.8rem, 4.5vw, 4.25rem); line-height: 1.06; letter-spacing: -.045em; text-transform: none; max-width: 15ch; }
+.dark-editorial .hero-intro { color: #c2cdd2; font-size: .85rem; }
+.dark-editorial .hero .lead { max-width: 27rem; color: #cbd3d7; }
+.dark-editorial .hero-dark .hero-image img { object-position: 60% 45%; }
+.dark-editorial .hero-dark::before { background: linear-gradient(90deg, rgba(10,15,18,.92), rgba(10,15,18,.65) 38%, rgba(10,15,18,.06) 72%), linear-gradient(0deg,rgba(10,15,18,.45),transparent 42%); }
+.dark-editorial .hero-contact { display: inline-flex; align-items: center; gap: 20px; padding: 10px 4px; margin-left: 12px; font-size: .88rem; text-decoration: none; border-bottom: 1px solid #7c898f; }
+
+/* Eén appverhaal, met de notities bij de tekst en het scherm ernaast. */
+.dark-editorial .story-stage { grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-areas: "copy center" "aside center"; gap: 12px 10%; max-width: 1040px; }
+.dark-editorial .story-copy { grid-area: copy; align-self: end; }
+.dark-editorial .story-center { grid-area: center; }
+.dark-editorial .story-aside { grid-area: aside; align-self: start; }
+.dark-editorial .story-kicker { text-transform: none; letter-spacing: 0; font-size: .82rem; top: -36px; color: var(--muted); }
+.dark-editorial .story-front .story-text { gap: 18px; }
+.dark-editorial .story-front .story-text .step-n { font: 400 .8rem/1.4 var(--font-mono); color: var(--accent); gap: 7px; }
+.dark-editorial .step-n > span { color: #687a84; }
+.dark-editorial .story-front .story-text :is(h1,h2,h3) { font: 550 clamp(1.8rem,2.7vw,2.65rem)/1.15 var(--font); letter-spacing: -.035em; text-transform: none; }
+.dark-editorial .story-text p { font-size: .96rem; line-height: 1.75; max-width: 25rem; }
+.dark-editorial .story.is-pinned .story-copy { height: 275px; }
+.dark-editorial .story.is-pinned .story-aside { height: 130px; }
+.dark-editorial .story.is-pinned .story-aside-item { justify-content: flex-start; gap: 8px; }
+.dark-editorial .story-front .aside-card { padding: 0 0 0 16px; border-left: 2px solid #56717f; border-radius: 0; background: none; min-width: 0; }
+.dark-editorial .aside-card .k { text-transform: none; font: 400 .72rem/1.5 var(--font); letter-spacing: 0; }
+.dark-editorial .aside-card .v { font-size: .86rem; margin-top: 3px; }
+.dark-editorial .aside-card .s { font-size: .76rem; }
+.dark-editorial .story-front .aside-pill { font-size: .73rem; padding-left: 18px; color: #8e9ca5; }
+.dark-editorial .story.is-manual .story-copy { min-height: 0; }
+.dark-editorial .story.is-manual .story-aside { margin-top: 8px; }
+.dark-editorial .story.is-pinned .story-phone { --phone-w: clamp(235px, calc((100svh - 245px) * .462), 310px); }
+.dark-editorial .demo-tag { background: #1a2227; font-size: .55rem; font-weight: 450; text-transform: none; letter-spacing: 0; border-radius: 2px; }
+.dark-editorial .story-tick { height: 2px; border-radius: 0; }
+
+/* Rehab en performance: één training, twee momenten in de begeleiding. */
+.dark-editorial .paths { border-top: 1px solid var(--line); }
+.dark-editorial .paths-head { margin-bottom: 38px; gap: 24px 10%; align-items: start; }
+.dark-editorial .paths-head h2,
+.dark-editorial .case-intro h2,
+.dark-editorial .report-copy h2,
+.dark-editorial .origin-head h2,
+.dark-editorial .section-head h2,
+.dark-editorial .contact-inner h2 { font: 550 clamp(1.8rem,2.8vw,2.6rem)/1.16 var(--font); letter-spacing: -.035em; text-transform: none; }
+.dark-editorial .training-layout { display: grid; grid-template-columns: .95fr 1.05fr; gap: 10%; align-items: stretch; }
+.dark-editorial .training-image { margin: 0; display: flex; flex-direction: column; min-width: 0; }
+.dark-editorial .training-image img { width: 100%; flex: 1; min-height: 430px; max-height: 640px; object-fit: cover; object-position: 26% center; }
+.dark-editorial .training-image figcaption { padding-top: 12px; color: var(--muted); font-size: .74rem; }
+.dark-editorial .paths-list { display: block; border: 0; }
+.dark-editorial .path { padding: 0 0 24px; gap: 12px; }
+.dark-editorial .path + .path { padding: 24px 0 0; margin: 0; border-left: 0; border-top: 1px solid var(--line); }
+.dark-editorial .path-n { font: 500 .82rem/1.5 var(--font); color: var(--accent); letter-spacing: 0; text-transform: none; }
+.dark-editorial .path h3 { font-size: 1.4rem; letter-spacing: -.025em; text-transform: none; }
+.dark-editorial .path > p:not(.path-n) { font-size: .92rem; line-height: 1.7; }
+.dark-editorial .path ul { border-top: 0; margin-top: 0; padding-left: 16px; list-style: disc; }
+.dark-editorial .path li { padding-block: 4px; border-bottom: 0; font-size: .84rem; color: #c4cdd2; }
+.dark-editorial .path li::marker { color: #607986; font-size: .7em; }
+
+/* Het portaal blijft compact, de appkleuren blijven herkenbaar. */
+.dark-editorial #praktijkportaal { background: #161c1f; padding-block: 76px; }
+.dark-editorial .case-intro h2 { margin-top: 0; }
+.dark-editorial .dossier { border-radius: 4px; background: #1b2327; }
+.dark-editorial .dossier-topline { background: #202a2f; }
+.dark-editorial .dossier-person h3 { font-size: 1.35rem; }
+.dark-editorial .dossier .eyebrow { text-transform: none; letter-spacing: 0; }
+.dark-editorial .case-phase b { color: #bdcfda; }
+.dark-editorial .case-rings { margin-block: 5px; }
+.dark-editorial .forecast-heading .eyebrow { font-size: .7rem; }
+
+/* Het verslag leest als een document, niet als een verzameling badges. */
+.dark-editorial .report-section { background: var(--bg); }
+.dark-editorial .report-layout { gap: 64px 10%; }
+.dark-editorial .report-kicker { font-size: .78rem; line-height: 1.6; color: #bdcbd2; gap: 5px; }
+.dark-editorial .report-kicker span { color: #8e9ca4; }
+.dark-editorial .report-copy { gap: 20px; }
+.dark-editorial .report-copy > p:not(.lead) { font-size: .92rem; line-height: 1.75; }
+.dark-editorial .report-route { margin-top: 0; }
+.dark-editorial .report-route li { font-size: .86rem; padding-block: 13px; }
+.dark-editorial .report-paper { background: #e3e7e7; border: 0; border-top: 4px solid #839faa; }
+.dark-editorial .paper-topline { padding-bottom: 18px; }
+.dark-editorial .paper-group { text-transform: none; letter-spacing: 0; font-size: .74rem; }
+
+/* De herkomst en bronnen vormen een redactioneel blok met open kolommen. */
+.dark-editorial #oorsprong { border-top: 1px solid var(--line); }
+.dark-editorial #oorsprong > .wrap-wide { display: grid; grid-template-columns: .95fr 1.05fr; gap: 24px 10%; }
+.dark-editorial .origin-head { margin: 0; gap: 18px; align-items: flex-start; }
+.dark-editorial .origin-head .brand-mark { width: 38px; height: 38px; margin-top: 3px; }
+.dark-editorial .origin-head .brand-mark img { width: 30px; height: 30px; }
+.dark-editorial .origin-head h2 { margin-top: 0; }
+.dark-editorial .origin-intro { font-size: .96rem; line-height: 1.8; }
+.dark-editorial .evidence-block { grid-column: 1 / -1; margin-top: 26px; }
+.dark-editorial .evidence-heading { padding-top: 24px; }
+.dark-editorial .evidence-heading h3 { font-size: 1.25rem; margin: 0; letter-spacing: -.02em; }
+.dark-editorial .evidence-principles { gap: 34px; margin-top: 28px; }
+.dark-editorial .evidence-n { display: none; }
+.dark-editorial .evidence-principles h4 { font-weight: 550; }
+.dark-editorial .evidence-principles p { font-size: .85rem; }
+.dark-editorial .evidence-detail { font-size: .78rem; }
+.dark-editorial .section-head { gap: 18px; }
+.dark-editorial .faq-grid { gap: 36px 10%; }
+.dark-editorial .faq-list summary { grid-template-columns: minmax(0,1fr) 24px; }
+.dark-editorial .faq-list summary::before { display: none; }
+.dark-editorial .faq-list details p { padding-left: 0; }
+.dark-editorial .faq-question { font-weight: 500; font-size: .96rem; }
+.dark-editorial .faq-list details p { font-size: .9rem; line-height: 1.75; }
+.dark-editorial .contact-band { background: #24333b; border-top: 0; padding-block: 60px; }
+.dark-editorial .contact-inner { grid-template-columns: .95fr 1.05fr; gap: 24px 10%; align-items: center; }
+.dark-editorial .contact-side p { font-size: .96rem; color: #c1cbd1; }
+.dark-editorial .contact-email { display: inline-flex; align-items: center; min-height: 46px; font-size: .87rem; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.dark-editorial .site-footer { padding-top: 46px; }
+.dark-editorial .site-footer h2 { text-transform: none; letter-spacing: 0; }
+
+@media (max-width: 1099px), (max-height: 699px) {
+  .dark-editorial .story-stage { gap: 24px 6%; }
+  .dark-editorial .story-center { grid-row: 1 / 3; }
+  .dark-editorial .story.is-manual .story-phone { --phone-w: 270px; }
+  .dark-editorial .story.is-manual .story-copy { padding-top: 28px; }
+  .dark-editorial .story.is-manual .story-aside { margin-top: 0; }
+}
+@media (max-width: 899px) {
+  .dark-editorial .site-nav .nav-demo { border-left: 0; border-top: 1px solid var(--line); padding: 14px 0; font-size: 1rem; }
+  .dark-editorial .site-nav li a { font-size: 1rem; }
+  .dark-editorial .training-layout { gap: 6%; }
+  .dark-editorial .paths-head { grid-template-columns: 1fr 1fr; gap: 6%; }
+  .dark-editorial .report-layout { gap: 40px; }
+  .dark-editorial .origin-head { display: block; }
+  .dark-editorial .origin-head .brand-mark { margin: 0 0 18px; }
+  .dark-editorial .contact-inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 699px) {
+  .dark-editorial .section { padding-block: 58px; }
+  .dark-editorial .brand-name { font-size: .9rem; }
+  .dark-editorial .header-inner { gap: 10px; }
+  .dark-editorial .menu-toggle { background: none; border: 0; padding-right: 0; font-size: .82rem; font-weight: 450; }
+  .dark-editorial .hero-dark { min-height: 550px; height: auto; align-items: flex-end; }
+  .dark-editorial .hero-dark .hero-copy { padding-block: 115px 44px; gap: 18px; }
+  .dark-editorial .hero-dark h1 { font-size: clamp(2.3rem, 9.7vw, 3.25rem); }
+  .dark-editorial .hero-dark .hero-image img { object-position: 68% 35%; }
+  .dark-editorial .hero-dark::before { background: linear-gradient(0deg,rgba(10,15,18,.96),rgba(10,15,18,.6) 56%,rgba(10,15,18,.12)); }
+  .dark-editorial .hero-intro { font-size: .75rem; }
+  .dark-editorial .hero .lead { font-size: .93rem; line-height: 1.7; max-width: 28rem; }
+  .dark-editorial .hero-contact { margin-left: 3px; gap: 12px; }
+  .dark-editorial .hero .cta-row { gap: 12px; }
+  .dark-editorial .story-front.is-manual { padding-block: 42px 48px; }
+  .dark-editorial .story-stage { grid-template-columns: 1fr; grid-template-areas: "copy" "center"; gap: 26px; }
+  .dark-editorial .story-center { grid-row: auto; }
+  .dark-editorial .story-aside { display: none; }
+  .dark-editorial .story.is-manual .story-copy { padding-top: 30px; min-height: 225px; }
+  .dark-editorial .story-kicker { font-size: .76rem; }
+  .dark-editorial .story-front .story-text { gap: 12px; }
+  .dark-editorial .story-front .story-text :is(h1,h2,h3) { font-size: 1.85rem; }
+  .dark-editorial .story-text p { font-size: .91rem; line-height: 1.7; max-width: none; }
+  .dark-editorial .story.is-manual .story-phone { --phone-w: min(270px, 76vw); }
+  .dark-editorial .story-controls { width: 100%; }
+  .dark-editorial .story-steps { justify-content: space-between; gap: 6px; }
+  .dark-editorial .story-steps button { font-size: .65rem; }
+  .dark-editorial .story-hint { font-size: .72rem; }
+  .dark-editorial .paths-head { grid-template-columns: 1fr; gap: 18px; margin-bottom: 26px; }
+  .dark-editorial .paths-head h2, .dark-editorial .case-intro h2, .dark-editorial .report-copy h2, .dark-editorial .origin-head h2, .dark-editorial .section-head h2, .dark-editorial .contact-inner h2 { font-size: 1.85rem; }
+  .dark-editorial .training-layout { grid-template-columns: 1fr; gap: 30px; }
+  .dark-editorial .training-image img { min-height: 0; height: 270px; max-height: none; flex: none; object-position: 24% 48%; }
+  .dark-editorial .training-image figcaption { font-size: .7rem; }
+  .dark-editorial .path h3 { font-size: 1.25rem; }
+  .dark-editorial #praktijkportaal { padding-block: 52px; }
+  .dark-editorial .case-intro { gap: 18px; margin-bottom: 26px; }
+  .dark-editorial .report-layout { gap: 36px; }
+  .dark-editorial #oorsprong > .wrap-wide { grid-template-columns: 1fr; gap: 24px; }
+  .dark-editorial .origin-head { display: flex; align-items: flex-start; }
+  .dark-editorial .origin-head .brand-mark { margin: 2px 0 0; }
+  .dark-editorial .evidence-block { margin-top: 4px; }
+  .dark-editorial .contact-band { padding-block: 44px; }
+  .dark-editorial .contact-inner { gap: 22px; }
+  .dark-editorial .site-footer { padding-top: 36px; }
+}
+@media print {
+  .dark-editorial .hero-dark { height: auto; min-height: 0; }
+  .dark-editorial .training-image img { min-height: 0; max-height: 360px; }
+  .dark-editorial .nav-demo, .dark-editorial .hero-contact { display: none; }
+}
