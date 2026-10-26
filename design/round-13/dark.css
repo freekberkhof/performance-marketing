@@ -1,0 +1,250 @@
+/* Ronde 13. Typografie uit Kaylees performance-marketing/main (1b81dd9).
+   Alleen deze pagina laadt dit bestand. De appbeelden houden hun eigen ontwerp. */
+@font-face {
+  font-family: "Geist";
+  src: url("assets/fonts/geist.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("assets/fonts/source-serif-4.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+}
+.dark-editorial {
+  --bg: #151515;
+  --bg-alt: #1c1c1e;
+  --surface: #1c1c1e;
+  --surface-2: #242426;
+  --ink: #f5f5f6;
+  --muted: #a3a3aa;
+  --line: #303032;
+  --line-strong: #48484c;
+  --accent: #f4f7f8;
+  --on-accent: #151515;
+  --font: "Geist", system-ui, -apple-system, sans-serif;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --gutter: 20px;
+  --wide: calc(1440px - 2 * var(--gutter));
+  --wrap: var(--wide);
+  --title-size: 36px;
+  --heading-size: 30px;
+  --story-title-size: 30px;
+  --radius: 0;
+  --radius-lg: 0;
+  font-family: var(--font);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.dark-editorial h1, .dark-editorial h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -.01em;
+  text-transform: none;
+  line-height: 1.12;
+  font-optical-sizing: auto;
+}
+.dark-editorial h3, .dark-editorial h4 { font-family: var(--font); font-weight: 600; letter-spacing: -.025em; text-transform: none; line-height: 1.4; }
+.dark-editorial h3 { font-size: 18px; }
+.dark-editorial h4 { font-size: 14px; }
+.dark-editorial .section { padding-block: 96px; }
+.dark-editorial .lead { font-size: 14px; line-height: 1.625; }
+.dark-editorial .btn { border-radius: 0; font-size: 14px; font-weight: 500; min-height: 40px; padding-inline: 20px; }
+.dark-editorial .btn-primary { clip-path: polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px); }
+.dark-editorial .btn-primary:hover { background: #dfe1e2; }
+.dark-editorial .site-header { background: var(--bg); backdrop-filter: none; }
+.dark-editorial .brand-mark { background: none; box-shadow: none; border-radius: 0; }
+.dark-editorial .brand-mark img { width: 25px; height: 25px; }
+.dark-editorial .brand-name { font-size: 16px; letter-spacing: -.025em; }
+.dark-editorial .site-nav { gap: 32px; }
+.dark-editorial .site-nav ul { gap: 24px; }
+.dark-editorial .site-nav a { font-size: 14px; }
+.dark-editorial .site-nav .nav-demo { display: inline-flex; align-items: center; padding: 9px 0 9px 25px; border-left: 1px solid var(--line); color: var(--ink); }
+
+/* Fotografie opent de pagina; geen bovenlabel of gekleurd titelwoord. */
+.dark-editorial .hero-dark { min-height: 570px; height: min(660px, calc(100svh - 64px)); align-items: center; }
+.dark-editorial .hero-dark .hero-copy { padding-block: 80px; gap: 16px; }
+.dark-editorial .hero-dark h1 { font-size: var(--title-size); line-height: 1.1; letter-spacing: -.01em; text-transform: none; max-width: 19ch; }
+.dark-editorial .hero .lead { max-width: 29rem; color: #d0d0d3; font-size: 15px; }
+.dark-editorial .hero .cta-row { margin-top: 12px; }
+.dark-editorial .hero-dark .hero-image img { object-position: 60% 45%; }
+.dark-editorial .hero-dark::before { background: linear-gradient(90deg,rgba(12,12,12,.9),rgba(12,12,12,.55) 43%,rgba(12,12,12,.04) 80%),linear-gradient(0deg,rgba(12,12,12,.35),transparent 42%); }
+.dark-editorial .hero-contact { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 0; margin-left: 12px; font-size: 14px; text-underline-offset: 5px; }
+
+/* De eigen appflow: tekst en notitie links, het echte scherm rechts. */
+.dark-editorial .story-stage { grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-areas: "copy center" "aside center"; gap: 18px 10%; max-width: 1100px; }
+.dark-editorial .story-copy { grid-area: copy; align-self: end; }
+.dark-editorial .story-center { grid-area: center; }
+.dark-editorial .story-aside { grid-area: aside; align-self: start; }
+.dark-editorial .story-front .story-text { gap: 16px; }
+.dark-editorial .story-front .story-text h2, .dark-editorial #app-title { font: 400 var(--story-title-size)/1.12 var(--font-display); letter-spacing: -.01em; text-transform: none; max-width: 19ch; }
+.dark-editorial .story-text p { font-size: 16px; line-height: 1.625; max-width: 24rem; }
+.dark-editorial .story.is-pinned .story-copy { height: 255px; }
+.dark-editorial .story.is-pinned .story-aside { height: 105px; }
+.dark-editorial .story.is-pinned .story-aside-item { justify-content: flex-start; gap: 0; }
+.dark-editorial .story-front .aside-card { padding: 16px 0 0; border: 0; border-top: 1px dotted var(--line-strong); border-radius: 0; background: none; min-width: 0; width: 100%; max-width: 24rem; }
+.dark-editorial .aside-card .k { text-transform: none; font: 400 12px/1.5 var(--font); letter-spacing: 0; }
+.dark-editorial .aside-card .v { font-size: 14px; font-weight: 500; margin-top: 3px; }
+.dark-editorial .aside-card .s { font-size: 12px; }
+.dark-editorial .story.is-manual .story-copy { min-height: 0; }
+.dark-editorial .story.is-manual .story-aside { margin-top: 8px; }
+.dark-editorial .story.is-pinned .story-phone { --phone-w: clamp(235px,calc((100svh - 245px) * .462),300px); }
+.dark-editorial .demo-tag { background: #151515; font: 400 9px/1.4 var(--font); text-transform: none; letter-spacing: 0; border-radius: 2px; }
+.dark-editorial .story-tick { height: 2px; border-radius: 0; }
+.dark-editorial .story-steps button { font-weight: 500; font-size: 12px; }
+.dark-editorial .plus-panel h3 { font-size: 6.1cqw; line-height: 1.2; }
+
+/* Eén vaste koppenreeks uit het bestaande thema. */
+.dark-editorial .paths-head h2,
+.dark-editorial .case-intro h2,
+.dark-editorial .report-copy h2,
+.dark-editorial .origin-head h2,
+.dark-editorial .section-head h2,
+.dark-editorial .contact-inner h2,
+.dark-editorial #portal-title,
+.dark-editorial #verslag-title { font: 400 var(--heading-size)/1.12 var(--font-display); letter-spacing: -.01em; text-transform: none; max-width: 22ch; }
+.dark-editorial .paths { border-top: 1px solid var(--line); }
+.dark-editorial .paths-head { margin-bottom: 48px; gap: 24px 10%; align-items: start; }
+.dark-editorial .training-layout { display: grid; grid-template-columns: .95fr 1.05fr; gap: 10%; align-items: stretch; }
+.dark-editorial .training-image { margin: 0; display: flex; flex-direction: column; min-width: 0; }
+.dark-editorial .training-image img { width: 100%; flex: 1; min-height: 380px; max-height: 540px; object-fit: cover; object-position: 26% center; }
+.dark-editorial .training-image figcaption { padding-top: 12px; color: var(--muted); font-size: 12px; }
+.dark-editorial .paths-list { display: block; border: 0; }
+.dark-editorial .path { padding: 0 0 24px; gap: 12px; }
+.dark-editorial .path + .path { padding: 24px 0 0; margin: 0; border-left: 0; border-top: 1px dotted var(--line-strong); }
+.dark-editorial .path h3 { font-size: 18px; letter-spacing: -.025em; text-transform: none; }
+.dark-editorial .path > p { font-size: 14px; line-height: 1.625; }
+.dark-editorial .path ul { border-top: 0; margin-top: 0; padding-left: 16px; list-style: disc; }
+.dark-editorial .path li { padding-block: 4px; border-bottom: 0; font-size: 14px; color: #c5c5ca; }
+.dark-editorial .path li::marker { color: #77777d; font-size: .7em; }
+
+/* Het dossier is functioneel. De kleuren van ringen en curves komen uit de app. */
+.dark-editorial #praktijkportaal { background: var(--bg-alt); padding-block: 80px; }
+.dark-editorial .case-intro h2 { margin-top: 0; }
+.dark-editorial .dossier { border-radius: 0; background: #1a1a1c; box-shadow: none; }
+.dark-editorial .dossier-topline { background: #232325; }
+.dark-editorial .dossier-person h3 { font-size: 18px; margin-top: 0; }
+.dark-editorial .case-phase b { color: var(--ink); }
+.dark-editorial .case-rings { margin-block: 5px; }
+.dark-editorial .forecast-heading h4 { margin-top: 0; }
+
+/* Een doorlopend verslag, zonder decoratieve labels en stapnummers. */
+.dark-editorial .report-section { background: var(--bg); }
+.dark-editorial .report-layout { gap: 64px 10%; }
+.dark-editorial .report-copy { gap: 20px; }
+.dark-editorial .report-copy > p { font-size: 14px; line-height: 1.625; }
+.dark-editorial .report-route { margin-top: 0; list-style: none; }
+.dark-editorial .report-route li { display: block; font-size: 14px; padding-block: 13px; border-bottom: 0; border-top: 1px dotted var(--line-strong); }
+.dark-editorial .report-paper { background: #e8e7e2; border: 0; box-shadow: none; }
+.dark-editorial .report-paper h3 { font-size: 18px; }
+.dark-editorial .paper-topline { padding-bottom: 18px; }
+.dark-editorial .paper-group { text-transform: none; letter-spacing: 0; font-size: 12px; }
+.dark-editorial .kngf-note { border-top-style: dotted; }
+
+.dark-editorial #oorsprong { border-top: 1px solid var(--line); }
+.dark-editorial #oorsprong > .wrap-wide { display: grid; grid-template-columns: .95fr 1.05fr; gap: 24px 10%; }
+.dark-editorial .origin-head { margin: 0; gap: 18px; align-items: flex-start; }
+.dark-editorial .origin-head .brand-mark { width: 38px; height: 38px; margin-top: 3px; }
+.dark-editorial .origin-head .brand-mark img { width: 30px; height: 30px; }
+.dark-editorial .origin-head h2 { margin-top: 0; }
+.dark-editorial .origin-intro { font-size: 16px; line-height: 1.625; }
+.dark-editorial .evidence-block { grid-column: 1 / -1; margin-top: 32px; }
+.dark-editorial .evidence-heading { padding-top: 24px; }
+.dark-editorial .evidence-heading h3 { font-size: 18px; margin: 0; }
+.dark-editorial .evidence-principles { gap: 34px; margin-top: 28px; }
+.dark-editorial .evidence-principles p { font-size: 14px; }
+.dark-editorial .evidence-detail { font-size: 13px; }
+.dark-editorial .section-head { gap: 18px; }
+.dark-editorial .faq-grid { gap: 36px 10%; }
+.dark-editorial .faq-list summary { grid-template-columns: minmax(0,1fr) 24px; }
+.dark-editorial .faq-list summary::before { display: none; }
+.dark-editorial .faq-list details p { padding-left: 0; font-size: 14px; line-height: 1.625; }
+.dark-editorial .faq-question { font-weight: 500; font-size: 14px; }
+.dark-editorial .contact-band { background: var(--bg-alt); border-top: 1px solid var(--line); padding-block: 64px; }
+.dark-editorial .contact-inner { grid-template-columns: .95fr 1.05fr; gap: 24px 10%; align-items: center; }
+.dark-editorial .contact-side p { font-size: 16px; line-height: 1.625; color: #b9b9bf; }
+.dark-editorial .contact-email { display: inline-flex; align-items: center; min-height: 40px; font-size: 14px; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.dark-editorial .site-footer { padding-top: 46px; }
+.dark-editorial .site-footer h2 { font: 600 14px/1.4 var(--font); text-transform: none; letter-spacing: -.025em; }
+.dark-editorial .dialog h2 { font: 400 30px/1.12 var(--font-display); letter-spacing: -.01em; text-transform: none; }
+
+/* Beweging bij de hoofdstukken, schermwissels en curves; lopende tekst blijft rustig. */
+.page-motion .dark-editorial [data-motion] { opacity: 1; transform: none; }
+.page-motion .dark-editorial :is(.hero-copy > h1, .paths-head > div, .case-intro > div, .report-copy > h2, .contact-inner > div:first-child)[data-motion] {
+  opacity: var(--motion-opacity,1);
+  transform: translate3d(var(--motion-x,0px),var(--motion-y,0px),0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-motion .dark-editorial [data-motion] { opacity: 1 !important; transform: none !important; }
+}
+@media (min-width: 640px) {
+  .dark-editorial { --gutter: 32px; --title-size: 48px; --heading-size: 36px; }
+  .dark-editorial .section { padding-block: 128px; }
+  .dark-editorial .hero .lead, .dark-editorial .lead { font-size: 16px; }
+}
+@media (min-width: 1024px) {
+  .dark-editorial { --gutter: 40px; --title-size: 56px; --heading-size: 44px; }
+}
+@media (min-width: 1280px) { .dark-editorial { --story-title-size: 36px; } }
+@media (max-width: 1099px), (max-height: 699px) {
+  .dark-editorial .story-stage { gap: 24px 6%; }
+  .dark-editorial .story-center { grid-row: 1 / 3; }
+  .dark-editorial .story.is-manual .story-phone { --phone-w: 270px; }
+  .dark-editorial .story.is-manual .story-copy { padding-top: 0; }
+  .dark-editorial .story.is-manual .story-aside { margin-top: 0; }
+}
+@media (max-width: 899px) {
+  .dark-editorial .site-nav .nav-demo { border-left: 0; border-top: 1px solid var(--line); padding: 14px 0; }
+  .dark-editorial .site-nav li a { font-size: 14px; }
+  .dark-editorial .training-layout { gap: 6%; }
+  .dark-editorial .paths-head { grid-template-columns: 1fr 1fr; gap: 6%; }
+  .dark-editorial .report-layout { gap: 40px; }
+  .dark-editorial .origin-head { display: block; }
+  .dark-editorial .origin-head .brand-mark { margin: 0 0 18px; }
+  .dark-editorial .contact-inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 699px) {
+  .dark-editorial .section { padding-block: 72px; }
+  .dark-editorial .brand-name { font-size: 15px; }
+  .dark-editorial .header-inner { gap: 10px; }
+  .dark-editorial .menu-toggle { background: none; border: 0; padding-right: 0; font-size: 14px; font-weight: 500; }
+  .dark-editorial .hero-dark { min-height: 520px; height: auto; align-items: flex-end; }
+  .dark-editorial .hero-dark .hero-copy { padding-block: 140px 40px; gap: 16px; }
+  .dark-editorial .hero-dark .hero-image img { object-position: 68% 35%; }
+  .dark-editorial .hero-dark::before { background: linear-gradient(0deg,rgba(12,12,12,.96),rgba(12,12,12,.55) 60%,rgba(12,12,12,.06)); }
+  .dark-editorial .hero-contact { margin-left: 3px; }
+  .dark-editorial .btn, .dark-editorial .hero-contact, .dark-editorial .contact-email { min-height: 44px; }
+  .dark-editorial .story-front.is-manual { padding-block: 54px; }
+  .dark-editorial .story-stage { grid-template-columns: 1fr; grid-template-areas: "copy" "center"; gap: 30px; }
+  .dark-editorial .story-center { grid-row: auto; }
+  .dark-editorial .story-aside { display: none; }
+  .dark-editorial .story.is-manual .story-copy { padding-top: 0; min-height: 205px; }
+  .dark-editorial .story-front .story-text { gap: 14px; }
+  .dark-editorial .story-text p { font-size: 16px; max-width: none; }
+  .dark-editorial .story.is-manual .story-phone { --phone-w: min(270px,76vw); }
+  .dark-editorial .story-controls { width: 100%; }
+  .dark-editorial .story-steps { justify-content: space-between; gap: 6px; }
+  .dark-editorial .story-steps button { font-size: 10px; }
+  .dark-editorial .story-hint { font-size: 12px; }
+  .dark-editorial .paths-head { grid-template-columns: 1fr; gap: 18px; margin-bottom: 28px; }
+  .dark-editorial .training-layout { grid-template-columns: 1fr; gap: 30px; }
+  .dark-editorial .training-image img { min-height: 0; height: 270px; max-height: none; flex: none; object-position: 24% 48%; }
+  .dark-editorial #praktijkportaal { padding-block: 64px; }
+  .dark-editorial .case-intro { gap: 18px; margin-bottom: 28px; }
+  .dark-editorial .report-layout { gap: 36px; }
+  .dark-editorial #oorsprong > .wrap-wide { grid-template-columns: 1fr; gap: 24px; }
+  .dark-editorial .origin-head { display: flex; align-items: flex-start; }
+  .dark-editorial .origin-head .brand-mark { margin: 2px 0 0; }
+  .dark-editorial .evidence-block { margin-top: 8px; }
+  .dark-editorial .contact-band { padding-block: 52px; }
+  .dark-editorial .contact-inner { gap: 24px; }
+  .dark-editorial .site-footer { padding-top: 36px; }
+}
+@media print {
+  .dark-editorial .hero-dark { height: auto; min-height: 0; }
+  .dark-editorial .training-image img { min-height: 0; max-height: 360px; }
+  .dark-editorial .nav-demo, .dark-editorial .hero-contact { display: none; }
+}
