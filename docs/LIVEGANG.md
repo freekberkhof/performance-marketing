@@ -36,7 +36,7 @@ npm run start
 Op Windows PowerShell kan `npm.cmd` nodig zijn als het uitvoeren van `npm.ps1` niet is toegestaan.
 
 1. Bekijk deze branch en de controles hieronder. Bevestig de nog openstaande punten rond gegevensverwerking en verwijderen.
-2. Merge de pull request naar `main` wanneer de inhoud klopt.
+2. Open [de vergelijking op GitHub](https://github.com/freekberkhof/performance-marketing/pull/new/release/performanceplus-website-20261029), maak de pull request aan en merge naar `main` wanneer de inhoud klopt. De releasebranch is gepusht; de gebruikte GitHub-koppeling had geen recht om de pull request te openen.
 3. Laat de bestaande Next-hosting `npm run build` uitvoeren en via de normale productieflow publiceren. Koppel `performanceplus.nl` met HTTPS aan dat project.
 4. Open na publicatie de vier pagina’s zonder ingelogde sessie, ook op een telefoon. Test het menu, de appstappen, het plusje en de footerlinks.
 5. Controleer of een handmatig verzonden testmail op `info@performanceplus.nl` aankomt. Er is tijdens deze oplevering geen e-mail verstuurd.
