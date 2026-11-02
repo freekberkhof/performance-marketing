@@ -1,13 +1,10 @@
 "use client";
 
 import { CutButton } from "@/components/cut-button";
-import { AsciiField } from "@/components/ascii-field";
 import { softEase, useReducedMotion } from "@/lib/motion";
 import { motion, type Variants } from "motion/react";
+import Image from "next/image";
 import type { ReactNode } from "react";
-
-const CTA_MASK =
-  "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)";
 
 const container: Variants = {
   hidden: {},
@@ -29,30 +26,47 @@ export function FinalCta(): ReactNode {
     : { duration: 0.7, ease: softEase };
 
   return (
-    <section className="relative overflow-hidden">
-      <AsciiField mask={CTA_MASK} opacity={0.55} className="-z-10" />
+    <section className="mx-auto max-w-[1440px] px-5 pb-24 sm:px-8 sm:pb-32 lg:px-10">
+      <div className="relative isolate flex min-h-[560px] items-end overflow-hidden sm:min-h-[640px] lg:min-h-[720px]">
+        <Image
+          src="/cta.jpg"
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="(min-width: 1440px) 1360px, 100vw"
+          className="-z-20 object-cover object-[60%_center] lg:object-center"
+        />
 
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 left-1/2 -z-[1] h-[130%] w-[70%] -translate-x-1/2 -translate-y-1/2"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, var(--background) 0%, color-mix(in srgb, var(--background) 70%, transparent) 50%, transparent 78%)",
-        }}
-      />
+        {/* Scrim: heaviest at the bottom-left where the copy sits, so the
+            track and the runner stay readable everywhere else. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "linear-gradient(to top, color-mix(in srgb, var(--page) 88%, transparent) 0%, color-mix(in srgb, var(--page) 55%, transparent) 38%, transparent 72%)",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            background:
+              "linear-gradient(to right, color-mix(in srgb, var(--page) 70%, transparent) 0%, transparent 60%)",
+          }}
+        />
 
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10">
         <motion.div
           variants={prefersReducedMotion ? staticContainer : container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="mx-auto flex max-w-2xl flex-col items-center py-28 text-center sm:py-36 lg:py-44"
+          className="relative flex max-w-xl flex-col items-start p-7 text-left sm:p-10 lg:p-14"
         >
           <motion.h2
             variants={item}
             transition={itemTransition}
-            className="font-serif text-4xl leading-[1.08] font-normal tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.75rem]"
+            className="font-serif text-4xl leading-[1.08] font-normal tracking-[-0.01em] text-balance text-white sm:text-5xl lg:text-[3.75rem]"
           >
             Van herstel naar prestatie, zonder losse eindjes
           </motion.h2>
@@ -60,7 +74,7 @@ export function FinalCta(): ReactNode {
           <motion.p
             variants={item}
             transition={itemTransition}
-            className="text-muted-foreground mt-5 max-w-md text-[15px] leading-relaxed text-balance sm:text-base"
+            className="mt-5 max-w-md text-[15px] leading-relaxed text-white/75 sm:text-base"
           >
             Zie in een half uur hoe een traject in Performance Plus wordt
             opgebouwd — en wat je ervan terugkrijgt na elke sessie.
@@ -69,7 +83,7 @@ export function FinalCta(): ReactNode {
           <motion.div
             variants={item}
             transition={itemTransition}
-            className="mt-8 flex flex-wrap items-center justify-center gap-3"
+            className="mt-8 flex flex-wrap items-center gap-3"
           >
             <CutButton variant="solid" href="#demo">
               Demo aanvragen

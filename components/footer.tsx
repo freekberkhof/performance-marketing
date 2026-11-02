@@ -1,7 +1,7 @@
 import { CutButton } from "@/components/cut-button";
 import { Logo } from "@/components/logo";
 import { Instagram, Linkedin } from "lucide-react";
-import type { CSSProperties, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 type FooterLink = { label: string; href: string };
 
@@ -18,7 +18,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
     title: "Praktijk",
     links: [
       { label: "Voor praktijken", href: "#praktijken" },
-      { label: "Veiligheid en AVG", href: "#veiligheid" },
+      { label: "Veiligheid en AVG", href: "#faq" },
       { label: "Veelgestelde vragen", href: "#faq" },
       { label: "Support", href: "#support" },
     ],
@@ -67,9 +67,6 @@ const SOCIALS: { label: string; href: string; icon: ReactNode }[] = [
     icon: <XIcon className="h-3.5 w-3.5" />,
   },
 ];
-
-const PANEL_CLIP =
-  "polygon(28px 0, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px)";
 
 function Plus({ className }: { className: string }): ReactNode {
   return (
@@ -132,12 +129,10 @@ function FooterColumn({
 }
 
 export function Footer(): ReactNode {
-  const clip = { clipPath: PANEL_CLIP } as CSSProperties;
-
   return (
     <footer className="mx-auto max-w-[1440px] px-5 pb-10 sm:px-8 lg:px-10">
-      <div className="bg-border p-px" style={clip}>
-        <div className="bg-background p-8 sm:p-10 lg:p-14" style={clip}>
+      <div className="bg-border p-px">
+        <div className="bg-background p-8 sm:p-10 lg:p-14">
           <Logo />
 
           <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-10 md:mt-14 md:grid-cols-4 md:gap-x-0">

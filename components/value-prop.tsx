@@ -1,5 +1,5 @@
 import { Kicker } from "@/components/corner-plus";
-import type { CSSProperties, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 const PROBLEMS: { title: string; body: string }[] = [
   {
@@ -15,9 +15,6 @@ const PROBLEMS: { title: string; body: string }[] = [
     body: "Pijn die oploopt, motivatie die wegzakt, check-ins die niet meer worden ingevuld — dat zie je zonder data pas als er al iets is misgegaan.",
   },
 ];
-
-const CUT_CLIP =
-  "polygon(28px 0, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px)";
 
 /** A small, honest slice of the practice portal: what lands when it matters. */
 function AlertsVisual(): ReactNode {
@@ -51,10 +48,7 @@ function AlertsVisual(): ReactNode {
   ];
 
   return (
-    <div
-      className="border-border bg-muted/30 relative flex h-full w-full flex-col border p-6 sm:p-8"
-      style={{ clipPath: CUT_CLIP } as CSSProperties}
-    >
+    <div className="border-border bg-muted/30 relative flex h-full w-full flex-col border p-6 sm:p-8">
       <p className="text-muted-foreground font-mono text-[10px] tracking-widest uppercase">
         Meldingen · vandaag
       </p>

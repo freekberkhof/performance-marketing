@@ -5,10 +5,7 @@ import type { ReactNode } from "react";
 
 export function CaseStudy(): ReactNode {
   return (
-    <section
-      id="praktijkportaal"
-      className="mx-auto max-w-[1440px] scroll-mt-24 px-5 pb-24 sm:px-8 sm:pb-32 lg:px-10"
-    >
+    <section className="mx-auto max-w-[1440px] px-5 pb-24 sm:px-8 sm:pb-32 lg:px-10">
       <div className="border-border relative border">
         <CornerPlus className="top-0 left-0 -translate-x-1/2 -translate-y-1/2" />
         <CornerPlus className="top-0 right-0 translate-x-1/2 -translate-y-1/2" />

@@ -1,17 +1,16 @@
 import { AppShowcase } from "@/components/app-showcase";
+import { Audiences } from "@/components/audiences";
 import { CaseStudy } from "@/components/case-study";
 import { Faq } from "@/components/faq";
-import { Features } from "@/components/features";
 import { FinalCta } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { HeroWaves } from "@/components/hero-waves";
 import { Nav } from "@/components/nav";
 import { Stats } from "@/components/stats";
-import { TrustedBy } from "@/components/trusted-by";
 import { ValueProp } from "@/components/value-prop";
 import { WindowMockup } from "@/components/window-mockup";
-import { InView, MotionSection } from "@/lib/motion";
+import { InView } from "@/lib/motion";
 import { createMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -41,24 +40,43 @@ export default function HomePage(): ReactNode {
       <span id="top" className="sr-only" />
       <Nav />
       <main id="main-content" className="flex-1 overflow-x-clip">
-        <div className="relative">
+        <Hero />
+        <InView className="pt-24 sm:pt-32">
+          <Audiences />
+        </InView>
+        <AppShowcase />
+        <section
+          id="praktijkportaal"
+          className="relative scroll-mt-24 pb-24 sm:pb-32"
+        >
           <HeroWaves />
-          <Hero />
-          <MotionSection
+          <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10">
+            <InView className="relative max-w-2xl">
+              <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
+                Als fysiotherapeut direct inzicht in het traject
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
+                Trajecten in fases, programma&apos;s uit je eigen bibliotheek en
+                de check-ins die binnenkomen — bij elkaar in één overzicht op de
+                praktijkcomputer.
+              </p>
+              <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
+                Daardoor begin je elke sessie met wat er sinds de vorige is
+                gebeurd: welke oefeningen zijn gedaan, met welke weerstand, en
+                hoe pijn en motivatie liepen. De tijd in de behandelkamer gaat
+                naar bijsturen op wat je ziet, in plaats van naar uitvragen wat
+                je mist.
+              </p>
+            </InView>
+          </div>
+          <InView
             variants={RISE_IN}
-            transition={{ duration: 0.85, delay: 0.55, ease: SOFT_EASE }}
-            className="relative px-5 pb-24 sm:px-8 lg:px-10"
+            transition={{ duration: 0.85, ease: SOFT_EASE }}
+            className="relative mt-12 px-5 sm:px-8 lg:px-10"
           >
             <WindowMockup />
-          </MotionSection>
-        </div>
-        <InView>
-          <TrustedBy />
-        </InView>
-        <InView>
-          <Features />
-        </InView> 
-        <AppShowcase />
+          </InView>
+        </section>
         <InView>
           <ValueProp />
         </InView>

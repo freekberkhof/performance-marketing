@@ -1,7 +1,4 @@
-import type { ComponentPropsWithoutRef, CSSProperties, ReactNode } from "react";
-
-const CUT =
-  "[clip-path:polygon(var(--cut)_0,100%_0,100%_calc(100%-var(--cut)),calc(100%-var(--cut))_100%,0_100%,0_var(--cut))]";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 type Variant = "solid" | "outline";
 
@@ -9,7 +6,6 @@ type BaseProps = {
   variant?: Variant;
   iconOnly?: boolean;
   fullWidth?: boolean;
-  cut?: number;
   className?: string;
   children: ReactNode;
 };
@@ -33,30 +29,28 @@ export function CutButton({
   variant = "solid",
   iconOnly = false,
   fullWidth = false,
-  cut = 9,
   className = "",
   children,
   ...props
 }: CutButtonProps): ReactNode {
-  const cutVar = { "--cut": `${cut}px` } as CSSProperties;
   const isAnchor = "href" in props && props.href !== undefined;
 
   if (variant === "solid") {
     const size = iconOnly
       ? "h-10 w-10"
       : `h-10 px-5 ${fullWidth ? "w-full" : ""}`;
-    const cls = `${BASE} ${size} ${CUT} bg-foreground text-background hover:bg-foreground/85 ${className}`;
+    const cls = `${BASE} ${size} bg-foreground text-background hover:bg-foreground/85 ${className}`;
 
     if (isAnchor) {
       const { href, ...rest } = props as AnchorProps;
       return (
-        <a href={href} style={cutVar} className={cls} {...rest}>
+        <a href={href} className={cls} {...rest}>
           {children}
         </a>
       );
     }
     return (
-      <button style={cutVar} className={cls} {...(props as ButtonProps)}>
+      <button className={cls} {...(props as ButtonProps)}>
         {children}
       </button>
     );
@@ -65,23 +59,23 @@ export function CutButton({
   const wrapperSize = iconOnly
     ? "h-10 w-10"
     : `h-10 ${fullWidth ? "w-full" : ""}`;
-  const wrapper = `inline-flex ${wrapperSize} bg-border p-px ${CUT} ${className}`;
+  const wrapper = `inline-flex ${wrapperSize} bg-border p-px ${className}`;
   const innerSize = iconOnly ? "w-full" : `px-5 ${fullWidth ? "w-full" : ""}`;
-  const inner = `${BASE} h-full ${innerSize} ${CUT} bg-background text-foreground hover:bg-muted`;
+  const inner = `${BASE} h-full ${innerSize} bg-background text-foreground hover:bg-muted`;
 
   if (isAnchor) {
     const { href, ...rest } = props as AnchorProps;
     return (
-      <span style={cutVar} className={wrapper}>
-        <a href={href} style={cutVar} className={inner} {...rest}>
+      <span className={wrapper}>
+        <a href={href} className={inner} {...rest}>
           {children}
         </a>
       </span>
     );
   }
   return (
-    <span style={cutVar} className={wrapper}>
-      <button style={cutVar} className={inner} {...(props as ButtonProps)}>
+    <span className={wrapper}>
+      <button className={inner} {...(props as ButtonProps)}>
         {children}
       </button>
     </span>

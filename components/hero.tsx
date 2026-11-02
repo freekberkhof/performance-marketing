@@ -8,6 +8,7 @@ import {
   useReducedMotion,
 } from "@/lib/motion";
 import { motion, type Variants } from "motion/react";
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 const container: Variants = {
@@ -25,32 +26,43 @@ export function Hero(): ReactNode {
     : { duration: 0.7, ease: softEase };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden">
+      {/* Full-bleed photo */}
+      <Image
+        src="/hero.jpg"
+        alt=""
+        aria-hidden="true"
+        fill
+        priority
+        sizes="100vw"
+        className="-z-20 object-cover object-[62%_center] sm:object-[58%_center] lg:object-[55%_center]"
+      />
+
+      {/* Legibility scrims: dark from the left, plus top and bottom fades */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(60% 50% at 50% -5%, color-mix(in srgb, var(--foreground) 5%, transparent), transparent 70%)",
+            "linear-gradient(to right, color-mix(in srgb, var(--background) 92%, transparent) 0%, color-mix(in srgb, var(--background) 72%, transparent) 38%, color-mix(in srgb, var(--background) 20%, transparent) 70%, transparent 100%)",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(to bottom, color-mix(in srgb, var(--background) 70%, transparent) 0%, transparent 28%, transparent 62%, var(--background) 100%)",
         }}
       />
 
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto w-full max-w-[1440px] px-5 pt-28 pb-24 sm:px-8 sm:pt-32 lg:px-10">
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="relative mx-auto flex max-w-2xl flex-col items-center pt-32 pb-12 text-center sm:pt-40"
+          className="flex max-w-2xl flex-col items-start text-left"
         >
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute top-1/2 left-1/2 -z-[1] h-[150%] w-[160%] -translate-x-1/2 -translate-y-1/2"
-            style={{
-              background:
-                "radial-gradient(ellipse at center, var(--background) 0%, color-mix(in srgb, var(--background) 78%, transparent) 45%, transparent 72%)",
-            }}
-          />
-
           <motion.h1
             variants={item}
             transition={itemTransition}
@@ -62,7 +74,7 @@ export function Hero(): ReactNode {
           <motion.p
             variants={item}
             transition={itemTransition}
-            className="text-muted-foreground mt-4 max-w-xl text-[15px] leading-relaxed text-balance sm:text-base"
+            className="text-muted-foreground mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
           >
             Performance Plus geeft fysiotherapiepraktijken één plek om
             oefenprogramma&apos;s in fases op te bouwen, en hun cliënten één app
@@ -73,7 +85,7 @@ export function Hero(): ReactNode {
           <motion.div
             variants={item}
             transition={itemTransition}
-            className="mt-7 flex items-center justify-center gap-3"
+            className="mt-8 flex flex-wrap items-center gap-3"
           >
             <CutButton variant="solid" href="#demo">
               Demo aanvragen
@@ -82,14 +94,6 @@ export function Hero(): ReactNode {
               Bekijk de app
             </CutButton>
           </motion.div>
-
-          <motion.p
-            variants={item}
-            transition={itemTransition}
-            className="text-muted-foreground mt-6 text-xs"
-          >
-            Pilotversie · NEN 7510 · gehost in Europa
-          </motion.p>
         </motion.div>
       </div>
     </section>

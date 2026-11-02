@@ -57,7 +57,7 @@ const PLATFORM_ITEMS: PlatformItem[] = [
   {
     title: "Veiligheid",
     desc: "NEN 7510, AVG en EU-hosting",
-    href: "#veiligheid",
+    href: "#faq",
     icon: ShieldCheck,
     featureTitle: "Gebouwd voor zorgdata",
     featureDesc:
