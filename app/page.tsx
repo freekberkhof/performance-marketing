@@ -11,20 +11,16 @@ import { Stats } from "@/components/stats";
 import { ValueProp } from "@/components/value-prop";
 import { WindowMockup } from "@/components/window-mockup";
 import { InView } from "@/lib/motion";
-import { createMetadata, siteConfig } from "@/lib/metadata";
+import { createMetadata } from "@/lib/metadata";
+import { homeJsonLd, toJsonLd } from "@/lib/structured-data";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
-export const metadata: Metadata = {
-  ...createMetadata({
-    title: "Home",
-    description: siteConfig.description,
-    path: "/",
-  }),
-  title: {
-    absolute: "Perform+: van revalidatie naar prestatie",
-  },
-};
+export const metadata: Metadata = createMetadata({
+  title: "Perform+: fysiotherapiesoftware van revalidatie naar prestatie",
+  absoluteTitle: true,
+  path: "/",
+});
 
 // Plain literals (built server-side) passed as props to the client motion
 // wrappers, kept inline to avoid importing values from a "use client" module.
@@ -37,6 +33,10 @@ const RISE_IN = {
 export default function HomePage(): ReactNode {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: toJsonLd(homeJsonLd) }}
+      />
       <span id="top" className="sr-only" />
       <Nav />
       <main

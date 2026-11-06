@@ -1,6 +1,5 @@
 import { Footer } from "@/components/footer";
 import { Logo } from "@/components/logo";
-import Link from "next/link";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { ReactNode } from "react";
@@ -93,13 +92,7 @@ export async function LegalPage({
     <>
       <header className="border-border/50 border-b">
         <div className="mx-auto flex h-16 max-w-[1440px] items-center px-5 sm:px-8 lg:px-10">
-          <Link
-            href="/"
-            aria-label="Terug naar de homepage"
-            className="focus-ring"
-          >
-            <Logo />
-          </Link>
+          <Logo href="/" />
         </div>
       </header>
       <main

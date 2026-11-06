@@ -20,7 +20,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       { label: "Voor praktijken", href: "/#praktijken" },
       { label: "Veiligheid en AVG", href: "/#faq" },
       { label: "Veelgestelde vragen", href: "/#faq" },
-      { label: "Support", href: "/#support" },
+      { label: "Support", href: "mailto:info@performplus.nl" },
     ],
   },
   {
@@ -135,7 +135,7 @@ export function Footer(): ReactNode {
     <footer className="mx-auto max-w-[1440px] px-5 pb-10 sm:px-8 lg:px-10">
       <div className="bg-border p-px">
         <div className="bg-background p-8 sm:p-10 lg:p-14">
-          <Logo />
+          <Logo href="/#top" />
 
           <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-10 md:mt-14 md:grid-cols-4 md:gap-x-0">
             {COLUMNS.map((col, i) => (
@@ -158,7 +158,10 @@ export function Footer(): ReactNode {
               ]}
             >
               <div className="mt-6 flex flex-col items-start gap-2.5">
-                <CutButton variant="solid" href="/#demo">
+                <CutButton
+                  variant="solid"
+                  href="mailto:info@performplus.nl?subject=Demo%20aanvragen%20Perform%2B"
+                >
                   Demo aanvragen
                 </CutButton>
               </div>

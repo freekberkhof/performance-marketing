@@ -29,7 +29,11 @@ export function CaseStudy(): ReactNode {
               traject. Je begint met belasting opbouwen en sluit af als je
               cliënt weer sport.
             </p>
-            <CutButton href="#demo" variant="outline" className="self-start">
+            <CutButton
+              href="mailto:info@performplus.nl?subject=Demo%20aanvragen%20Perform%2B"
+              variant="outline"
+              className="self-start"
+            >
               Plan een rondleiding
             </CutButton>
           </div>

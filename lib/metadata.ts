@@ -33,6 +33,12 @@ export const siteConfig = {
   ],
 } as const;
 
+export const ogImage = {
+  width: 1200,
+  height: 630,
+  alt: `${siteConfig.name}: ${siteConfig.tagline.toLowerCase()}`,
+} as const;
+
 /*
  * Social images come from the file conventions app/opengraph-image.tsx and
  * app/twitter-image.tsx, and icons from app/favicon.ico, app/icon.png and
@@ -92,8 +98,8 @@ export const baseMetadata: Metadata = {
 
 /**
  * Per-page metadata. Next replaces `openGraph` and `twitter` as a whole
- * when a page sets them, so the shared fields (locale, siteName, card) are
- * spread back in here to keep them on every page.
+ * when a page sets them (the root opengraph-image is then dropped too), so
+ * the shared fields and the generated social image are set again here.
  */
 export function createMetadata({
   title,
@@ -129,13 +135,13 @@ export function createMetadata({
       title: socialTitle,
       description,
       url: path,
-      ...(image && { images: [image] }),
+      images: [image ?? { url: "/opengraph-image", ...ogImage }],
     },
     twitter: {
       ...twitterBase,
       title: socialTitle,
       description,
-      ...(image && { images: [image] }),
+      images: [image ?? { url: "/twitter-image", ...ogImage }],
     },
     ...(noIndex && {
       robots: {

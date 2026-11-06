@@ -122,7 +122,10 @@ export function Faq(): ReactNode {
             er niet bij, stel hem dan aan ons.
           </p>
           <div className="mt-8">
-            <CutButton href="#demo" variant="outline">
+            <CutButton
+              href="mailto:info@performplus.nl?subject=Demo%20aanvragen%20Perform%2B"
+              variant="outline"
+            >
               Stel je vraag
             </CutButton>
           </div>

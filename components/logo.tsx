@@ -21,12 +21,12 @@ export function LogoMark({
   );
 }
 
-export function Logo(): ReactNode {
+export function Logo({ href = "#top" }: { href?: string }): ReactNode {
   return (
     <a
-      href="#top"
+      href={href}
       className="focus-ring group inline-flex items-center gap-2.5"
-      aria-label="Perform+ home"
+      aria-label="Perform+, naar de homepage"
     >
       <LogoMark className="h-7 w-7 transition-transform duration-300 group-hover:scale-105" />
       <span className="text-[17px] font-semibold tracking-tight max-[374px]:sr-only">

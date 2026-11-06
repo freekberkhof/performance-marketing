@@ -98,7 +98,7 @@ export function Hero(): ReactNode {
           >
             <CutButton
               variant="solid"
-              href="#demo"
+              href="mailto:info@performplus.nl?subject=Demo%20aanvragen%20Perform%2B"
               className="w-full sm:w-auto sm:min-w-44"
             >
               Demo aanvragen

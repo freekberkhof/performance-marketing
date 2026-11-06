@@ -234,13 +234,20 @@ export function Nav(): ReactNode {
         </div>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <CutButton variant="solid" href="#demo">
+          <CutButton
+            variant="solid"
+            href="mailto:info@performplus.nl?subject=Demo%20aanvragen%20Perform%2B"
+          >
             Demo aanvragen
           </CutButton>
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
-          <CutButton variant="solid" size="sm" href="#demo">
+          <CutButton
+            variant="solid"
+            size="sm"
+            href="mailto:info@performplus.nl?subject=Demo%20aanvragen%20Perform%2B"
+          >
             Demo aanvragen
           </CutButton>
           <CutButton
