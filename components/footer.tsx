@@ -152,8 +152,8 @@ export function Footer(): ReactNode {
               title="Contact"
               links={[
                 {
-                  label: "info@performanceplus.nl",
-                  href: "mailto:info@performanceplus.nl",
+                  label: "info@performplus.nl",
+                  href: "mailto:info@performplus.nl",
                 },
               ]}
             >

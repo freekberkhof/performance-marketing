@@ -4,13 +4,13 @@ export const siteConfig = {
   name: "Perform+",
   description:
     "Perform+ is het trainings- en herstelplatform van PFH Performance. Jij bouwt als fysiotherapeut het traject in fases op, je cliënt traint in de app en vult check-ins in. Van revalidatie tot prestatie houd je één dossier bij.",
-  url: "https://performanceplus.nl",
+  url: "https://performplus.nl",
   ogImage: "/og-image.png",
   creator: "PFH Performance",
   authors: [
     {
       name: "PFH Performance",
-      url: "https://performanceplus.nl",
+      url: "https://performplus.nl",
     },
   ],
   keywords: [
