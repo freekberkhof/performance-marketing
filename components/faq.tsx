@@ -163,7 +163,7 @@ export function Faq(): ReactNode {
 
         {/* Left: heading */}
         <div className="border-border border-b py-10 lg:border-r lg:border-b-0 lg:py-16 lg:pr-12">
-          <h2 className="font-serif text-4xl leading-[1.05] font-[450] tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.5rem]">
+          <h2 className="font-serif text-[2rem] leading-[1.05] font-[450] tracking-[-0.01em] text-pretty sm:text-5xl sm:text-balance lg:text-[3.5rem]">
             Veelgestelde vragen
           </h2>
           <p className="text-muted-foreground mt-6 max-w-sm text-sm leading-relaxed sm:text-base">

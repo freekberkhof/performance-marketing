@@ -77,7 +77,7 @@ export function FinalCta(): ReactNode {
           <motion.h2
             variants={item}
             transition={itemTransition}
-            className="font-serif text-4xl leading-[1.08] font-[450] tracking-[-0.01em] text-balance text-white sm:text-5xl lg:text-[3.75rem]"
+            className="font-serif text-[2rem] leading-[1.08] font-[450] tracking-[-0.01em] text-pretty text-white sm:text-5xl sm:text-balance lg:text-[3.75rem]"
           >
             Van herstel naar prestatie in één dossier
           </motion.h2>

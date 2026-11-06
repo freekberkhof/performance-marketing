@@ -77,9 +77,9 @@ export function Hero(): ReactNode {
           <motion.h1
             variants={item}
             transition={itemTransition}
-            className="font-serif text-4xl leading-[1.1] font-[450] tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.5rem]"
+            className="font-serif text-[2rem] leading-[1.1] font-[450] tracking-[-0.01em] text-pretty sm:text-5xl sm:text-balance lg:text-[3.5rem]"
           >
-            Van revalidatie naar prestatie, in één traject
+            Van revalidatie naar prestatie
           </motion.h1>
 
           <motion.p
@@ -87,9 +87,8 @@ export function Hero(): ReactNode {
             transition={itemTransition}
             className="text-foreground/80 mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
           >
-            Met Perform+ bouw je als fysiotherapiepraktijk oefenprogramma&apos;s
-            in fases op. Je cliënten trainen ermee in de app, en jij ziet na
-            elke sessie hoe belasting, pijn en motivatie lopen.
+            Jij bouwt het programma in fases op, je cliënt traint in de app en
+            na elke sessie zie jij hoe pijn, belasting en motivatie lopen.
           </motion.p>
 
           <motion.div

@@ -29,7 +29,9 @@ export function Logo(): ReactNode {
       aria-label="Perform+ home"
     >
       <LogoMark className="h-7 w-7 transition-transform duration-300 group-hover:scale-105" />
-      <span className="text-[17px] font-semibold tracking-tight">Perform+</span>
+      <span className="text-[17px] font-semibold tracking-tight max-[374px]:sr-only">
+        Perform+
+      </span>
     </a>
   );
 }
