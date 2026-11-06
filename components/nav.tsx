@@ -9,7 +9,6 @@ import {
   ChevronDown,
   LayoutGrid,
   Menu,
-  ShieldCheck,
   Smartphone,
   X,
   type LucideIcon,
@@ -53,15 +52,6 @@ const PLATFORM_ITEMS: PlatformItem[] = [
     featureTitle: "Je ziet een hoge pijnscore in het portaal",
     featureDesc:
       "Je krijgt een melding van sessies, check-ins en pijnscores vanaf 7, met locatie, score en context.",
-  },
-  {
-    title: "Veiligheid",
-    desc: "NEN 7510, AVG en EU-hosting",
-    href: "#faq",
-    icon: ShieldCheck,
-    featureTitle: "Je zorgdata blijft binnen de EU",
-    featureDesc:
-      "We hosten de gegevens bij een gecertificeerde partij binnen de EU en leggen elke inzage in dossiers vast in een auditlog die niemand kan wijzigen.",
   },
 ];
 
