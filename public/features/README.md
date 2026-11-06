@@ -2,9 +2,9 @@
 
 De drie kaarten in `components/features.tsx` verwachten hier:
 
-- `01.jpg` — Eén traject, van klacht tot doel
-- `02.jpg` — Je ziet wat er in de zaal gebeurt
-- `03.jpg` — Compliance die je niet hoeft te regelen
+- `01.webp` — Eén traject, van klacht tot doel
+- `02.webp` — Je ziet wat er in de zaal gebeurt
+- `03.webp` — Compliance die je niet hoeft te regelen
 
 Specificatie:
 

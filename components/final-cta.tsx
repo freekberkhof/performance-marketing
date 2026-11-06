@@ -29,7 +29,7 @@ export function FinalCta(): ReactNode {
     <section className="mx-auto max-w-[1440px] px-5 pb-24 sm:px-8 sm:pb-32 lg:px-10">
       <div className="relative isolate flex min-h-[560px] items-end overflow-hidden sm:min-h-[640px] lg:min-h-[720px]">
         <Image
-          src="/cta.jpg"
+          src="/cta.webp"
           alt=""
           aria-hidden="true"
           fill

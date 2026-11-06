@@ -24,7 +24,7 @@ const STEPS: Step[] = [
   {
     title: "Je overzicht, elke ochtend",
     body: "Bovenaan zie je je belasting, voltooide sessies en motivatie, met daaronder de sessie van vandaag.",
-    screen: "/app/01.jpg",
+    screen: "/app/01.webp",
     alt: "Overzichtsscherm met de ringen voor belasting, voltooid en motivatie",
     aside: (
       <>
@@ -48,7 +48,7 @@ const STEPS: Step[] = [
   {
     title: "Sessie voor sessie afvinken",
     body: "Je fysio deelt je week op in sessies en elke sessie in oefeningen. Je vinkt oefeningen af tijdens het trainen en ziet de voortgangsbalk vollopen.",
-    screen: "/app/02.jpg",
+    screen: "/app/02.webp",
     alt: "Sessieoverzicht van week 1 met voltooide sessies en voortgangsbalken",
     aside: (
       <>
@@ -75,7 +75,7 @@ const STEPS: Step[] = [
   {
     title: "Even inchecken, één minuut",
     body: "Je geeft slaap, stress, pijn en de training van gisteren een score. Je fysio leest je check-in mee in je dossier. Wil je een dag overslaan, dan kan dat.",
-    screen: "/app/03.jpg",
+    screen: "/app/03.webp",
     alt: "Dagelijkse check-in met schuifregelaars voor slaap, stress en pijn",
     aside: (
       <>
@@ -96,7 +96,7 @@ const STEPS: Step[] = [
   {
     title: "Je opbouw in cijfers",
     body: "Je ziet RPE, motivatie en pijn tijdens en na de training uitgezet over al je sessies. Je kijkt terug op de scores die je na elke sessie invulde.",
-    screen: "/app/04.jpg",
+    screen: "/app/04.webp",
     alt: "Progressiescherm met programma-statistieken en het sessieverloop",
     aside: (
       <>

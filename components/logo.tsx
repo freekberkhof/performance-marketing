@@ -1,6 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 
-const MARK_MASK = "url(/logo-mark.png) center / contain no-repeat";
+const MARK_MASK = "url(/logo-mark.webp) center / contain no-repeat";
 
 /**
  * The Perform+ "P+" mark. Rendered as a CSS mask over

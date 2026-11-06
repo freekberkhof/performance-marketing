@@ -29,7 +29,7 @@ export function Hero(): ReactNode {
     <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden sm:items-center">
       {/* Full-bleed photo */}
       <Image
-        src="/hero.png"
+        src="/hero.webp"
         alt=""
         aria-hidden="true"
         fill
