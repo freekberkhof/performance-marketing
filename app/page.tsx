@@ -39,7 +39,11 @@ export default function HomePage(): ReactNode {
     <>
       <span id="top" className="sr-only" />
       <Nav />
-      <main id="main-content" className="flex-1 overflow-x-clip">
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="flex-1 overflow-x-clip outline-none"
+      >
         <Hero />
         <InView className="pt-24 sm:pt-32">
           <Audiences />

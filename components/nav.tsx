@@ -133,7 +133,10 @@ export function Nav(): ReactNode {
         <div className="flex items-center gap-8">
           <Logo />
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav
+            aria-label="Hoofdmenu"
+            className="hidden items-center gap-1 lg:flex"
+          >
             {/* Expandable */}
             <div
               className="relative"
@@ -255,6 +258,8 @@ export function Nav(): ReactNode {
             size="sm"
             iconOnly
             aria-label={mobileOpen ? "Menu sluiten" : "Menu openen"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobiel-menu"
             onClick={() => setMobileOpen((v) => !v)}
           >
             {mobileOpen ? (
@@ -269,7 +274,9 @@ export function Nav(): ReactNode {
       {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
+          <motion.nav
+            id="mobiel-menu"
+            aria-label="Mobiel menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -338,7 +345,7 @@ export function Nav(): ReactNode {
                 </a>
               ))}
             </div>
-          </motion.div>
+          </motion.nav>
         )}
       </AnimatePresence>
     </motion.header>

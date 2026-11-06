@@ -56,6 +56,17 @@ export function FinalCta(): ReactNode {
           }}
         />
 
+        {/* Mobile: the copy fills most of the card and reaches up into the
+            bright sky, so darken the whole lower two-thirds. */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 sm:hidden"
+          style={{
+            background:
+              "linear-gradient(to top, color-mix(in srgb, var(--page) 80%, transparent) 0%, color-mix(in srgb, var(--page) 65%, transparent) 55%, color-mix(in srgb, var(--page) 15%, transparent) 85%, transparent 100%)",
+          }}
+        />
+
         <motion.div
           variants={prefersReducedMotion ? staticContainer : container}
           initial="hidden"

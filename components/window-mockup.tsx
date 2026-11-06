@@ -82,7 +82,7 @@ function Sidebar(): ReactNode {
         </span>
       </div>
 
-      <nav className="flex flex-1 flex-col gap-1 p-3">
+      <div className="flex flex-1 flex-col gap-1 p-3">
         {NAV_ITEMS.map((item) => (
           <span
             key={item.label}
@@ -100,7 +100,7 @@ function Sidebar(): ReactNode {
             {item.label}
           </span>
         ))}
-      </nav>
+      </div>
 
       <div className="border-border/60 flex items-center gap-2.5 border-t p-3">
         <span className="bg-foreground text-background grid h-8 w-8 shrink-0 place-items-center rounded-full text-[11px] font-semibold">
@@ -367,7 +367,11 @@ function ClientRail(): ReactNode {
 
 export function WindowMockup(): ReactNode {
   return (
-    <div className="border-border/60 bg-background mx-auto max-w-[1100px] overflow-hidden rounded-2xl border shadow-2xl shadow-black/[0.08]">
+    <div
+      role="img"
+      aria-label="Voorbeeld van het praktijkportaal: het dossier van een cliënt met belasting, sessies en meldingen"
+      className="border-border/60 bg-background mx-auto max-w-[1100px] overflow-hidden rounded-2xl border shadow-2xl shadow-black/[0.08]"
+    >
       <div className="border-border/60 relative flex h-7 items-center border-b px-2.5">
         <div className="flex items-center gap-1.5">
           <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
@@ -387,7 +391,7 @@ export function WindowMockup(): ReactNode {
           <Breadcrumb />
           <Tabs />
 
-          <main className="flex min-h-0 flex-1 gap-3 p-3 sm:p-4">
+          <div className="flex min-h-0 flex-1 gap-3 p-3 sm:p-4">
             <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-3">
               <div className="grid shrink-0 grid-cols-3 gap-3">
                 {RINGS.map((ring) => (
@@ -399,7 +403,7 @@ export function WindowMockup(): ReactNode {
             </div>
 
             <ClientRail />
-          </main>
+          </div>
         </section>
       </div>
     </div>

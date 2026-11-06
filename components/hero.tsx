@@ -29,7 +29,7 @@ export function Hero(): ReactNode {
     <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden sm:items-center">
       {/* Full-bleed photo */}
       <Image
-        src="/hero.jpg"
+        src="/hero.png"
         alt=""
         aria-hidden="true"
         fill
@@ -85,7 +85,7 @@ export function Hero(): ReactNode {
           <motion.p
             variants={item}
             transition={itemTransition}
-            className="text-foreground/80 sm:text-muted-foreground mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
+            className="text-foreground/80 mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
           >
             Met Perform+ bouw je als fysiotherapiepraktijk oefenprogramma&apos;s
             in fases op. Je cliënten trainen ermee in de app, en jij ziet na
