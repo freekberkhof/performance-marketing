@@ -79,7 +79,7 @@ export function FinalCta(): ReactNode {
             transition={itemTransition}
             className="font-serif text-[2rem] leading-[1.08] font-[450] tracking-[-0.01em] text-pretty text-white sm:text-5xl sm:text-balance lg:text-[3.75rem]"
           >
-            Van herstel naar prestatie in één dossier
+            Volg je cliënt van eerste sessie tot terug op het veld
           </motion.h2>
 
           <motion.p

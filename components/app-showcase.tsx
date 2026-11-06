@@ -95,7 +95,7 @@ const STEPS: Step[] = [
   },
   {
     title: "Je opbouw in cijfers",
-    body: "Je ziet RPE, motivatie en pijn tijdens en na de training uitgezet over al je sessies. Je kijkt terug op de scores die je na elke sessie invulde.",
+    body: "Je ziet RPE, motivatie en pijn tijdens en na de training uitgezet over al je sessies.",
     screen: "/app/04.webp",
     alt: "Progressiescherm met programma-statistieken en het sessieverloop",
     aside: (

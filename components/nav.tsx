@@ -47,7 +47,7 @@ const PLATFORM_ITEMS: PlatformItem[] = [
   },
   {
     title: "Meldingen",
-    desc: "Zien wanneer het nodig is",
+    desc: "Melding bij een pijnscore vanaf 7",
     href: "#meldingen",
     icon: ClipboardList,
     featureTitle: "Je ziet een hoge pijnscore in het portaal",
@@ -59,7 +59,7 @@ const PLATFORM_ITEMS: PlatformItem[] = [
     desc: "NEN 7510, AVG en EU-hosting",
     href: "#faq",
     icon: ShieldCheck,
-    featureTitle: "Gebouwd voor zorgdata",
+    featureTitle: "Je zorgdata blijft binnen de EU",
     featureDesc:
       "We hosten de gegevens bij een gecertificeerde partij binnen de EU en leggen elke inzage in dossiers vast in een auditlog die niemand kan wijzigen.",
   },

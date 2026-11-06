@@ -16,7 +16,7 @@ export function CaseStudy(): ReactNode {
           <div className="px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
             <LogoMark className="mb-7 h-9 w-9" />
             <h2 className="font-serif text-[1.5rem] leading-[1.22] font-[450] tracking-[-0.01em] text-pretty sm:text-4xl sm:text-balance lg:text-[2.5rem] lg:leading-[1.2]">
-              Perform+ is vanuit de praktijk gebouwd, voor cliënten die van hun
+              We bouwden Perform+ vanuit de praktijk, voor cliënten die van hun
               klacht af willen en terug willen naar hun sport.
             </h2>
           </div>
@@ -25,9 +25,9 @@ export function CaseStudy(): ReactNode {
             <CornerPlus className="top-0 left-0 hidden -translate-x-1/2 -translate-y-1/2 lg:block" />
             <CornerPlus className="bottom-0 left-0 hidden -translate-x-1/2 translate-y-1/2 lg:block" />
             <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
-              We gaan ervan uit dat revalidatie en prestatie fases van hetzelfde
-              traject zijn. Je begint met belasting opbouwen en eindigt met je
-              cliënt terug op het veld, in hetzelfde systeem.
+              In Perform+ zijn revalidatie en prestatie twee fases van één
+              traject. Je begint met belasting opbouwen en sluit af als je
+              cliënt weer sport.
             </p>
             <CutButton href="#demo" variant="outline" className="self-start">
               Plan een rondleiding

@@ -22,7 +22,7 @@ const FAQS: QA[] = [
   {
     question: "Hoe zit het met revalidatie versus performance?",
     answer:
-      "Beide vallen onder hetzelfde traject. Een traject bestaat uit fases, en per fase wijs je een programma toe uit je bibliotheek. Dat programma kan uit de categorie revalidatie of performance komen. Je cliënt blijft in hetzelfde dossier en begint niet opnieuw.",
+      "Beide vallen onder hetzelfde traject. Een traject bestaat uit fases, en per fase wijs je een programma toe uit je bibliotheek. Dat programma kan uit de categorie revalidatie of performance komen. Je cliënt blijft in hetzelfde dossier.",
   },
   {
     question: "Wat vult een cliënt in na een sessie?",
@@ -37,7 +37,7 @@ const FAQS: QA[] = [
   {
     question: "Geeft de app trainingsadvies aan mijn cliënt?",
     answer:
-      "Nee. De herstelscore geeft een signaal en geen vrijgave om te trainen. Jij blijft je cliënt beoordelen. De app stuurt je cliënt geen adviezen; jij ontvangt alleen de meldingen in het portaal.",
+      "Nee. De herstelscore is een signaal voor jou, en jij beslist of je cliënt traint. De app stuurt je cliënt geen adviezen. Meldingen komen alleen bij jou in het portaal binnen.",
   },
   {
     question: "Waar staan de gegevens?",
@@ -52,7 +52,7 @@ const FAQS: QA[] = [
   {
     question: "Is dit een afgerond product?",
     answer:
-      "Perform+ draait als pilotversie, en dat staat ook in de app. We verbeteren het op basis van gebruik en feedback van de praktijken die meedraaien, en bepalen samen met hen welke functies er volgen.",
+      "Perform+ draait als pilotversie, en dat staat in de app. We verbeteren het op basis van gebruik en feedback van de praktijken die meedraaien, en bepalen samen met hen welke functies er volgen.",
   },
 ];
 
