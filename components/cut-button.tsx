@@ -27,9 +27,24 @@ type CutButtonProps = ButtonProps | AnchorProps;
 const BASE =
   "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium tracking-wide transition-colors duration-200 focus-ring";
 
-const SIZES: Record<Size, { box: string; pad: string; text: string }> = {
-  md: { box: "h-10", pad: "px-5", text: "text-sm" },
-  sm: { box: "h-9", pad: "px-3.5", text: "text-[13px]" },
+const SIZES: Record<
+  Size,
+  { box: string; pad: string; text: string; radius: string; inner: string }
+> = {
+  md: {
+    box: "h-10",
+    pad: "px-5",
+    text: "text-sm",
+    radius: "rounded-[4px]",
+    inner: "rounded-[4px]",
+  },
+  sm: {
+    box: "h-9",
+    pad: "px-3.5",
+    text: "text-[13px]",
+    radius: "rounded-[4px]",
+    inner: "rounded-[4px]",
+  },
 };
 
 export function CutButton({
@@ -48,7 +63,7 @@ export function CutButton({
     const size = iconOnly
       ? `${s.box} aspect-square`
       : `${s.box} ${s.pad} ${fullWidth ? "w-full" : ""}`;
-    const cls = `${BASE} ${s.text} ${size} bg-foreground text-background hover:bg-foreground/85 ${className}`;
+    const cls = `${BASE} ${s.text} ${s.radius} ${size} bg-foreground text-background hover:bg-foreground/85 ${className}`;
 
     if (isAnchor) {
       const { href, ...rest } = props as AnchorProps;
@@ -68,9 +83,9 @@ export function CutButton({
   const wrapperSize = iconOnly
     ? `${s.box} aspect-square`
     : `${s.box} ${fullWidth ? "w-full" : ""}`;
-  const wrapper = `inline-flex ${wrapperSize} bg-border p-px ${className}`;
+  const wrapper = `inline-flex ${wrapperSize} ${s.radius} bg-border p-px ${className}`;
   const innerSize = iconOnly ? "w-full" : `flex-1 ${s.pad}`;
-  const inner = `${BASE} ${s.text} h-full ${innerSize} bg-background text-foreground hover:bg-muted`;
+  const inner = `${BASE} ${s.text} ${s.inner} h-full ${innerSize} bg-background text-foreground hover:bg-muted`;
 
   if (isAnchor) {
     const { href, ...rest } = props as AnchorProps;
