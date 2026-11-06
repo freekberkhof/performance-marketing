@@ -68,7 +68,7 @@ export function FinalCta(): ReactNode {
             transition={itemTransition}
             className="font-serif text-4xl leading-[1.08] font-normal tracking-[-0.01em] text-balance text-white sm:text-5xl lg:text-[3.75rem]"
           >
-            Van herstel naar prestatie, zonder losse eindjes
+            Van herstel naar prestatie in één dossier
           </motion.h2>
 
           <motion.p
@@ -76,8 +76,8 @@ export function FinalCta(): ReactNode {
             transition={itemTransition}
             className="mt-5 max-w-md text-[15px] leading-relaxed text-white/75 sm:text-base"
           >
-            Zie in een half uur hoe een traject in Performance Plus wordt
-            opgebouwd — en wat je ervan terugkrijgt na elke sessie.
+            In een half uur laten we je zien hoe je een traject opbouwt en welke
+            gegevens je na elke sessie terugkrijgt.
           </motion.p>
 
           <motion.div
@@ -85,10 +85,14 @@ export function FinalCta(): ReactNode {
             transition={itemTransition}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <CutButton variant="solid" href="#demo">
+            <CutButton variant="solid" href="#demo" className="min-w-44">
               Demo aanvragen
             </CutButton>
-            <CutButton variant="outline" href="#hoe-het-werkt">
+            <CutButton
+              variant="outline"
+              href="#hoe-het-werkt"
+              className="min-w-44"
+            >
               Bekijk de app
             </CutButton>
           </motion.div>

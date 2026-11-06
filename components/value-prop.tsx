@@ -3,16 +3,16 @@ import type { ReactNode } from "react";
 
 const PROBLEMS: { title: string; body: string }[] = [
   {
-    title: "Het schema verdwijnt na de behandeling",
-    body: "Een PDF of een foto van een A4 is twee weken later onvindbaar. Wat er thuis of in de zaal écht gebeurt, hoor je pas bij de volgende afspraak.",
+    title: "Je cliënt raakt het schema kwijt",
+    body: "Je cliënt vindt de PDF of de foto van het A4'tje twee weken later niet meer terug. Je hoort pas bij de volgende afspraak hoe het thuis of in de zaal ging.",
   },
   {
-    title: "Revalidatie en performance leven apart",
-    body: "Zodra iemand hersteld is begint het opbouwen. In de meeste systemen is dat een nieuw dossier, een nieuwe tool, en een breuk in de lijn die je net hebt opgebouwd.",
+    title: "Revalidatie en performance staan in aparte systemen",
+    body: "Is je cliënt hersteld, dan begin je met opbouwen. In de meeste systemen open je daarvoor een nieuw dossier in een andere tool, en verlies je de lijn die je net hebt opgebouwd.",
   },
   {
-    title: "Signalen komen te laat binnen",
-    body: "Pijn die oploopt, motivatie die wegzakt, check-ins die niet meer worden ingevuld — dat zie je zonder data pas als er al iets is misgegaan.",
+    title: "Je ziet signalen te laat",
+    body: "Pijn loopt op of je cliënt slaat check-ins over. Zonder data merk je dat pas als het al is misgegaan.",
   },
 ];
 
@@ -78,8 +78,8 @@ function AlertsVisual(): ReactNode {
       </ul>
 
       <p className="text-muted-foreground border-border mt-auto border-t border-dotted pt-5 text-xs leading-relaxed">
-        Meldingen gaan naar de praktijk, nooit automatisch terug naar de cliënt.
-        De app doet geen beoordeling en is geen spoedkanaal.
+        Meldingen gaan alleen naar de praktijk. De app beoordeelt je cliënt niet
+        en is geen spoedkanaal.
       </p>
     </div>
   );
@@ -99,7 +99,8 @@ export function ValueProp(): ReactNode {
         <div className="lg:order-1">
           <Kicker>De uitdaging</Kicker>
           <h2 className="mt-5 max-w-2xl font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-            Je weet wat iemand zou moeten doen. Zelden wat er echt gebeurt
+            Je weet wat je cliënt moet doen, maar je ziet niet wat er thuis
+            gebeurt
           </h2>
 
           <dl className="mt-10">

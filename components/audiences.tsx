@@ -6,28 +6,28 @@ type Audience = {
   body: string;
   src: string;
   alt: string;
-  /** Where the crop should hold on — these are portraits, so faces first. */
+  /** Where the crop should hold on; these are portraits, so faces first. */
   position: string;
 };
 
 const AUDIENCES: Audience[] = [
   {
     title: "Terug na een blessure",
-    body: "Belasting opbouwen in fases, met pijn, herstel en motivatie die je na elke sessie terugziet in plaats van pas bij de volgende afspraak.",
+    body: "Je bouwt de belasting in fases op en ziet na elke sessie hoe pijn, herstel en motivatie lopen.",
     src: "/audiences/01.jpg",
     alt: "Wielrenster halverwege een zware inspanning",
     position: "50% 35%",
   },
   {
     title: "Op weg naar het oude niveau",
-    body: "Hersteld, maar nog niet terug waar het was. Hetzelfde dossier loopt door — van revalidatie naar opbouw, zonder van systeem te wisselen.",
+    body: "Je cliënt is hersteld, maar haalt het oude niveau nog niet. Je zet de opbouwfase klaar in hetzelfde dossier.",
     src: "/audiences/02.jpg",
     alt: "Sporter in trainingstenue op het veld",
     position: "50% 30%",
   },
   {
     title: "Zelfstandig doortrainen",
-    body: "De app blijft het plan dragen wanneer iemand op eigen kracht verder gaat, en check-ins blijven bij de praktijk binnenkomen.",
+    body: "Je cliënt traint op eigen kracht verder met het plan in de app, en jij blijft de check-ins in het portaal lezen.",
     src: "/audiences/03.jpg",
     alt: "Hardloopster op volle snelheid",
     position: "50% 25%",
@@ -42,11 +42,11 @@ export function Audiences(): ReactNode {
     >
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-          Gebouwd voor iedereen die terug wil naar zijn niveau
+          Voor cliënten die terug willen naar hun oude niveau
         </h2>
         <p className="text-muted-foreground mt-4 text-sm leading-relaxed text-balance sm:text-base">
-          Revalidatie, opbouw en zelfstandig doortrainen zijn geen losse
-          trajecten. Het is dezelfde lijn, in verschillende fases.
+          Revalidatie, opbouw en zelfstandig doortrainen zijn drie fases van
+          hetzelfde traject.
         </p>
       </div>
 

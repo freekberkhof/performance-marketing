@@ -22,13 +22,13 @@ const STATS: Stat[] = [
   {
     value: 6,
     label: "Fases in een traject",
-    note: "Zelf in te richten, per fase een eigen programma",
+    note: "Je richt ze zelf in, met een eigen programma per fase",
   },
   {
     value: 7,
     suffix: "+",
-    label: "Pijnscore wordt een melding",
-    note: "Automatisch, met locatie en context",
+    label: "Pijnscore waarbij jij een melding krijgt",
+    note: "Met locatie en context",
   },
 ];
 
@@ -87,17 +87,15 @@ export function Stats(): ReactNode {
       <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="lg:pt-6">
           <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-            Wat je terugkrijgt na elke sessie
+            Je krijgt na elke sessie vier scores terug
           </h2>
           <p className="text-muted-foreground mt-4 max-w-md text-sm leading-relaxed sm:text-base">
-            De cliënt vult na het trainen een korte check-in in. Die vier scores
-            vormen samen het beeld dat je in het portaal terugziet: per sessie,
-            per week en over het hele traject.
+            Je cliënt vult na het trainen een korte check-in in. In het portaal
+            bekijk je die scores per sessie, per week of over het hele traject.
           </p>
           <p className="text-muted-foreground mt-4 max-w-md text-sm leading-relaxed">
-            Performance Plus ondersteunt je beoordeling — het vervangt hem niet.
-            De app geeft geen trainingsvrijgave en stuurt nooit uit zichzelf
-            advies naar je cliënt.
+            Jij beoordeelt, Performance Plus levert de gegevens. De app geeft
+            geen trainingsvrijgave en stuurt je cliënt geen advies.
           </p>
         </div>
 

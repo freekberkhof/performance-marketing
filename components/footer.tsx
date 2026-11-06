@@ -1,6 +1,6 @@
 import { CutButton } from "@/components/cut-button";
 import { Logo } from "@/components/logo";
-import { Instagram, Linkedin } from "lucide-react";
+// import { Instagram, Linkedin } from "lucide-react";
 import type { ReactNode } from "react";
 
 type FooterLink = { label: string; href: string };
@@ -33,6 +33,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
   },
 ];
 
+/* Socials tijdelijk uitgezet.
 function XIcon({ className }: { className?: string }): ReactNode {
   return (
     <svg
@@ -67,6 +68,7 @@ const SOCIALS: { label: string; href: string; icon: ReactNode }[] = [
     icon: <XIcon className="h-3.5 w-3.5" />,
   },
 ];
+*/
 
 function Plus({ className }: { className: string }): ReactNode {
   return (
@@ -169,6 +171,7 @@ export function Footer(): ReactNode {
               een product van PFH Performance.
             </p>
 
+            {/* Socials tijdelijk uitgezet.
             <div className="flex items-center gap-4">
               {SOCIALS.map((social, i) => (
                 <div key={social.href} className="flex items-center gap-4">
@@ -185,6 +188,7 @@ export function Footer(): ReactNode {
                 </div>
               ))}
             </div>
+            */}
           </div>
         </div>
       </div>

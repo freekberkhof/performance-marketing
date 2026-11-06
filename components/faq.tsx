@@ -10,49 +10,49 @@ type QA = { question: string; answer: string };
 
 const FAQS: QA[] = [
   {
-    question: "Wat is Performance Plus precies?",
+    question: "Wat is Performance Plus?",
     answer:
-      "Performance Plus bestaat uit twee delen: een praktijkportaal waarin je trajecten, fases en oefenprogramma's opbouwt, en een app waarin je cliënt die sessies uitvoert, oefeningen afvinkt en check-ins invult. Alles wat er in de app gebeurt, komt in het portaal terug.",
+      "Performance Plus bestaat uit twee delen: een praktijkportaal waarin je trajecten, fases en oefenprogramma's opbouwt, en een app waarin je cliënt die sessies uitvoert, oefeningen afvinkt en check-ins invult. Jij ziet in het portaal terug wat je cliënt in de app doet.",
   },
   {
     question: "Voor wie is het bedoeld?",
     answer:
-      "Voor fysiotherapiepraktijken die cliënten begeleiden van klacht naar doel. De praktijk is de klant; behandelaars en praktijkbeheerders werken in het portaal, cliënten krijgen een uitnodiging voor de app. Toegang is uitsluitend op uitnodiging — er is geen open registratie.",
+      "Voor fysiotherapiepraktijken die cliënten begeleiden van klacht naar doel. De praktijk neemt Performance Plus af. Behandelaars en praktijkbeheerders werken in het portaal, en cliënten krijgen van de praktijk een uitnodiging voor de app. Zonder uitnodiging kun je geen account aanmaken.",
   },
   {
     question: "Hoe zit het met revalidatie versus performance?",
     answer:
-      "Dat is één traject, geen twee. Een traject bestaat uit fases, en per fase wijs je een programma toe vanuit je bibliotheek. Of dat programma uit de categorie revalidatie of performance komt, maakt voor het dossier niet uit — je cliënt blijft in dezelfde lijn en hoeft nergens opnieuw te beginnen.",
+      "Beide vallen onder hetzelfde traject. Een traject bestaat uit fases, en per fase wijs je een programma toe uit je bibliotheek. Dat programma kan uit de categorie revalidatie of performance komen. Je cliënt blijft in hetzelfde dossier en begint niet opnieuw.",
   },
   {
     question: "Wat vult een cliënt in na een sessie?",
     answer:
-      "Een korte check-in: pijn tijdens de training, pijn na de training, RPE oftewel hoe zwaar het voelde, motivatie, en optioneel een notitie voor jou. Daarnaast is er een dagelijkse check-in over slaap, stress, pijn en spierpijn die uitkomt op een herstelscore.",
+      "Een korte check-in: pijn tijdens en na de training, RPE (hoe zwaar het voelde), motivatie en eventueel een notitie voor jou. Daarnaast vult je cliënt elke dag een check-in in over slaap, stress, pijn en spierpijn. De app berekent daaruit een herstelscore.",
   },
   {
     question: "Krijg ik een melding als het misgaat?",
     answer:
-      "Ja. Afgeronde sessies en ingevulde check-ins landen als melding in het portaal, en bij een pijnscore van 7 of hoger krijgt die melding voorrang, inclusief locatie en score. Je handelt meldingen af vanuit het portaal. De app is nadrukkelijk geen spoedkanaal — daarvoor gelden je eigen afspraken.",
+      "Ja. Je krijgt in het portaal een melding van elke afgeronde sessie en ingevulde check-in. Geeft je cliënt een pijnscore van 7 of hoger, dan staat die melding bovenaan, met locatie en score. De app is geen spoedkanaal. Voor spoed gelden de afspraken van je praktijk.",
   },
   {
     question: "Geeft de app trainingsadvies aan mijn cliënt?",
     answer:
-      "Nee. De herstelscore is een signaal, geen vrijgave om te trainen, en de app vervangt geen persoonlijke beoordeling. Er gaat ook nooit automatisch iets naar jou toe zonder dat de cliënt dat zelf doet — behalve de meldingen die in het portaal verschijnen.",
+      "Nee. De herstelscore geeft een signaal en geen vrijgave om te trainen. Jij blijft je cliënt beoordelen. De app stuurt je cliënt geen adviezen; jij ontvangt alleen de meldingen in het portaal.",
   },
   {
     question: "Waar staan de gegevens?",
     answer:
-      "Bij een gecertificeerde host binnen de EU. De opzet volgt NEN 7510, 7512 en 7513: inzage in dossiers en programma's wordt gelogd in een auditlog waarin niets achteraf gewijzigd of verwijderd kan worden, en er staan nooit gezondheidswaarden in die logs.",
+      "Bij een gecertificeerde host binnen de EU. De opzet volgt NEN 7510, 7512 en 7513. Het systeem legt elke inzage in dossiers en programma's vast in een auditlog die niemand achteraf kan wijzigen of verwijderen. Gezondheidswaarden komen niet in die logs.",
   },
   {
     question: "Moet ik mijn bestaande schema's opnieuw invoeren?",
     answer:
-      "Je bouwt je oefeningen en templates één keer op in je eigen praktijkbibliotheek; daarna wijs je ze met twee klikken toe. Bij grotere praktijken helpen we bij het overzetten van bestaande schema's — dat bespreken we in de demo.",
+      "Je bouwt je oefeningen en templates één keer op in je eigen praktijkbibliotheek; daarna wijs je ze met twee klikken toe. Heeft je praktijk veel bestaande schema's, dan helpen we met overzetten. Dat bespreken we in de demo.",
   },
   {
     question: "Is dit een afgerond product?",
     answer:
-      "Performance Plus draait als pilotversie en wordt stap voor stap verbeterd op basis van gebruik en feedback uit de praktijk. Dat zeggen we ook in de app zelf. Wat er staat, werkt; wat eraan komt, bepalen we samen met de praktijken die meedraaien.",
+      "Performance Plus draait als pilotversie, en dat staat ook in de app. We verbeteren het op basis van gebruik en feedback van de praktijken die meedraaien, en bepalen samen met hen welke functies er volgen.",
   },
 ];
 
@@ -167,8 +167,8 @@ export function Faq(): ReactNode {
             Veelgestelde vragen
           </h2>
           <p className="text-muted-foreground mt-6 max-w-sm text-sm leading-relaxed sm:text-base">
-            Alles over werken met Performance Plus in je praktijk. Staat je
-            vraag er niet bij? We denken graag mee.
+            Antwoorden over werken met Performance Plus in je praktijk. Staat je
+            vraag er niet bij, stel hem dan aan ons.
           </p>
           <div className="mt-8">
             <CutButton href="#demo" variant="outline">

@@ -23,7 +23,7 @@ type Step = {
 const STEPS: Step[] = [
   {
     title: "Je overzicht, elke ochtend",
-    body: "Belasting, voltooide sessies en motivatie staan bovenaan. Eén blik en je weet waar je staat — en welke sessie vandaag klaarstaat.",
+    body: "Bovenaan zie je je belasting, voltooide sessies en motivatie, met daaronder de sessie van vandaag.",
     screen: "/app/01.jpg",
     alt: "Overzichtsscherm met de ringen voor belasting, voltooid en motivatie",
     aside: (
@@ -40,14 +40,14 @@ const STEPS: Step[] = [
           </p>
         </div>
         <span className="border-border bg-background text-muted-foreground rounded-full border px-3.5 py-1.5 text-xs">
-          Geen Excel, geen papieren schema
+          Je hele schema op je telefoon
         </span>
       </>
     ),
   },
   {
     title: "Sessie voor sessie afvinken",
-    body: "Je week is opgedeeld in sessies, je sessie in oefeningen. Vink af tijdens het trainen; de voortgang loopt live mee.",
+    body: "Je fysio deelt je week op in sessies en elke sessie in oefeningen. Je vinkt oefeningen af tijdens het trainen en ziet de voortgangsbalk vollopen.",
     screen: "/app/02.jpg",
     alt: "Sessieoverzicht van week 1 met voltooide sessies en voortgangsbalken",
     aside: (
@@ -74,7 +74,7 @@ const STEPS: Step[] = [
   },
   {
     title: "Even inchecken, één minuut",
-    body: "Slaap, stress, pijn en de training van gisteren. Je fysio leest je check-ins mee in je dossier — of je slaat hem over.",
+    body: "Je geeft slaap, stress, pijn en de training van gisteren een score. Je fysio leest je check-in mee in je dossier. Wil je een dag overslaan, dan kan dat.",
     screen: "/app/03.jpg",
     alt: "Dagelijkse check-in met schuifregelaars voor slaap, stress en pijn",
     aside: (
@@ -95,7 +95,7 @@ const STEPS: Step[] = [
   },
   {
     title: "Je opbouw in cijfers",
-    body: "RPE, motivatie, pijn tijdens en pijn na, uitgezet over je sessies. Niet hoe je denkt dat het ging, maar wat je op het moment zelf invulde.",
+    body: "Je ziet RPE, motivatie en pijn tijdens en na de training uitgezet over al je sessies. Je kijkt terug op de scores die je na elke sessie invulde.",
     screen: "/app/04.jpg",
     alt: "Progressiescherm met programma-statistieken en het sessieverloop",
     aside: (
@@ -342,8 +342,8 @@ export function AppShowcase(): ReactNode {
             Vier schermen, één routine
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
-            De hele week zit in één app: wat je vandaag doet, wat je hebt
-            afgevinkt, hoe het voelde en waar je naartoe werkt.
+            In de app vind je de sessie van vandaag, wat je al hebt afgevinkt en
+            waar je naartoe werkt.
           </p>
         </div>
       </div>

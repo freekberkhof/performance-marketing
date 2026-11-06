@@ -41,7 +41,7 @@ const PLATFORM_ITEMS: PlatformItem[] = [
     desc: "Trajecten, fases en programma's",
     href: "#praktijkportaal",
     icon: LayoutGrid,
-    featureTitle: "Het traject is de paraplu",
+    featureTitle: "Eén traject voor alle fases",
     featureDesc:
       "Bouw het fasenplan, wijs programma's toe vanuit je bibliotheek en open de volgende fase zodra je cliënt er klaar voor is.",
   },
@@ -50,9 +50,9 @@ const PLATFORM_ITEMS: PlatformItem[] = [
     desc: "Zien wanneer het nodig is",
     href: "#meldingen",
     icon: ClipboardList,
-    featureTitle: "Een hoge pijnscore komt vanzelf bij je terug",
+    featureTitle: "Je ziet een hoge pijnscore in het portaal",
     featureDesc:
-      "Sessies, check-ins en pijnscores vanaf 7 landen als melding in het portaal — met locatie, score en context.",
+      "Je krijgt een melding van sessies, check-ins en pijnscores vanaf 7, met locatie, score en context.",
   },
   {
     title: "Veiligheid",
@@ -61,7 +61,7 @@ const PLATFORM_ITEMS: PlatformItem[] = [
     icon: ShieldCheck,
     featureTitle: "Gebouwd voor zorgdata",
     featureDesc:
-      "Gegevens staan bij een gecertificeerde host binnen de EU. Inzage in dossiers wordt gelogd in een append-only auditlog.",
+      "We hosten de gegevens bij een gecertificeerde partij binnen de EU en leggen elke inzage in dossiers vast in een auditlog die niemand kan wijzigen.",
   },
 ];
 

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Performance Plus",
   description:
-    "Performance Plus is het trainings- en herstelplatform van PFH Performance. Fysiotherapeuten bouwen het traject in fases, cliënten trainen in de app en vullen check-ins in — van revalidatie tot prestatie, in één dossier.",
+    "Performance Plus is het trainings- en herstelplatform van PFH Performance. Jij bouwt als fysiotherapeut het traject in fases op, je cliënt traint in de app en vult check-ins in. Van revalidatie tot prestatie houd je één dossier bij.",
   url: "https://performanceplus.nl",
   ogImage: "/og-image.png",
   creator: "PFH Performance",

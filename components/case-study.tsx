@@ -16,9 +16,8 @@ export function CaseStudy(): ReactNode {
           <div className="px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
             <LogoMark className="mb-7 h-9 w-9" />
             <h2 className="font-serif text-[1.75rem] leading-[1.22] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2]">
-              Performance Plus is gebouwd in de praktijk van PFH Performance —
-              voor cliënten die niet alleen van hun klacht af willen, maar terug
-              willen naar hun sport.
+              Performance Plus is vanuit de praktijk gebouwd, voor cliënten die
+              van hun klacht af willen en terug willen naar hun sport.
             </h2>
           </div>
 
@@ -26,10 +25,9 @@ export function CaseStudy(): ReactNode {
             <CornerPlus className="top-0 left-0 hidden -translate-x-1/2 -translate-y-1/2 lg:block" />
             <CornerPlus className="bottom-0 left-0 hidden -translate-x-1/2 translate-y-1/2 lg:block" />
             <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
-              Daarom staat de hele opzet op één aanname: revalidatie en
-              prestatie zijn geen twee trajecten, maar fases van hetzelfde
-              traject. Je begint bij belasting opbouwen en eindigt bij terug op
-              het veld, zonder onderweg van systeem te wisselen.
+              We gaan ervan uit dat revalidatie en prestatie fases van hetzelfde
+              traject zijn. Je begint met belasting opbouwen en eindigt met je
+              cliënt terug op het veld, in hetzelfde systeem.
             </p>
             <CutButton href="#demo" variant="outline" className="self-start">
               Plan een rondleiding

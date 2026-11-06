@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     path: "/",
   }),
   title: {
-    absolute: "Performance Plus — van revalidatie naar prestatie",
+    absolute: "Performance Plus: van revalidatie naar prestatie",
   },
 };
 
 // Plain literals (built server-side) passed as props to the client motion
-// wrappers — kept inline to avoid importing values from a "use client" module.
+// wrappers, kept inline to avoid importing values from a "use client" module.
 const SOFT_EASE = [0.22, 1, 0.36, 1] as const;
 const RISE_IN = {
   hidden: { opacity: 0, y: 24, scale: 0.985 },
@@ -53,19 +53,18 @@ export default function HomePage(): ReactNode {
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10">
             <InView className="relative max-w-2xl">
               <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-                Als fysiotherapeut direct inzicht in het traject
+                Jij ziet het hele traject in het praktijkportaal
               </h2>
               <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
-                Trajecten in fases, programma&apos;s uit je eigen bibliotheek en
-                de check-ins die binnenkomen — bij elkaar in één overzicht op de
-                praktijkcomputer.
+                Je bouwt trajecten in fases op met programma&apos;s uit je eigen
+                bibliotheek, en leest in hetzelfde overzicht de check-ins van je
+                cliënten.
               </p>
               <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
-                Daardoor begin je elke sessie met wat er sinds de vorige is
-                gebeurd: welke oefeningen zijn gedaan, met welke weerstand, en
-                hoe pijn en motivatie liepen. De tijd in de behandelkamer gaat
-                naar bijsturen op wat je ziet, in plaats van naar uitvragen wat
-                je mist.
+                Je begint een sessie met de oefeningen en weerstanden van je
+                cliënt sinds de vorige afspraak, en met het verloop van pijn en
+                motivatie. In de behandelkamer besteed je je tijd aan bijsturen
+                en minder aan uitvragen.
               </p>
             </InView>
           </div>

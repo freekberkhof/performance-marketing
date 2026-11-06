@@ -76,10 +76,10 @@ export function Hero(): ReactNode {
             transition={itemTransition}
             className="text-muted-foreground mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
           >
-            Performance Plus geeft fysiotherapiepraktijken één plek om
-            oefenprogramma&apos;s in fases op te bouwen, en hun cliënten één app
-            om erin te trainen. Jij ziet belasting, pijn en motivatie terug —
-            sessie voor sessie.
+            Met Performance Plus bouw je als fysiotherapiepraktijk
+            oefenprogramma&apos;s in fases op. Je cliënten trainen ermee in de
+            app, en jij ziet na elke sessie hoe belasting, pijn en motivatie
+            lopen.
           </motion.p>
 
           <motion.div
@@ -87,10 +87,14 @@ export function Hero(): ReactNode {
             transition={itemTransition}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <CutButton variant="solid" href="#demo">
+            <CutButton variant="solid" href="#demo" className="min-w-44">
               Demo aanvragen
             </CutButton>
-            <CutButton variant="outline" href="#hoe-het-werkt">
+            <CutButton
+              variant="outline"
+              href="#hoe-het-werkt"
+              className="min-w-44"
+            >
               Bekijk de app
             </CutButton>
           </motion.div>

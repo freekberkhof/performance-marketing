@@ -60,7 +60,7 @@ export function CutButton({
     ? "h-10 w-10"
     : `h-10 ${fullWidth ? "w-full" : ""}`;
   const wrapper = `inline-flex ${wrapperSize} bg-border p-px ${className}`;
-  const innerSize = iconOnly ? "w-full" : `px-5 ${fullWidth ? "w-full" : ""}`;
+  const innerSize = iconOnly ? "w-full" : "flex-1 px-5";
   const inner = `${BASE} h-full ${innerSize} bg-background text-foreground hover:bg-muted`;
 
   if (isAnchor) {

@@ -2,7 +2,7 @@
 
 /* ---------------------------------------------------------------------------
    Performance Plus is dark-only. There is no theme toggle and no
-   `prefers-color-scheme` branch — the page is always dark.
+   `prefers-color-scheme` branch; the page is always dark.
 
    Palette and the mint accent are taken from the practice portal
    (performance-admin), so marketing and product read as one product.
@@ -23,7 +23,7 @@
   --accent: #f4f7f8;
   --accent-foreground: #04140f;
 
-  /* Brand mint — the single accent colour across the site. */
+  /* Brand mint: the single accent colour across the site. */
   --brand: #1de9a6;
   --brand-foreground: #04140f;
   --brand-soft: rgba(29, 233, 166, 0.16);

@@ -3,7 +3,7 @@
 import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
 
 /**
- * A still ASCII field — the texture the template drew with WebGL, but
+ * A still ASCII field: the texture the template drew with WebGL, but
  * painted once on a canvas from deterministic noise. No three.js, no video,
  * and nothing animating: it renders on mount and on resize, then sits there.
  */
