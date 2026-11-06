@@ -78,7 +78,7 @@ De server berekent de herstelscore uit je dagelijkse check-in. De app toont de s
 
 - **Jij** ziet je eigen gegevens in de app.
 - **Medewerkers van je eigen praktijk** zien je traject en scores. Alleen de praktijkbeheerder kan je persoonsgegevens wijzigen.
-- **Ons beheerteam** heeft technische toegang voor support en onderhoud. Het gebruikt die alleen op verzoek van je praktijk of om een storing op te lossen. Het systeem legt elke inzage vast.
+- **Onze developer** heeft technische toegang voor ontwikkeling, support en onderhoud. Die toegang gebruikt de developer alleen op verzoek van je praktijk of om een storing op te lossen. Het systeem legt elke inzage vast.
 - **Onze dienstverleners** voor hosting en e-mail (zie hoofdstuk 7).
 
 Andere praktijken zien je gegevens niet. We verkopen geen gegevens en delen ze niet met adverteerders.
@@ -133,7 +133,7 @@ Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binn
 
 Je hebt recht op inzage, correctie, verwijdering, beperking, bezwaar en overdracht van je gegevens.
 
-- **Cliënt:** dien je verzoek in bij je praktijk. In de app kun je onder Instellingen vragen om je account te verwijderen. De praktijk beoordeelt het verzoek binnen een maand. Gegevens die bij je medisch dossier horen, kan de praktijk soms moeten bewaren. Dat legt ze je dan uit.
+- **Cliënt:** dien je verzoek in bij je praktijk, ook als je je account wilt laten verwijderen. De praktijk beoordeelt het verzoek binnen een maand. Gegevens die bij je medisch dossier horen, kan de praktijk soms moeten bewaren. Dat legt ze je dan uit.
 - **Websitebezoeker of zakelijk contact:** mail naar info@performplus.nl.
 
 We reageren binnen een maand. Ben je het niet eens met hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens.

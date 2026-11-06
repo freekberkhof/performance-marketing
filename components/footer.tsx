@@ -9,26 +9,26 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
     title: "Product",
     links: [
-      { label: "Hoe het werkt", href: "#hoe-het-werkt" },
-      { label: "Praktijkportaal", href: "#praktijkportaal" },
-      { label: "Meldingen", href: "#meldingen" },
+      { label: "Hoe het werkt", href: "/#hoe-het-werkt" },
+      { label: "Praktijkportaal", href: "/#praktijkportaal" },
+      { label: "Meldingen", href: "/#meldingen" },
     ],
   },
   {
     title: "Praktijk",
     links: [
-      { label: "Voor praktijken", href: "#praktijken" },
-      { label: "Veiligheid en AVG", href: "#faq" },
-      { label: "Veelgestelde vragen", href: "#faq" },
-      { label: "Support", href: "#support" },
+      { label: "Voor praktijken", href: "/#praktijken" },
+      { label: "Veiligheid en AVG", href: "/#faq" },
+      { label: "Veelgestelde vragen", href: "/#faq" },
+      { label: "Support", href: "/#support" },
     ],
   },
   {
     title: "Juridisch",
     links: [
-      { label: "Privacyverklaring", href: "#privacy" },
-      { label: "Algemene voorwaarden", href: "#voorwaarden" },
-      { label: "Verwerkersovereenkomst", href: "#verwerkersovereenkomst" },
+      { label: "Privacyverklaring", href: "/privacy" },
+      { label: "Algemene voorwaarden", href: "/voorwaarden" },
+      { label: "Verwerkersovereenkomst", href: "/verwerkersovereenkomst" },
     ],
   },
 ];
@@ -50,21 +50,21 @@ function XIcon({ className }: { className?: string }): ReactNode {
 const SOCIALS: { label: string; href: string; icon: ReactNode }[] = [
   {
     label: "LinkedIn",
-    href: "#linkedin",
+    href: "/#linkedin",
     icon: (
       <Linkedin className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
     ),
   },
   {
     label: "Instagram",
-    href: "#instagram",
+    href: "/#instagram",
     icon: (
       <Instagram className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
     ),
   },
   {
     label: "X",
-    href: "#x",
+    href: "/#x",
     icon: <XIcon className="h-3.5 w-3.5" />,
   },
 ];
@@ -158,7 +158,7 @@ export function Footer(): ReactNode {
               ]}
             >
               <div className="mt-6 flex flex-col items-start gap-2.5">
-                <CutButton variant="solid" href="#demo">
+                <CutButton variant="solid" href="/#demo">
                   Demo aanvragen
                 </CutButton>
               </div>
@@ -167,8 +167,8 @@ export function Footer(): ReactNode {
 
           <div className="mt-12 flex flex-col-reverse items-start justify-between gap-6 pt-6 sm:flex-row sm:items-center md:mt-14">
             <p className="text-muted-foreground text-xs">
-              © {new Date().getFullYear()} PFH Performance. Perform+ is een
-              product van PFH Performance.
+              © {new Date().getFullYear()} PassionForHealth B.V. · KvK 88144763.
+              Perform+ is een product van Fysiotherapie Passion For Health.
             </p>
 
             {/* Socials tijdelijk uitgezet.

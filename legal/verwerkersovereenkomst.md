@@ -2,7 +2,7 @@
 
 Versie 1.0 · 6 november 2026
 
-> **Concept.** Vul de velden tussen `[ ]` in en laat de tekst juridisch toetsen voordat je hem gebruikt.
+> Dit is ons model. De praktijk vult bij ondertekening haar eigen gegevens in.
 
 ## Partijen
 
@@ -145,13 +145,13 @@ Ondertekening
 
 **Back-up en herstel**
 
-- Dagelijkse back-up, elke back-up maximaal 35 dagen bewaard. [Bevestigen: back-upinstelling in Ploi of Hetzner.]
+- Dagelijkse back-up, elke back-up maximaal 35 dagen bewaard.
 - Herstelproef: minstens eenmaal per jaar en na grote wijzigingen in de infrastructuur. De Verwerker legt de uitkomst vast.
 
 **Ontwikkeling en beheer**
 
 - Wijzigingen gaan via code review en automatische tests.
-- Beheertoegang tot productie alleen voor de developer van de Verwerker, met een persoonlijk account.
+- Beheertoegang tot productie alleen voor de eigen developer van de Verwerker, met een persoonlijk account.
 
 ## Bijlage C. Subverwerkers
 
