@@ -1,9 +1,11 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 type Variant = "solid" | "outline";
+type Size = "md" | "sm";
 
 type BaseProps = {
   variant?: Variant;
+  size?: Size;
   iconOnly?: boolean;
   fullWidth?: boolean;
   className?: string;
@@ -23,23 +25,30 @@ type AnchorProps = BaseProps &
 type CutButtonProps = ButtonProps | AnchorProps;
 
 const BASE =
-  "inline-flex items-center justify-center gap-2 text-sm font-medium tracking-wide transition-colors duration-200 focus-ring";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium tracking-wide transition-colors duration-200 focus-ring";
+
+const SIZES: Record<Size, { box: string; pad: string; text: string }> = {
+  md: { box: "h-10", pad: "px-5", text: "text-sm" },
+  sm: { box: "h-9", pad: "px-3.5", text: "text-[13px]" },
+};
 
 export function CutButton({
   variant = "solid",
+  size: sizeName = "md",
   iconOnly = false,
   fullWidth = false,
   className = "",
   children,
   ...props
 }: CutButtonProps): ReactNode {
+  const s = SIZES[sizeName];
   const isAnchor = "href" in props && props.href !== undefined;
 
   if (variant === "solid") {
     const size = iconOnly
-      ? "h-10 w-10"
-      : `h-10 px-5 ${fullWidth ? "w-full" : ""}`;
-    const cls = `${BASE} ${size} bg-foreground text-background hover:bg-foreground/85 ${className}`;
+      ? `${s.box} aspect-square`
+      : `${s.box} ${s.pad} ${fullWidth ? "w-full" : ""}`;
+    const cls = `${BASE} ${s.text} ${size} bg-foreground text-background hover:bg-foreground/85 ${className}`;
 
     if (isAnchor) {
       const { href, ...rest } = props as AnchorProps;
@@ -57,11 +66,11 @@ export function CutButton({
   }
 
   const wrapperSize = iconOnly
-    ? "h-10 w-10"
-    : `h-10 ${fullWidth ? "w-full" : ""}`;
+    ? `${s.box} aspect-square`
+    : `${s.box} ${fullWidth ? "w-full" : ""}`;
   const wrapper = `inline-flex ${wrapperSize} bg-border p-px ${className}`;
-  const innerSize = iconOnly ? "w-full" : "flex-1 px-5";
-  const inner = `${BASE} h-full ${innerSize} bg-background text-foreground hover:bg-muted`;
+  const innerSize = iconOnly ? "w-full" : `flex-1 ${s.pad}`;
+  const inner = `${BASE} ${s.text} h-full ${innerSize} bg-background text-foreground hover:bg-muted`;
 
   if (isAnchor) {
     const { href, ...rest } = props as AnchorProps;

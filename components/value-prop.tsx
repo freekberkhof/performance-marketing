@@ -98,9 +98,8 @@ export function ValueProp(): ReactNode {
 
         <div className="lg:order-1">
           <Kicker>De uitdaging</Kicker>
-          <h2 className="mt-5 max-w-2xl font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
-            Je weet wat je cliënt moet doen, maar je ziet niet wat er thuis
-            gebeurt
+          <h2 className="mt-5 max-w-2xl font-serif text-3xl leading-[1.12] font-[450] tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
+            Je ziet niet wat er thuis gebeurt
           </h2>
 
           <dl className="mt-10">

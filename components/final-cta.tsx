@@ -66,7 +66,7 @@ export function FinalCta(): ReactNode {
           <motion.h2
             variants={item}
             transition={itemTransition}
-            className="font-serif text-4xl leading-[1.08] font-normal tracking-[-0.01em] text-balance text-white sm:text-5xl lg:text-[3.75rem]"
+            className="font-serif text-4xl leading-[1.08] font-[450] tracking-[-0.01em] text-balance text-white sm:text-5xl lg:text-[3.75rem]"
           >
             Van herstel naar prestatie in één dossier
           </motion.h2>
@@ -83,15 +83,19 @@ export function FinalCta(): ReactNode {
           <motion.div
             variants={item}
             transition={itemTransition}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
           >
-            <CutButton variant="solid" href="#demo" className="min-w-44">
+            <CutButton
+              variant="solid"
+              href="#demo"
+              className="w-full sm:w-auto sm:min-w-44"
+            >
               Demo aanvragen
             </CutButton>
             <CutButton
               variant="outline"
               href="#hoe-het-werkt"
-              className="min-w-44"
+              className="w-full sm:w-auto sm:min-w-44"
             >
               Bekijk de app
             </CutButton>

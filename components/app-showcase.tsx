@@ -264,7 +264,7 @@ function StepText({
           className="bg-foreground block h-px w-12"
         />
       </div>
-      <h3 className="text-foreground mt-5 font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] xl:text-4xl">
+      <h3 className="text-foreground mt-5 font-serif text-3xl leading-[1.12] font-[450] tracking-[-0.01em] xl:text-4xl">
         {step.title}
       </h3>
       <p className="text-muted-foreground mt-4 max-w-sm text-base leading-relaxed">
@@ -338,7 +338,7 @@ export function AppShowcase(): ReactNode {
     <section id="hoe-het-werkt" className="scroll-mt-24 pb-24 sm:pb-32">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-10">
         <div className="max-w-2xl">
-          <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
+          <h2 className="font-serif text-3xl leading-[1.12] font-[450] tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
             Vier schermen, één routine
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl text-sm leading-relaxed sm:text-base">
@@ -424,7 +424,7 @@ export function AppShowcase(): ReactNode {
                   </span>
                   <span className="bg-foreground block h-px w-12" />
                 </div>
-                <h3 className="text-foreground mt-5 font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] sm:text-4xl">
+                <h3 className="text-foreground mt-5 font-serif text-3xl leading-[1.12] font-[450] tracking-[-0.01em] sm:text-4xl">
                   {step.title}
                 </h3>
                 <p className="text-muted-foreground mt-4 max-w-sm text-base leading-relaxed">

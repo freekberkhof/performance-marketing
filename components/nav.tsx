@@ -246,12 +246,13 @@ export function Nav(): ReactNode {
           </CutButton>
         </div>
 
-        <div className="flex items-center gap-2.5 lg:hidden">
-          <CutButton variant="solid" href="#demo">
+        <div className="flex items-center gap-2 lg:hidden">
+          <CutButton variant="solid" size="sm" href="#demo">
             Demo aanvragen
           </CutButton>
           <CutButton
             variant="outline"
+            size="sm"
             iconOnly
             aria-label={mobileOpen ? "Menu sluiten" : "Menu openen"}
             onClick={() => setMobileOpen((v) => !v)}

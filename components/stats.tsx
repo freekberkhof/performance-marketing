@@ -67,7 +67,7 @@ function StatNumber({
   }, [inView, reduce, value, delay]);
 
   return (
-    <span className="block font-serif text-5xl leading-none font-normal tracking-[-0.02em] tabular-nums sm:text-6xl">
+    <span className="block font-serif text-5xl leading-none font-[450] tracking-[-0.02em] tabular-nums sm:text-6xl">
       <span aria-hidden="true">{`${prefix}${Math.round(display)}${suffix}`}</span>
       <span className="sr-only">{`${prefix}${value}${suffix}`}</span>
     </span>
@@ -86,7 +86,7 @@ export function Stats(): ReactNode {
     >
       <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="lg:pt-6">
-          <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
+          <h2 className="font-serif text-3xl leading-[1.12] font-[450] tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
             Je krijgt na elke sessie vier scores terug
           </h2>
           <p className="text-muted-foreground mt-4 max-w-md text-sm leading-relaxed sm:text-base">

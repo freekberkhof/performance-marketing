@@ -101,7 +101,7 @@ function FooterColumn({
   const divided = index > 0;
   return (
     <div
-      className={`relative md:px-8 ${divided ? "md:border-border md:border-l" : "md:pl-0"} ${
+      className={`relative md:px-8 ${index === 3 ? "col-span-2 md:col-span-1" : ""} ${divided ? "md:border-border md:border-l" : "md:pl-0"} ${
         index === 3 ? "md:pr-0" : ""
       }`}
     >
@@ -115,10 +115,10 @@ function FooterColumn({
       <h3 className="text-sm font-semibold tracking-tight">{title}</h3>
       <ul className="mt-4 space-y-3">
         {links.map((link) => (
-          <li key={link.href}>
+          <li key={link.label}>
             <a
               href={link.href}
-              className="focus-ring text-muted-foreground hover:text-foreground text-sm transition-colors"
+              className="focus-ring text-muted-foreground hover:text-foreground text-sm hyphens-auto transition-colors"
             >
               {link.label}
             </a>

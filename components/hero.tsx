@@ -26,7 +26,7 @@ export function Hero(): ReactNode {
     : { duration: 0.7, ease: softEase };
 
   return (
-    <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden">
+    <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden sm:items-center">
       {/* Full-bleed photo */}
       <Image
         src="/hero.jpg"
@@ -56,7 +56,18 @@ export function Hero(): ReactNode {
         }}
       />
 
-      <div className="mx-auto w-full max-w-[1440px] px-5 pt-28 pb-24 sm:px-8 sm:pt-32 lg:px-10">
+      {/* Mobile: the copy spans the full width, so the side scrim can't
+          carry it. A bottom-up scrim keeps the photo clear up top. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 sm:hidden"
+        style={{
+          background:
+            "linear-gradient(to top, var(--background) 0%, color-mix(in srgb, var(--background) 88%, transparent) 38%, color-mix(in srgb, var(--background) 40%, transparent) 62%, transparent 80%)",
+        }}
+      />
+
+      <div className="mx-auto w-full max-w-[1440px] px-5 pt-28 pb-12 sm:px-8 sm:pt-32 sm:pb-24 lg:px-10">
         <motion.div
           variants={container}
           initial="hidden"
@@ -66,7 +77,7 @@ export function Hero(): ReactNode {
           <motion.h1
             variants={item}
             transition={itemTransition}
-            className="font-serif text-4xl leading-[1.1] font-normal tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.5rem]"
+            className="font-serif text-4xl leading-[1.1] font-[450] tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.5rem]"
           >
             Van revalidatie naar prestatie, in één traject
           </motion.h1>
@@ -74,7 +85,7 @@ export function Hero(): ReactNode {
           <motion.p
             variants={item}
             transition={itemTransition}
-            className="text-muted-foreground mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
+            className="text-foreground/80 sm:text-muted-foreground mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
           >
             Met Perform+ bouw je als fysiotherapiepraktijk oefenprogramma&apos;s
             in fases op. Je cliënten trainen ermee in de app, en jij ziet na
@@ -84,15 +95,19 @@ export function Hero(): ReactNode {
           <motion.div
             variants={item}
             transition={itemTransition}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center"
           >
-            <CutButton variant="solid" href="#demo" className="min-w-44">
+            <CutButton
+              variant="solid"
+              href="#demo"
+              className="w-full sm:w-auto sm:min-w-44"
+            >
               Demo aanvragen
             </CutButton>
             <CutButton
               variant="outline"
               href="#hoe-het-werkt"
-              className="min-w-44"
+              className="w-full sm:w-auto sm:min-w-44"
             >
               Bekijk de app
             </CutButton>

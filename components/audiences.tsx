@@ -41,7 +41,7 @@ export function Audiences(): ReactNode {
       className="mx-auto max-w-[1440px] scroll-mt-24 px-5 pb-24 sm:px-8 sm:pb-32 lg:px-10"
     >
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="font-serif text-3xl leading-[1.12] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
+        <h2 className="font-serif text-3xl leading-[1.12] font-[450] tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.75rem]">
           Voor cliënten die terug willen naar hun oude niveau
         </h2>
         <p className="text-muted-foreground mt-4 text-sm leading-relaxed text-balance sm:text-base">
