@@ -133,7 +133,7 @@ Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binn
 
 Je hebt recht op inzage, correctie, verwijdering, beperking, bezwaar en overdracht van je gegevens.
 
-- **Cliënt:** dien je verzoek in bij je praktijk, ook als je je account wilt laten verwijderen. De praktijk beoordeelt het verzoek binnen een maand. Gegevens die bij je medisch dossier horen, kan de praktijk soms moeten bewaren. Dat legt ze je dan uit.
+- **Cliënt:** dien je verzoek in bij je praktijk. Verwijdering van je account vraag je aan in de app, via Instellingen > Account verwijderen. Je wordt dan direct uitgelogd en kunt niet meer inloggen. De praktijk handelt het verzoek binnen een maand af en laat je de uitkomst per e-mail weten. Gegevens die bij je medisch dossier horen, kan de praktijk soms moeten bewaren. Dat legt ze je dan uit.
 - **Websitebezoeker of zakelijk contact:** mail naar info@performplus.nl.
 
 We reageren binnen een maand. Ben je het niet eens met hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens.

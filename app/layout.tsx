@@ -1,6 +1,6 @@
 import { Providers } from "@/components/providers";
 import { SkipToContent } from "@/components/skip-to-content";
-import { baseMetadata } from "@/lib/metadata";
+import { baseMetadata, siteConfig } from "@/lib/metadata";
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import type { ReactNode } from "react";
@@ -28,7 +28,8 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = baseMetadata;
 
 export const viewport: Viewport = {
-  themeColor: "#0f0f10",
+  themeColor: siteConfig.themeColor,
+  colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,

@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/metadata";
 
+/** Date of the current legal documents (Versie 1.0, see legal/*.md). */
+const LEGAL_UPDATED = new Date("2026-11-06");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
 
@@ -13,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...["/privacy", "/voorwaarden", "/verwerkersovereenkomst"].map((path) => ({
       url: `${baseUrl}${path}`,
-      lastModified: new Date(),
+      lastModified: LEGAL_UPDATED,
       changeFrequency: "yearly" as const,
       priority: 0.3,
     })),

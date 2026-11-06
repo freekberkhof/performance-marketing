@@ -2,42 +2,70 @@ import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "Perform+",
+  tagline: "Van revalidatie naar prestatie",
   description:
-    "Perform+ is het trainings- en herstelplatform van Fysiotherapie Passion For Health. Jij bouwt als fysiotherapeut het traject in fases op, je cliënt traint in de app en vult check-ins in. Van revalidatie tot prestatie houd je één dossier bij.",
+    "Perform+ is software voor fysiotherapiepraktijken. Bouw trajecten in fases op, je cliënt traint in de app en jij ziet na elke sessie pijn en belasting terug.",
   url: "https://performplus.nl",
-  ogImage: "/og-image.png",
-  creator: "PassionForHealth B.V.",
-  authors: [
-    {
-      name: "PassionForHealth B.V.",
-      url: "https://performplus.nl",
+  email: "info@performplus.nl",
+  locale: "nl_NL",
+  /** Dark page ground, matches `--page` in app/globals.css. */
+  themeColor: "#151515",
+  company: {
+    legalName: "PassionForHealth B.V.",
+    tradeName: "Fysiotherapie Passion For Health",
+    kvk: "88144763",
+    address: {
+      streetAddress: "Van Zeggelenplein 5",
+      postalCode: "2032 KA",
+      addressLocality: "Haarlem",
+      addressCountry: "NL",
     },
-  ],
+  },
   keywords: [
     "fysiotherapie software",
+    "praktijksoftware fysiotherapie",
     "revalidatie app",
     "oefenprogramma app",
-    "trainingsschema fysio",
-    "RPE",
-    "check-in",
-    "NEN 7510",
-    "AVG",
-    "praktijksoftware",
-    "performance",
+    "trainingsschema fysiotherapie",
+    "sportrevalidatie",
+    "cliënt app fysiotherapie",
+    "check-in na training",
   ],
+} as const;
+
+/*
+ * Social images come from the file conventions app/opengraph-image.tsx and
+ * app/twitter-image.tsx, and icons from app/favicon.ico, app/icon.png and
+ * app/apple-icon.png. Next injects those tags itself, so they are not
+ * repeated here.
+ */
+const openGraphBase = {
+  type: "website",
+  locale: siteConfig.locale,
+  siteName: siteConfig.name,
+} as const;
+
+const twitterBase = {
+  card: "summary_large_image",
 } as const;
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [...siteConfig.keywords],
-  authors: [...siteConfig.authors],
-  creator: siteConfig.creator,
-  publisher: siteConfig.name,
+  authors: [{ name: siteConfig.company.legalName, url: siteConfig.url }],
+  creator: siteConfig.company.legalName,
+  publisher: siteConfig.company.legalName,
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
   robots: {
     index: true,
     follow: true,
@@ -49,77 +77,65 @@ export const baseMetadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
-    type: "website",
-    locale: "nl_NL",
+    ...openGraphBase,
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
-    siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
   },
   twitter: {
-    card: "summary_large_image",
+    ...twitterBase,
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
   },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
-  },
-  manifest: "/site.webmanifest",
 };
 
+/**
+ * Per-page metadata. Next replaces `openGraph` and `twitter` as a whole
+ * when a page sets them, so the shared fields (locale, siteName, card) are
+ * spread back in here to keep them on every page.
+ */
 export function createMetadata({
   title,
-  description,
+  absoluteTitle = false,
+  description = siteConfig.description,
   path = "/",
   image,
   noIndex = false,
 }: {
   title?: string;
+  /** Use `title` as-is, without the "| Perform+" template. */
+  absoluteTitle?: boolean;
   description?: string;
   path?: string;
-  image?: string;
+  /** Optional override; defaults to the generated opengraph-image. */
+  image?: { url: string; width: number; height: number; alt: string };
   noIndex?: boolean;
 }): Metadata {
-  const url = `${siteConfig.url}${path}`;
-  const ogImage = image ?? siteConfig.ogImage;
+  const socialTitle = title
+    ? absoluteTitle
+      ? title
+      : `${title} | ${siteConfig.name}`
+    : siteConfig.name;
 
   return {
-    title,
+    ...(title && { title: absoluteTitle ? { absolute: title } : title }),
     description,
     alternates: {
       canonical: path,
     },
     openGraph: {
-      title: title ?? siteConfig.name,
-      description: description ?? siteConfig.description,
-      url,
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: title ?? siteConfig.name,
-        },
-      ],
+      ...openGraphBase,
+      title: socialTitle,
+      description,
+      url: path,
+      ...(image && { images: [image] }),
     },
     twitter: {
-      title: title ?? siteConfig.name,
-      description: description ?? siteConfig.description,
-      images: [ogImage],
+      ...twitterBase,
+      title: socialTitle,
+      description,
+      ...(image && { images: [image] }),
     },
     ...(noIndex && {
       robots: {
