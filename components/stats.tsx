@@ -94,8 +94,8 @@ export function Stats(): ReactNode {
             bekijk je die scores per sessie, per week of over het hele traject.
           </p>
           <p className="text-muted-foreground mt-4 max-w-md text-sm leading-relaxed">
-            Jij beoordeelt, Performance Plus levert de gegevens. De app geeft
-            geen trainingsvrijgave en stuurt je cliënt geen advies.
+            Jij beoordeelt, Perform+ levert de gegevens. De app geeft geen
+            trainingsvrijgave en stuurt je cliënt geen advies.
           </p>
         </div>
 

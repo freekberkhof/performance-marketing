@@ -76,10 +76,9 @@ export function Hero(): ReactNode {
             transition={itemTransition}
             className="text-muted-foreground mt-5 max-w-xl text-[15px] leading-relaxed sm:text-base"
           >
-            Met Performance Plus bouw je als fysiotherapiepraktijk
-            oefenprogramma&apos;s in fases op. Je cliënten trainen ermee in de
-            app, en jij ziet na elke sessie hoe belasting, pijn en motivatie
-            lopen.
+            Met Perform+ bouw je als fysiotherapiepraktijk oefenprogramma&apos;s
+            in fases op. Je cliënten trainen ermee in de app, en jij ziet na
+            elke sessie hoe belasting, pijn en motivatie lopen.
           </motion.p>
 
           <motion.div

@@ -16,8 +16,8 @@ export function CaseStudy(): ReactNode {
           <div className="px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
             <LogoMark className="mb-7 h-9 w-9" />
             <h2 className="font-serif text-[1.75rem] leading-[1.22] font-normal tracking-[-0.01em] text-balance sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2]">
-              Performance Plus is vanuit de praktijk gebouwd, voor cliënten die
-              van hun klacht af willen en terug willen naar hun sport.
+              Perform+ is vanuit de praktijk gebouwd, voor cliënten die van hun
+              klacht af willen en terug willen naar hun sport.
             </h2>
           </div>
 

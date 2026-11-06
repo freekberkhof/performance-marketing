@@ -375,7 +375,7 @@ export function WindowMockup(): ReactNode {
           <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         </div>
         <span className="text-muted-foreground pointer-events-none absolute inset-x-0 text-center text-xs font-normal">
-          Performance Plus · praktijkportaal
+          Perform+ · praktijkportaal
         </span>
       </div>
 

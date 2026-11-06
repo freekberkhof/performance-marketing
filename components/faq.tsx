@@ -10,14 +10,14 @@ type QA = { question: string; answer: string };
 
 const FAQS: QA[] = [
   {
-    question: "Wat is Performance Plus?",
+    question: "Wat is Perform+?",
     answer:
-      "Performance Plus bestaat uit twee delen: een praktijkportaal waarin je trajecten, fases en oefenprogramma's opbouwt, en een app waarin je cliënt die sessies uitvoert, oefeningen afvinkt en check-ins invult. Jij ziet in het portaal terug wat je cliënt in de app doet.",
+      "Perform+ bestaat uit twee delen: een praktijkportaal waarin je trajecten, fases en oefenprogramma's opbouwt, en een app waarin je cliënt die sessies uitvoert, oefeningen afvinkt en check-ins invult. Jij ziet in het portaal terug wat je cliënt in de app doet.",
   },
   {
     question: "Voor wie is het bedoeld?",
     answer:
-      "Voor fysiotherapiepraktijken die cliënten begeleiden van klacht naar doel. De praktijk neemt Performance Plus af. Behandelaars en praktijkbeheerders werken in het portaal, en cliënten krijgen van de praktijk een uitnodiging voor de app. Zonder uitnodiging kun je geen account aanmaken.",
+      "Voor fysiotherapiepraktijken die cliënten begeleiden van klacht naar doel. De praktijk neemt Perform+ af. Behandelaars en praktijkbeheerders werken in het portaal, en cliënten krijgen van de praktijk een uitnodiging voor de app. Zonder uitnodiging kun je geen account aanmaken.",
   },
   {
     question: "Hoe zit het met revalidatie versus performance?",
@@ -52,7 +52,7 @@ const FAQS: QA[] = [
   {
     question: "Is dit een afgerond product?",
     answer:
-      "Performance Plus draait als pilotversie, en dat staat ook in de app. We verbeteren het op basis van gebruik en feedback van de praktijken die meedraaien, en bepalen samen met hen welke functies er volgen.",
+      "Perform+ draait als pilotversie, en dat staat ook in de app. We verbeteren het op basis van gebruik en feedback van de praktijken die meedraaien, en bepalen samen met hen welke functies er volgen.",
   },
 ];
 
@@ -167,8 +167,8 @@ export function Faq(): ReactNode {
             Veelgestelde vragen
           </h2>
           <p className="text-muted-foreground mt-6 max-w-sm text-sm leading-relaxed sm:text-base">
-            Antwoorden over werken met Performance Plus in je praktijk. Staat je
-            vraag er niet bij, stel hem dan aan ons.
+            Antwoorden over werken met Perform+ in je praktijk. Staat je vraag
+            er niet bij, stel hem dan aan ons.
           </p>
           <div className="mt-8">
             <CutButton href="#demo" variant="outline">

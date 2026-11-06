@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     path: "/",
   }),
   title: {
-    absolute: "Performance Plus: van revalidatie naar prestatie",
+    absolute: "Perform+: van revalidatie naar prestatie",
   },
 };
 

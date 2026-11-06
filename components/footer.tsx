@@ -167,8 +167,8 @@ export function Footer(): ReactNode {
 
           <div className="mt-12 flex flex-col-reverse items-start justify-between gap-6 pt-6 sm:flex-row sm:items-center md:mt-14">
             <p className="text-muted-foreground text-xs">
-              © {new Date().getFullYear()} PFH Performance. Performance Plus is
-              een product van PFH Performance.
+              © {new Date().getFullYear()} PFH Performance. Perform+ is een
+              product van PFH Performance.
             </p>
 
             {/* Socials tijdelijk uitgezet.
