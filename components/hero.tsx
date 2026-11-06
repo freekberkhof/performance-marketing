@@ -77,7 +77,7 @@ export function Hero(): ReactNode {
           <motion.h1
             variants={item}
             transition={itemTransition}
-            className="font-serif text-[2rem] leading-[1.1] font-[450] tracking-[-0.01em] text-pretty sm:text-5xl sm:text-balance lg:text-[3.5rem]"
+            className="font-serif text-[2rem] leading-[1.1] font-[450] tracking-[-0.01em] text-balance sm:text-5xl lg:text-[3.5rem]"
           >
             Van revalidatie naar prestatie
           </motion.h1>
