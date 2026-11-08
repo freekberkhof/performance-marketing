@@ -20,7 +20,8 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       { label: "Voor praktijken", href: "/#praktijken" },
       { label: "Veiligheid en AVG", href: "/#faq" },
       { label: "Veelgestelde vragen", href: "/#faq" },
-      { label: "Support", href: "mailto:info@performplus.nl" },
+      { label: "Support", href: "/support" },
+      { label: "Account verwijderen", href: "/account-verwijderen" },
     ],
   },
   {
