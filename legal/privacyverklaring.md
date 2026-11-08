@@ -1,6 +1,6 @@
 # Privacyverklaring Perform+
 
-Versie 1.0 · 6 november 2026
+Versie 1.1 · 8 november 2026
 
 ## 1. Wie we zijn
 
@@ -52,14 +52,14 @@ Dit hoofdstuk beschrijft hoe Perform+ werkt. Je praktijk bepaalt waarvoor ze de 
 
 ### Welke gegevens
 
-| Onderdeel | Gegevens |
-| --- | --- |
-| Account | Voor- en achternaam, e-mailadres, telefoonnummer (optioneel), taal, gekozen avatar, rol en praktijk. Het wachtwoord slaan we alleen versleuteld (gehasht) op. |
-| Traject | Blessure of klacht, sport, doel, start- en einddatum, fases, toegewezen programma's en je behandelaar. |
-| Sessies | Afgevinkte oefeningen, gebruikte belasting (bijvoorbeeld 40 kg), pijn tijdens en na de training (0 tot 10), ervaren inspanning (RPE), motivatie en een notitie. |
-| Dagelijkse check-in | Slaap, stress en pijn (1 tot 10), spierpijn en de intensiteit daarvan, of je gisteren trainde en hoe zwaar, en een notitie. De app berekent hieruit een herstelscore. |
-| Eigen trainingen | Naam, datum, sport, duur, afstand, oefeningen met herhalingen en gewicht, en notities. Dit logboek is optioneel. |
-| Inloggen en beveiliging | IP-adres en browsergegevens van je websessie, het apparaatmodel en besturingssysteem bij inloggen in de app, en een logboek van wie welk dossier inzag. |
+| Onderdeel               | Gegevens                                                                                                                                                              |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Account                 | Voor- en achternaam, e-mailadres, telefoonnummer (optioneel), taal, gekozen avatar, rol en praktijk. Het wachtwoord slaan we alleen versleuteld (gehasht) op.         |
+| Traject                 | Blessure of klacht, sport, doel, start- en einddatum, fases, toegewezen programma's en je behandelaar.                                                                |
+| Sessies                 | Afgevinkte oefeningen, gebruikte belasting (bijvoorbeeld 40 kg), pijn tijdens en na de training (0 tot 10), ervaren inspanning (RPE), motivatie en een notitie.       |
+| Dagelijkse check-in     | Slaap, stress en pijn (1 tot 10), spierpijn en de intensiteit daarvan, of je gisteren trainde en hoe zwaar, en een notitie. De app berekent hieruit een herstelscore. |
+| Eigen trainingen        | Naam, datum, sport, duur, afstand, oefeningen met herhalingen en gewicht, en notities. Dit logboek is optioneel.                                                      |
+| Inloggen en beveiliging | IP-adres en browsergegevens van je websessie, het apparaatmodel en besturingssysteem bij inloggen in de app, en een logboek van wie welk dossier inzag.               |
 
 Pijn, klacht en herstel zijn gezondheidsgegevens. De AVG beschermt die extra (artikel 9). Perform+ vraagt geen BSN, geboortedatum of geslacht.
 
@@ -69,6 +69,18 @@ Pijn, klacht en herstel zijn gezondheidsgegevens. De AVG beschermt die extra (ar
 - je behandelaar een melding sturen na een sessie of check-in, met voorrang bij een pijnscore van 7 of hoger;
 - de praktijk samengevatte cijfers laten zien over gebruik en het verloop van pijnscores. Groepen kleiner dan vijf cliënten tellen we samen. Er is geen export;
 - de software beveiligen en vastleggen wie welk dossier inzag, zoals NEN 7513 vraagt.
+
+### Op welke grond
+
+De praktijk verwerkt je gegevens om je te behandelen. Daarvoor gebruikt ze deze grondslagen:
+
+- **Behandelovereenkomst:** je hebt een behandelovereenkomst met je praktijk. Om die uit te voeren, gebruikt de praktijk je account-, traject-, sessie- en check-ingegevens (artikel 6 lid 1 onder b AVG, artikel 7:446 BW).
+- **Wettelijke plicht:** de praktijk moet een dossier bijhouden en bewaren (artikel 7:454 BW). Ze moet ook vastleggen wie je dossier inzag (NEN 7510 en NEN 7513) (artikel 6 lid 1 onder c AVG).
+- **Gezondheidsgegevens:** gezondheidsgegevens zijn extra beschermd. De praktijk mag ze verwerken omdat dat nodig is voor je zorg. Alleen zorgverleners met een beroepsgeheim zien ze (artikel 9 lid 2 onder h AVG en artikel 30 lid 3 UAVG). Daarvoor vragen we geen aparte toestemming.
+- **Eigen trainingen:** het trainingslogboek is optioneel. Vul je het in, dan hoort het bij je behandeling en geldt dezelfde grondslag.
+- **Beveiliging:** IP-adressen, apparaatgegevens en inlogsessies gebruiken we om de software te beveiligen. Dat is een gerechtvaardigd belang van de praktijk en van ons (artikel 6 lid 1 onder f AVG).
+
+Wij verwerken deze gegevens alleen in opdracht van de praktijk, via een verwerkersovereenkomst (artikel 28 AVG). Bij cliënten van Fysiotherapie Passion For Health zelf gelden deze grondslagen voor ons als zorgaanbieder.
 
 ### Herstelscore
 
@@ -105,27 +117,27 @@ De app bewaart je inlogtoken en een paar voorkeuren (thema, wanneer de check-in 
 
 Alle gegevens van het portaal en de app staan op servers van Hetzner Online GmbH in Falkenstein, Duitsland. De datacenters van Hetzner zijn ISO 27001-gecertificeerd. Voor het portaal en de app gebruiken we geen dienstverleners buiten de Europese Economische Ruimte.
 
-| Dienstverlener | Wat ze doen | Locatie |
-| --- | --- | --- |
-| Hetzner Online GmbH | Server, database en back-ups | Duitsland |
-| WebBuilds B.V. (Ploi) | Beheer en updates van de server; technische toegang, geen eigen opslag van gegevens | Nederland |
-| Mijndomein Hosting B.V. | E-mail voor uitnodigingen, wachtwoordherstel, verwijderverzoeken en demo-aanvragen | Nederland |
-| Vercel Inc. | Hosting van deze website en verwerking van het demoformulier | Frankfurt; Amerikaans bedrijf onder het Data Privacy Framework |
+| Dienstverlener          | Wat ze doen                                                                         | Locatie                                                        |
+| ----------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Hetzner Online GmbH     | Server, database en back-ups                                                        | Duitsland                                                      |
+| WebBuilds B.V. (Ploi)   | Beheer en updates van de server; technische toegang, geen eigen opslag van gegevens | Nederland                                                      |
+| Mijndomein Hosting B.V. | E-mail voor uitnodigingen, wachtwoordherstel, verwijderverzoeken en demo-aanvragen  | Nederland                                                      |
+| Vercel Inc.             | Hosting van deze website en verwerking van het demoformulier                        | Frankfurt; Amerikaans bedrijf onder het Data Privacy Framework |
 
 Met elke dienstverlener sluiten we een verwerkersovereenkomst.
 
 ## 8. Hoe lang we gegevens bewaren
 
-| Gegevens | Termijn |
-| --- | --- |
-| Dossiergegevens: traject, sessies, check-ins, herstelscores, meldingen en je naam en contactgegevens | 20 jaar na de laatste wijziging in je dossier, of langer als goede zorg dat vraagt (WGBO, artikel 7:454 BW). Dit is ook de norm uit de KNGF-richtlijn voor verslaglegging. |
-| Auditlog over inzage en wijziging van je dossier | Even lang als het dossier zelf, zodat je altijd kunt nagaan wie je dossier inzag (NEN 7513). |
-| Account na beëindiging of een verwijderverzoek | De praktijk handelt je verzoek binnen een maand af. Je account wordt direct geblokkeerd. Je kunt niet meer inloggen; je dossier blijft bewaard volgens de termijn hierboven. |
-| Eigen trainingen, avatar en voorkeuren (geen dossier) | Verwijderd binnen 30 dagen na beëindiging van je account. |
-| Technische logs en inlogsessies | 90 dagen. |
-| Back-ups | Elke back-up maximaal 35 dagen. Verwijderde gegevens verdwijnen daarna ook uit de back-ups. |
-| Demo-aanvragen | 12 maanden na het laatste contact. |
-| Facturen en klantadministratie | 7 jaar (fiscale bewaarplicht). |
+| Gegevens                                                                                             | Termijn                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dossiergegevens: traject, sessies, check-ins, herstelscores, meldingen en je naam en contactgegevens | 20 jaar na de laatste wijziging in je dossier, of langer als goede zorg dat vraagt (WGBO, artikel 7:454 BW). Dit is ook de norm uit de KNGF-richtlijn voor verslaglegging.   |
+| Auditlog over inzage en wijziging van je dossier                                                     | Even lang als het dossier zelf, zodat je altijd kunt nagaan wie je dossier inzag (NEN 7513).                                                                                 |
+| Account na beëindiging of een verwijderverzoek                                                       | De praktijk handelt je verzoek binnen een maand af. Je account wordt direct geblokkeerd. Je kunt niet meer inloggen; je dossier blijft bewaard volgens de termijn hierboven. |
+| Eigen trainingen, avatar en voorkeuren (geen dossier)                                                | Verwijderd binnen 30 dagen na beëindiging van je account.                                                                                                                    |
+| Technische logs en inlogsessies                                                                      | 90 dagen.                                                                                                                                                                    |
+| Back-ups                                                                                             | Elke back-up maximaal 35 dagen. Verwijderde gegevens verdwijnen daarna ook uit de back-ups.                                                                                  |
+| Demo-aanvragen                                                                                       | 12 maanden na het laatste contact.                                                                                                                                           |
+| Facturen en klantadministratie                                                                       | 7 jaar (fiscale bewaarplicht).                                                                                                                                               |
 
 Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binnen drie maanden, tenzij de wet bewaren vereist of het belang van een ander zwaarder weegt (artikel 7:455 BW).
 
@@ -133,7 +145,7 @@ Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binn
 
 Je hebt recht op inzage, correctie, verwijdering, beperking, bezwaar en overdracht van je gegevens.
 
-- **Cliënt:** dien je verzoek in bij je praktijk. Verwijdering van je account vraag je aan in de app, via Instellingen > Account verwijderen. Je wordt dan direct uitgelogd en kunt niet meer inloggen. De praktijk handelt het verzoek binnen een maand af en laat je de uitkomst per e-mail weten. Gegevens die bij je medisch dossier horen, kan de praktijk soms moeten bewaren. Dat legt ze je dan uit.
+- **Cliënt:** dien je verzoek in bij je praktijk. Verwijdering van je account vraag je aan in de app, via Instellingen > Account verwijderen. Je wordt dan direct uitgelogd en kunt niet meer inloggen. Zonder de app gaat het via [Account verwijderen](/account-verwijderen). De praktijk handelt het verzoek binnen een maand af en laat je de uitkomst per e-mail weten. Gegevens die bij je medisch dossier horen, kan de praktijk soms moeten bewaren. Dat legt ze je dan uit.
 - **Websitebezoeker of zakelijk contact:** mail naar info@performplus.nl.
 
 We reageren binnen een maand. Ben je het niet eens met hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de Autoriteit Persoonsgegevens.

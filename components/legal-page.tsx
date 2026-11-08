@@ -9,7 +9,9 @@ import remarkGfm from "remark-gfm";
 export type LegalDocument =
   | "privacyverklaring"
   | "algemene-voorwaarden"
-  | "verwerkersovereenkomst";
+  | "verwerkersovereenkomst"
+  | "support"
+  | "account-verwijderen";
 
 // De teksten staan als Markdown in /legal, zodat ze zonder code te wijzigen zijn.
 async function readLegalDocument(name: LegalDocument): Promise<string> {
