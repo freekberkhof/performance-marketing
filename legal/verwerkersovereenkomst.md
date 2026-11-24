@@ -1,6 +1,6 @@
 # Verwerkersovereenkomst Perform+
 
-Versie 1.0 · 6 november 2026
+Versie 1.1 · 24 november 2026
 
 > Dit is ons model. De praktijk vult bij ondertekening haar eigen gegevens in.
 
@@ -109,6 +109,10 @@ Ondertekening
 | Eigen trainingen | Naam, datum, sport, duur, afstand, oefeningen, herhalingen, gewicht, notities, eerdere versies |
 | Meldingen | Tekst met pijn-, slaap- en stressscores na een sessie of check-in |
 | Technisch | IP-adres en user agent van websessies, apparaatmodel en besturingssysteem bij app-login, tokens, auditlog van inzage en wijzigingen |
+
+**Medisch dossier:** de Verwerkingsverantwoordelijke legt bij ondertekening vast welke gegevens in Perform+ tot het medisch dossier behoren (artikel 7:454 BW). Perform+ kan het hele dossier zijn of een deel ervan, bijvoorbeeld het behandelplan terwijl het overige dossier in een eigen elektronisch patiëntendossier staat. Voor de dossiergegevens in Perform+ geldt een bewaartermijn van 20 jaar na de laatste wijziging, tenzij de Verwerkingsverantwoordelijke schriftelijk anders instrueert. Eigen trainingen, avatar en voorkeuren van Cliënten horen niet bij het dossier.
+
+Vastgelegd door de Verwerkingsverantwoordelijke: [welke gegevens in Perform+ tot het dossier behoren, en in welk systeem de rest van het dossier staat].
 
 **Bijzondere persoonsgegevens:** gezondheidsgegevens (artikel 9 AVG). Perform+ verwerkt geen BSN, geboortedatum of geslacht.
 
