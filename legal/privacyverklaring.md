@@ -1,6 +1,6 @@
 # Privacyverklaring Perform+
 
-Versie 1.2 · 24 november 2026
+Versie 1.3 · 24 november 2026
 
 ## 1. Wie we zijn
 
@@ -86,7 +86,9 @@ Wij verwerken deze gegevens alleen in opdracht van de praktijk, via een verwerke
 
 Perform+ is voor de meeste praktijken een deel van het medisch dossier, niet het hele dossier. De praktijk legt vast welke gegevens in Perform+ bij het dossier horen.
 
-Bij Fysiotherapie Passion For Health staat je behandelplan in Perform+: je traject, fases en programma's, en hoe je die uitvoert (sessies, check-ins en meldingen). De rest van je dossier, zoals intake, onderzoek en verslaglegging, staat in het elektronisch patiëntendossier Intramed. Beide delen samen vormen je medisch dossier. Eigen trainingen, je avatar en voorkeuren horen er niet bij.
+Bij Fysiotherapie Passion For Health staat je behandelplan in Perform+: je traject (klacht, sport en doel), de fases en de programma's. De rest van je dossier, zoals intake, onderzoek en verslaglegging, staat in het elektronisch patiëntendossier Intramed. Beide delen samen vormen je medisch dossier.
+
+Sessies, check-ins, herstelscores en meldingen horen niet bij het dossier. Het zijn werkgegevens waarmee je behandelaar je voortgang volgt. Past je behandelaar op basis daarvan je behandeling aan, dan legt die dat vast in je dossier. Eigen trainingen, je avatar en voorkeuren horen ook niet bij het dossier.
 
 ### Herstelscore
 
@@ -134,16 +136,17 @@ Met elke dienstverlener sluiten we een verwerkersovereenkomst.
 
 ## 8. Hoe lang we gegevens bewaren
 
-| Gegevens                                                                                             | Termijn                                                                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dossiergegevens: traject, sessies, check-ins, herstelscores, meldingen en je naam en contactgegevens | 20 jaar na de laatste wijziging in je dossier, of langer als goede zorg dat vraagt (WGBO, artikel 7:454 BW). Dit is ook de norm uit de KNGF-richtlijn voor verslaglegging.   |
-| Auditlog over inzage en wijziging van je dossier                                                     | Even lang als het dossier zelf, zodat je altijd kunt nagaan wie je dossier inzag (NEN 7513).                                                                                 |
-| Account na beëindiging of een verwijderverzoek                                                       | De praktijk handelt je verzoek binnen een maand af. Je account wordt direct geblokkeerd. Je kunt niet meer inloggen; je dossier blijft bewaard volgens de termijn hierboven. |
-| Eigen trainingen, avatar en voorkeuren (geen dossier)                                                | Verwijderd binnen 30 dagen na beëindiging van je account.                                                                                                                    |
-| Technische logs en inlogsessies                                                                      | 90 dagen.                                                                                                                                                                    |
-| Back-ups                                                                                             | Elke back-up maximaal 35 dagen. Verwijderde gegevens verdwijnen daarna ook uit de back-ups.                                                                                  |
-| Demo-aanvragen                                                                                       | 12 maanden na het laatste contact.                                                                                                                                           |
-| Facturen en klantadministratie                                                                       | 7 jaar (fiscale bewaarplicht).                                                                                                                                               |
+| Gegevens                                                                                       | Termijn                                                                                                                                                                      |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dossiergegevens: je behandelplan (traject, fases en programma's) en je naam en contactgegevens | 20 jaar na de laatste wijziging in je dossier, of langer als goede zorg dat vraagt (WGBO, artikel 7:454 BW). Dit is ook de norm uit de KNGF-richtlijn voor verslaglegging.   |
+| Werkgegevens: sessies, check-ins, herstelscores en meldingen                                   | 2 jaar na het einde van je traject. Daarna verwijderen we ze.                                                                                                                |
+| Auditlog over inzage en wijziging van je dossier                                               | Even lang als het dossier zelf, zodat je altijd kunt nagaan wie je dossier inzag (NEN 7513).                                                                                 |
+| Account na beëindiging of een verwijderverzoek                                                 | De praktijk handelt je verzoek binnen een maand af. Je account wordt direct geblokkeerd. Je kunt niet meer inloggen; je dossier blijft bewaard volgens de termijn hierboven. |
+| Eigen trainingen, avatar en voorkeuren (geen dossier)                                          | Verwijderd binnen 30 dagen na beëindiging van je account.                                                                                                                    |
+| Technische logs en inlogsessies                                                                | 90 dagen.                                                                                                                                                                    |
+| Back-ups                                                                                       | Elke back-up maximaal 35 dagen. Verwijderde gegevens verdwijnen daarna ook uit de back-ups.                                                                                  |
+| Demo-aanvragen                                                                                 | 12 maanden na het laatste contact.                                                                                                                                           |
+| Facturen en klantadministratie                                                                 | 7 jaar (fiscale bewaarplicht).                                                                                                                                               |
 
 Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binnen drie maanden, tenzij de wet bewaren vereist of het belang van een ander zwaarder weegt (artikel 7:455 BW). Staat je dossier deels in Perform+ en deels in een ander systeem, zoals Intramed, dan vernietigt de praktijk beide delen.
 
