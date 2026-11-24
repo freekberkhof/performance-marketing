@@ -1,6 +1,6 @@
 # Privacyverklaring Perform+
 
-Versie 1.1 · 8 november 2026
+Versie 1.2 · 24 november 2026
 
 ## 1. Wie we zijn
 
@@ -82,6 +82,12 @@ De praktijk verwerkt je gegevens om je te behandelen. Daarvoor gebruikt ze deze 
 
 Wij verwerken deze gegevens alleen in opdracht van de praktijk, via een verwerkersovereenkomst (artikel 28 AVG). Bij cliënten van Fysiotherapie Passion For Health zelf gelden deze grondslagen voor ons als zorgaanbieder.
 
+### Perform+ en je medisch dossier
+
+Perform+ is voor de meeste praktijken een deel van het medisch dossier, niet het hele dossier. De praktijk legt vast welke gegevens in Perform+ bij het dossier horen.
+
+Bij Fysiotherapie Passion For Health staat je behandelplan in Perform+: je traject, fases en programma's, en hoe je die uitvoert (sessies, check-ins en meldingen). De rest van je dossier, zoals intake, onderzoek en verslaglegging, staat in het elektronisch patiëntendossier Intramed. Beide delen samen vormen je medisch dossier. Eigen trainingen, je avatar en voorkeuren horen er niet bij.
+
 ### Herstelscore
 
 De server berekent de herstelscore uit je dagelijkse check-in. De app toont de score met een korte indicatie, bijvoorbeeld "Houd het vandaag rustig", en een waarschuwing bij hoge pijn of weinig slaap. De score is een hulpmiddel. De app neemt geen besluiten over je behandeling; je behandelaar beoordeelt je voortgang.
@@ -139,7 +145,7 @@ Met elke dienstverlener sluiten we een verwerkersovereenkomst.
 | Demo-aanvragen                                                                                       | 12 maanden na het laatste contact.                                                                                                                                           |
 | Facturen en klantadministratie                                                                       | 7 jaar (fiscale bewaarplicht).                                                                                                                                               |
 
-Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binnen drie maanden, tenzij de wet bewaren vereist of het belang van een ander zwaarder weegt (artikel 7:455 BW).
+Vraag je de praktijk om je dossier te vernietigen, dan doet de praktijk dat binnen drie maanden, tenzij de wet bewaren vereist of het belang van een ander zwaarder weegt (artikel 7:455 BW). Staat je dossier deels in Perform+ en deels in een ander systeem, zoals Intramed, dan vernietigt de praktijk beide delen.
 
 ## 9. Je rechten
 
